@@ -1,0 +1,38 @@
+[
+  { "ayahIndex": 0, "wordIndex": 0, "start": 0.00, "end": 1.20 },
+  { "ayahIndex": 0, "wordIndex": 1, "start": 1.20, "end": 3.20 },
+  { "ayahIndex": 0, "wordIndex": 2, "start": 3.20, "end": 5.10 },
+  { "ayahIndex": 0, "wordIndex": 3, "start": 5.10, "end": 6.80 },
+
+  { "ayahIndex": 1, "wordIndex": 0, "start": 7.20, "end": 8.40 },
+  { "ayahIndex": 1, "wordIndex": 1, "start": 8.40, "end": 9.70 },
+  { "ayahIndex": 1, "wordIndex": 2, "start": 9.70, "end": 10.50 },
+  { "ayahIndex": 1, "wordIndex": 3, "start": 10.50, "end": 12.40 },
+
+  { "ayahIndex": 2, "wordIndex": 0, "start": 12.90, "end": 14.40 },
+  { "ayahIndex": 2, "wordIndex": 1, "start": 14.40, "end": 16.00 },
+
+  { "ayahIndex": 3, "wordIndex": 0, "start": 16.50, "end": 17.80 },
+  { "ayahIndex": 3, "wordIndex": 1, "start": 17.80, "end": 19.20 },
+  { "ayahIndex": 3, "wordIndex": 2, "start": 19.20, "end": 20.80 },
+
+  { "ayahIndex": 4, "wordIndex": 0, "start": 21.20, "end": 22.50 },
+  { "ayahIndex": 4, "wordIndex": 1, "start": 22.50, "end": 23.70 },
+  { "ayahIndex": 4, "wordIndex": 2, "start": 23.70, "end": 25.50 },
+  { "ayahIndex": 4, "wordIndex": 3, "start": 25.50, "end": 27.50 },
+
+  { "ayahIndex": 5, "wordIndex": 0, "start": 28.00, "end": 29.50 },
+  { "ayahIndex": 5, "wordIndex": 1, "start": 29.50, "end": 31.20 },
+  { "ayahIndex": 5, "wordIndex": 2, "start": 31.20, "end": 33.00 },
+  { "ayahIndex": 5, "wordIndex": 3, "start": 33.00, "end": 35.20 },
+
+  { "ayahIndex": 6, "wordIndex": 0, "start": 35.70, "end": 36.90 },
+  { "ayahIndex": 6, "wordIndex": 1, "start": 36.90, "end": 38.40 },
+  { "ayahIndex": 6, "wordIndex": 2, "start": 38.40, "end": 39.80 },
+  { "ayahIndex": 6, "wordIndex": 3, "start": 39.80, "end": 41.20 },
+  { "ayahIndex": 6, "wordIndex": 4, "start": 41.20, "end": 42.60 },
+  { "ayahIndex": 6, "wordIndex": 5, "start": 42.60, "end": 44.40 },
+  { "ayahIndex": 6, "wordIndex": 6, "start": 44.40, "end": 46.20 },
+  { "ayahIndex": 6, "wordIndex": 7, "start": 46.20, "end": 47.50 },
+  { "ayahIndex": 6, "wordIndex": 8, "start": 47.50, "end": 50.50 }
+]
