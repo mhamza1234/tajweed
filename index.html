@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Qur’an Read-Along — Tajwīd Tutor</title>
+  <link rel="preconnect" href="https://cdn.islamic.network" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" dir="ltr">
+    <div class="brand">Qur’an Read-Along</div>
+    <div class="controls">
+      <label for="surahSelect">Surah:</label>
+      <select id="surahSelect"></select>
+      <button id="legendToggle" aria-expanded="false">Legend</button>
+    </div>
+  </header>
+
+  <!-- HERO: full-surah recitation -->
+  <section class="hero" dir="ltr">
+    <div class="hero-head">
+      <div>
+        <h1 id="heroTitle" class="hero-title">—</h1>
+        <div id="heroMeta" class="hero-meta">—</div>
+      </div>
+      <div class="reciter">
+        <div class="reciter-name">Mishary Al-Afasy</div>
+        <div class="reciter-meta">Saudi (Madinah) — 128 kbps</div>
+      </div>
+    </div>
+
+    <div class="hero-audio">
+      <audio id="fullSurah" preload="metadata" controls></audio>
+      <div class="hero-controls">
+        <label>Speed:
+          <select id="fullRate">
+            <option value="0.85">0.85×</option>
+            <option value="1" selected>1.0×</option>
+            <option value="1.15">1.15×</option>
+            <option value="1.25">1.25×</option>
+          </select>
+        </label>
+        <label><input type="checkbox" id="fullLoop"> Loop</label>
+        <a id="downloadMp3" class="btn" download>Download MP3</a>
+        <button id="startPractice" class="btn primary">Start practice ↓</button>
+      </div>
+      <div id="fullTime" class="time">0:00 / 0:00</div>
+    </div>
+  </section>
+
+  <!-- PRACTICE player -->
+  <section class="player" dir="ltr">
+    <audio id="player" preload="metadata" controls></audio>
+    <div class="transport">
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn" title="Restart">↺</button>
+    </div>
+  </section>
+
+  <main>
+    <section class="panel">
+      <h2 id="surahTitle" class="surah-title" aria-live="polite"></h2>
+      <ol id="ayahList" class="ayah-list" aria-live="polite"></ol>
+
+      <div class="explain" dir="ltr">
+        <div>
+          <h3>Transliteration</h3>
+          <div id="trOut" class="mono"></div>
+        </div>
+        <div>
+          <h3>Meaning (Bangla)</h3>
+          <div id="bnOut"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside id="legend" hidden>
+      <h3 dir="ltr">Tajwīd Legend</h3>
+      <ul id="legendList"></ul>
+    </aside>
+  </main>
+
+  <div class="sr-only" aria-live="polite" id="live"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
