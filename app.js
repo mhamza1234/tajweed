@@ -148,11 +148,28 @@ async function loadSurah(id){
   setAudioWithFallback(player, candidates, url => { downloadMp3.href = url; });
   setAudioWithFallback(fullSurah, candidates);
 
-  // render Arabic words with basic rule coloring
+  // render Arabic: robust fallback if words are missing
   data.verses.forEach((ayah,i)=>{
     const li=document.createElement('li'); li.setAttribute('dir','rtl');
     const container=document.createElement('div'); container.className='ayah';
-    const spans=(ayah.words||[]).map((w,j)=>{
+
+    const safeWords = (ayah.words || []).filter(w => (w && (w.ar && w.ar.trim().length)));
+    if (!safeWords.length) {
+      // show whole line so page isn't blank
+      if (ayah.arabic_tajweed_html) {
+        container.innerHTML = ayah.arabic_tajweed_html;
+      } else if (ayah.arabic) {
+        container.textContent = ayah.arabic;
+      } else {
+        container.textContent = '—';
+      }
+      li.appendChild(container);
+      ayahList.appendChild(li);
+      spanRefs.push([]);
+      return;
+    }
+
+    const spans = safeWords.map((w,j)=>{
       const span=document.createElement('span'); span.className='word'; span.textContent=w.ar; span.setAttribute('lang','ar');
       span.dataset.rules=(w.rules||[]).join(',');
       const first=(w.rules||[])[0]; if(first && legend[first]?.color){ span.style.background = hexAlpha(legend[first].color, .18); }
