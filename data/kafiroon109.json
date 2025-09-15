@@ -1,0 +1,206 @@
+{
+  "surah": 109,
+  "name_ar": "الكافرون",
+  "name_bn": "অবিশ্বাসী",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "109:1",
+      "arabic_tajweed_html": "قُلْ يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed>لْكَ<tajweed class=madda_normal>ـٰ</tajweed>فِر<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١</span>",
+      "bangla": "Say [Prophet], ‘Disbelievers:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "qul",
+          "wbw_audio": "wbw/109_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yāayyuhā",
+          "wbw_audio": "wbw/109_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-kāfirūna",
+          "wbw_audio": "wbw/109_001_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "109:2",
+      "arabic_tajweed_html": "ل<tajweed class=madda_obligatory>َآ</tajweed> أَعْبُدُ مَا تَعْبُد<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢</span>",
+      "bangla": "I do not worship what you worship,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "lā",
+          "wbw_audio": "wbw/109_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aʿbudu",
+          "wbw_audio": "wbw/109_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/109_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taʿbudūna",
+          "wbw_audio": "wbw/109_002_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "109:3",
+      "arabic_tajweed_html": "وَل<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نت</tajweed>ُمْ عَ<tajweed class=madda_normal>ـٰ</tajweed>بِدُونَ م<tajweed class=madda_obligatory>َآ</tajweed> أَعْبُ<tajweed class=qalaqah>د</tajweed>ُ <span class=end>٣</span>",
+      "bangla": "you do not worship what I worship,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walā",
+          "wbw_audio": "wbw/109_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "antum",
+          "wbw_audio": "wbw/109_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿābidūna",
+          "wbw_audio": "wbw/109_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/109_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aʿbudu",
+          "wbw_audio": "wbw/109_003_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "109:4",
+      "arabic_tajweed_html": "وَل<tajweed class=madda_obligatory>َآ</tajweed> أَنَا۟ عَابِ<tajweed class=idgham_ghunnah>دٌ م</tajweed>َّا عَبَ<tajweed class=idgham_mutajanisayn>د</tajweed>تُّمْ <span class=end>٤</span>",
+      "bangla": "I will never worship what you worship,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walā",
+          "wbw_audio": "wbw/109_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "anā",
+          "wbw_audio": "wbw/109_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿābidun",
+          "wbw_audio": "wbw/109_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/109_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿabadttum",
+          "wbw_audio": "wbw/109_004_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "109:5",
+      "arabic_tajweed_html": "وَل<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نت</tajweed>ُمْ عَ<tajweed class=madda_normal>ـٰ</tajweed>بِدُونَ م<tajweed class=madda_obligatory>َآ</tajweed> أَعْبُ<tajweed class=qalaqah>د</tajweed>ُ <span class=end>٥</span>",
+      "bangla": "you will never worship what I worship:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walā",
+          "wbw_audio": "wbw/109_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "antum",
+          "wbw_audio": "wbw/109_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿābidūna",
+          "wbw_audio": "wbw/109_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/109_005_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aʿbudu",
+          "wbw_audio": "wbw/109_005_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "109:6",
+      "arabic_tajweed_html": "لَكُمْ دِينُكُمْ وَلِىَ د<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٦</span>",
+      "bangla": "you have your religion and I have mine.’",
+      "words": [
+        {
+          "ar": "",
+          "tr": "lakum",
+          "wbw_audio": "wbw/109_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dīnukum",
+          "wbw_audio": "wbw/109_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "waliya",
+          "wbw_audio": "wbw/109_006_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dīni",
+          "wbw_audio": "wbw/109_006_004.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

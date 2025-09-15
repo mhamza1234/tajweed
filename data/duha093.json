@@ -1,0 +1,325 @@
+{
+  "surah": 93,
+  "name_ar": "الضحى",
+  "name_bn": "পূর্বাহ্নের সুর্যকিরণ",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "93:1",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>ضُّحَىٰ <span class=end>١</span>",
+      "bangla": "By the morning brightness",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wal-ḍuḥā",
+          "wbw_audio": "wbw/093_001_001.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:2",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لَّيْلِ إِذَا سَجَىٰ <span class=end>٢</span>",
+      "bangla": "and by the night when it grows still,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-al-layli",
+          "wbw_audio": "wbw/093_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "idhā",
+          "wbw_audio": "wbw/093_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sajā",
+          "wbw_audio": "wbw/093_002_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:3",
+      "arabic_tajweed_html": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ <span class=end>٣</span>",
+      "bangla": "your Lord has not forsaken you [Prophet], nor does He hate you,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/093_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "waddaʿaka",
+          "wbw_audio": "wbw/093_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbuka",
+          "wbw_audio": "wbw/093_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/093_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "qalā",
+          "wbw_audio": "wbw/093_003_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:4",
+      "arabic_tajweed_html": "وَلَلْأَخِرَةُ خَيْ<tajweed class=idgham_wo_ghunnah>رٌ ل</tajweed>َّكَ مِنَ <tajweed class=ham_wasl>ٱ</tajweed>لْأُولَىٰ <span class=end>٤</span>",
+      "bangla": "and the future will be better for you than the past;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walalākhiratu",
+          "wbw_audio": "wbw/093_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "khayrun",
+          "wbw_audio": "wbw/093_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "laka",
+          "wbw_audio": "wbw/093_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mina",
+          "wbw_audio": "wbw/093_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ūlā",
+          "wbw_audio": "wbw/093_004_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:5",
+      "arabic_tajweed_html": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ <span class=end>٥</span>",
+      "bangla": "your Lord is sure to give you so much that you will be well satisfied.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walasawfa",
+          "wbw_audio": "wbw/093_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yuʿ'ṭīka",
+          "wbw_audio": "wbw/093_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbuka",
+          "wbw_audio": "wbw/093_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fatarḍā",
+          "wbw_audio": "wbw/093_005_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:6",
+      "arabic_tajweed_html": "أَلَمْ يَجِ<tajweed class=qalaqah>دْ</tajweed>كَ يَتِي<tajweed class=ikhafa>مًا ف</tajweed>َـَٔـاوَىٰ <span class=end>٦</span>",
+      "bangla": "Did He not find you an orphan and shelter you?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alam",
+          "wbw_audio": "wbw/093_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yajid'ka",
+          "wbw_audio": "wbw/093_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yatīman",
+          "wbw_audio": "wbw/093_006_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "faāwā",
+          "wbw_audio": "wbw/093_006_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:7",
+      "arabic_tajweed_html": "وَوَجَدَكَ ضَآل<tajweed class=ikhafa>اًّ ف</tajweed>َهَدَىٰ <span class=end>٧</span>",
+      "bangla": "Did He not find you lost and guide you?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wawajadaka",
+          "wbw_audio": "wbw/093_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ḍāllan",
+          "wbw_audio": "wbw/093_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fahadā",
+          "wbw_audio": "wbw/093_007_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:8",
+      "arabic_tajweed_html": "وَوَجَدَكَ ع<tajweed class=madda_obligatory>َا</tajweed>ٓئِل<tajweed class=ikhafa>اً ف</tajweed>َأَغْنَىٰ <span class=end>٨</span>",
+      "bangla": "Did He not find you in need and make you self-sufficient?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wawajadaka",
+          "wbw_audio": "wbw/093_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿāilan",
+          "wbw_audio": "wbw/093_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fa-aghnā",
+          "wbw_audio": "wbw/093_008_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:9",
+      "arabic_tajweed_html": "فَأَ<tajweed class=ghunnah>مّ</tajweed>َا <tajweed class=ham_wasl>ٱ</tajweed>لْيَتِيمَ فَلَا تَ<tajweed class=qalaqah>قْ</tajweed>هَرْ <span class=end>٩</span>",
+      "bangla": "So do not be harsh with the orphan",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fa-ammā",
+          "wbw_audio": "wbw/093_009_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-yatīma",
+          "wbw_audio": "wbw/093_009_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "falā",
+          "wbw_audio": "wbw/093_009_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taqhar",
+          "wbw_audio": "wbw/093_009_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:10",
+      "arabic_tajweed_html": "وَأَ<tajweed class=ghunnah>مّ</tajweed>َا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سّ<tajweed class=madda_obligatory>َا</tajweed>ٓئِلَ فَلَا تَنْهَرْ <span class=end>١٠</span>",
+      "bangla": "and do not chide the one who asks for help;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-ammā",
+          "wbw_audio": "wbw/093_010_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-sāila",
+          "wbw_audio": "wbw/093_010_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "falā",
+          "wbw_audio": "wbw/093_010_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "tanhar",
+          "wbw_audio": "wbw/093_010_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "93:11",
+      "arabic_tajweed_html": "وَأَ<tajweed class=ghunnah>مّ</tajweed>َا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ <span class=end>١١</span>",
+      "bangla": "talk about the blessings of your Lord.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-ammā",
+          "wbw_audio": "wbw/093_011_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "biniʿ'mati",
+          "wbw_audio": "wbw/093_011_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbika",
+          "wbw_audio": "wbw/093_011_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "faḥaddith",
+          "wbw_audio": "wbw/093_011_004.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "surah": 107,
+  "name_ar": "الماعون",
+  "name_bn": "সাহায্য সহায়তা",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "107:1",
+      "arabic_tajweed_html": "أَرَءَيْتَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى يُكَذِّبُ بِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دّ<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>١</span>",
+      "bangla": "[Prophet], have you considered the person who denies the Judgement?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "ara-ayta",
+          "wbw_audio": "wbw/107_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/107_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yukadhibu",
+          "wbw_audio": "wbw/107_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bil-dīni",
+          "wbw_audio": "wbw/107_001_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "107:2",
+      "arabic_tajweed_html": "فَذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى يَدُعُّ <tajweed class=ham_wasl>ٱ</tajweed>لْيَت<tajweed class=madda_permissible>ِي</tajweed>مَ <span class=end>٢</span>",
+      "bangla": "It is he who pushes aside the orphan",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fadhālika",
+          "wbw_audio": "wbw/107_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/107_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yaduʿʿu",
+          "wbw_audio": "wbw/107_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-yatīma",
+          "wbw_audio": "wbw/107_002_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "107:3",
+      "arabic_tajweed_html": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ <tajweed class=ham_wasl>ٱ</tajweed>لْمِسْك<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٣</span>",
+      "bangla": "and does not urge others to feed the needy.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walā",
+          "wbw_audio": "wbw/107_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yaḥuḍḍu",
+          "wbw_audio": "wbw/107_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/107_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ṭaʿāmi",
+          "wbw_audio": "wbw/107_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-mis'kīni",
+          "wbw_audio": "wbw/107_003_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "107:4",
+      "arabic_tajweed_html": "فَوَيْ<tajweed class=idgham_wo_ghunnah>لٌ ل</tajweed>ِّلْمُصَلّ<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٤</span>",
+      "bangla": "So woe to those who pray",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fawaylun",
+          "wbw_audio": "wbw/107_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lil'muṣallīna",
+          "wbw_audio": "wbw/107_004_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "107:5",
+      "arabic_tajweed_html": "ٱلَّذِينَ هُمْ عَ<tajweed class=ikhafa>ن ص</tajweed>َلَاتِهِمْ سَاه<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٥</span>",
+      "bangla": "but are heedless of their prayer;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/107_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "hum",
+          "wbw_audio": "wbw/107_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿan",
+          "wbw_audio": "wbw/107_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ṣalātihim",
+          "wbw_audio": "wbw/107_005_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sāhūna",
+          "wbw_audio": "wbw/107_005_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "107:6",
+      "arabic_tajweed_html": "ٱلَّذِينَ هُمْ يُر<tajweed class=madda_obligatory>َا</tajweed>ٓء<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٦</span>",
+      "bangla": "those who are all show",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/107_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "hum",
+          "wbw_audio": "wbw/107_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yurāūna",
+          "wbw_audio": "wbw/107_006_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "107:7",
+      "arabic_tajweed_html": "وَيَمْنَعُونَ <tajweed class=ham_wasl>ٱ</tajweed>لْمَاع<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٧</span>",
+      "bangla": "and forbid common kindnesses.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wayamnaʿūna",
+          "wbw_audio": "wbw/107_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-māʿūna",
+          "wbw_audio": "wbw/107_007_002.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

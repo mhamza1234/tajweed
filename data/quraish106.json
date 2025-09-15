@@ -1,0 +1,138 @@
+{
+  "surah": 106,
+  "name_ar": "قريش",
+  "name_bn": "কুরাইশ গোত্র",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "106:1",
+      "arabic_tajweed_html": "لِإِيلَ<tajweed class=madda_normal>ـٰ</tajweed>فِ قُر<tajweed class=madda_permissible>َي</tajweed>ْشٍ <span class=end>١</span>",
+      "bangla": "[He did this] to make the Quraysh feel secure,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "liīlāfi",
+          "wbw_audio": "wbw/106_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "qurayshin",
+          "wbw_audio": "wbw/106_001_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "106:2",
+      "arabic_tajweed_html": "إ<tajweed class=madda_normal>ِۦ</tajweed>لَ<tajweed class=madda_normal>ـٰ</tajweed>فِهِمْ رِحْلَةَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شِّت<tajweed class=madda_obligatory>َا</tajweed>ٓءِ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صّ<tajweed class=madda_permissible>َي</tajweed>ْفِ <span class=end>٢</span>",
+      "bangla": "secure in their winter and summer journeys.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "īlāfihim",
+          "wbw_audio": "wbw/106_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "riḥ'lata",
+          "wbw_audio": "wbw/106_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-shitāi",
+          "wbw_audio": "wbw/106_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wal-ṣayfi",
+          "wbw_audio": "wbw/106_002_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "106:3",
+      "arabic_tajweed_html": "فَلْيَعْبُدُو<tajweed class=slnt>اْ</tajweed> رَبَّ هَ<tajweed class=madda_normal>ـٰ</tajweed>ذَا <tajweed class=ham_wasl>ٱ</tajweed>لْب<tajweed class=madda_permissible>َي</tajweed>ْتِ <span class=end>٣</span>",
+      "bangla": "So let them worship the Lord of this House:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "falyaʿbudū",
+          "wbw_audio": "wbw/106_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabba",
+          "wbw_audio": "wbw/106_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "hādhā",
+          "wbw_audio": "wbw/106_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-bayti",
+          "wbw_audio": "wbw/106_003_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "106:4",
+      "arabic_tajweed_html": "ٱلَّذ<tajweed class=madda_obligatory>ِىٓ</tajweed> أَ<tajweed class=qalaqah>طْ</tajweed>عَمَه<tajweed class=idgham_shafawi>ُم م</tajweed>ِّ<tajweed class=ikhafa>ن ج</tajweed>ُو<tajweed class=idgham_ghunnah>عٍ و</tajweed>َءَامَنَه<tajweed class=idgham_shafawi>ُم م</tajweed>ِّنْ خ<tajweed class=madda_permissible>َو</tajweed>ْفِۭ <span class=end>٤</span>",
+      "bangla": "who provides them with food to ward off hunger, safety to ward off fear.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/106_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aṭʿamahum",
+          "wbw_audio": "wbw/106_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "min",
+          "wbw_audio": "wbw/106_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "jūʿin",
+          "wbw_audio": "wbw/106_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "waāmanahum",
+          "wbw_audio": "wbw/106_004_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "min",
+          "wbw_audio": "wbw/106_004_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "khawfin",
+          "wbw_audio": "wbw/106_004_007.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

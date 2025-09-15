@@ -1,0 +1,113 @@
+{
+  "surah": 103,
+  "name_ar": "العصر",
+  "name_bn": "সময়",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "103:1",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لْعَصْرِ <span class=end>١</span>",
+      "bangla": "By the declining day,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wal-ʿaṣri",
+          "wbw_audio": "wbw/103_001_001.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "103:2",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ لَفِى خُسْرٍ <span class=end>٢</span>",
+      "bangla": "man is [deep] in loss,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "inna",
+          "wbw_audio": "wbw/103_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-insāna",
+          "wbw_audio": "wbw/103_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lafī",
+          "wbw_audio": "wbw/103_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "khus'rin",
+          "wbw_audio": "wbw/103_002_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "103:3",
+      "arabic_tajweed_html": "إِلَّا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> وَعَمِلُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=madda_normal>ـٰ</tajweed>لِحَ<tajweed class=madda_normal>ـٰ</tajweed>تِ وَتَوَاصَوْ<tajweed class=slnt>اْ</tajweed> بِ<tajweed class=ham_wasl>ٱ</tajweed>لْحَقِّ وَتَوَاصَوْ<tajweed class=slnt>اْ</tajweed> بِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=qalaqah>بْ</tajweed>رِ <span class=end>٣</span>",
+      "bangla": "except for those who believe, do good deeds, urge one another to the truth, and urge one another to steadfastness.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "illā",
+          "wbw_audio": "wbw/103_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/103_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "āmanū",
+          "wbw_audio": "wbw/103_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "waʿamilū",
+          "wbw_audio": "wbw/103_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ṣāliḥāti",
+          "wbw_audio": "wbw/103_003_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "watawāṣaw",
+          "wbw_audio": "wbw/103_003_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bil-ḥaqi",
+          "wbw_audio": "wbw/103_003_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "watawāṣaw",
+          "wbw_audio": "wbw/103_003_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bil-ṣabri",
+          "wbw_audio": "wbw/103_003_009.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "surah": 108,
+  "name_ar": "الكوثر",
+  "name_bn": "কাউসার/প্রাচুর্য",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "108:1",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_obligatory>َآ</tajweed> أَعْطَيْنَ<tajweed class=madda_normal>ـٰ</tajweed>كَ <tajweed class=ham_wasl>ٱ</tajweed>لْكَوْثَرَ <span class=end>١</span>",
+      "bangla": "We have truly given abundance to you [Prophet]––",
+      "words": [
+        {
+          "ar": "",
+          "tr": "innā",
+          "wbw_audio": "wbw/108_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aʿṭaynāka",
+          "wbw_audio": "wbw/108_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-kawthara",
+          "wbw_audio": "wbw/108_001_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "108:2",
+      "arabic_tajweed_html": "فَصَلِّ لِرَبِّكَ وَ<tajweed class=ham_wasl>ٱ</tajweed>نْحَرْ <span class=end>٢</span>",
+      "bangla": "so pray to your Lord and make your sacrifice to Him alone––",
+      "words": [
+        {
+          "ar": "",
+          "tr": "faṣalli",
+          "wbw_audio": "wbw/108_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lirabbika",
+          "wbw_audio": "wbw/108_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wa-in'ḥar",
+          "wbw_audio": "wbw/108_002_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "108:3",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed>َ شَانِئَكَ هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْأَ<tajweed class=qalaqah>بْ</tajweed>تَرُ <span class=end>٣</span>",
+      "bangla": "it is the one who hates you who has been cut off.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "inna",
+          "wbw_audio": "wbw/108_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "shāni-aka",
+          "wbw_audio": "wbw/108_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "huwa",
+          "wbw_audio": "wbw/108_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-abtaru",
+          "wbw_audio": "wbw/108_003_004.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

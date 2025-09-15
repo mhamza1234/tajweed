@@ -1,0 +1,181 @@
+{
+  "surah": 111,
+  "name_ar": "المسد",
+  "name_bn": "খেজুরের পাকানো (রশি)",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "111:1",
+      "arabic_tajweed_html": "تَبَّتْ يَد<tajweed class=madda_obligatory>َآ</tajweed> أَبِى لَهَ<tajweed class=idgham_ghunnah>بٍ و</tajweed>َتَ<tajweed class=qalaqah>ب</tajweed>َّ <span class=end>١</span>",
+      "bangla": "May the hands of Abu Lahab be ruined! May he be ruined too!",
+      "words": [
+        {
+          "ar": "",
+          "tr": "tabbat",
+          "wbw_audio": "wbw/111_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yadā",
+          "wbw_audio": "wbw/111_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "abī",
+          "wbw_audio": "wbw/111_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lahabin",
+          "wbw_audio": "wbw/111_001_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "watabba",
+          "wbw_audio": "wbw/111_001_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "111:2",
+      "arabic_tajweed_html": "م<tajweed class=madda_obligatory>َآ</tajweed> أَغْنَىٰ عَنْهُ مَالُهُ<tajweed class=madda_normal>ۥ</tajweed> وَمَا كَسَ<tajweed class=qalaqah>ب</tajweed>َ <span class=end>٢</span>",
+      "bangla": "Neither his wealth nor his gains will help him:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/111_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aghnā",
+          "wbw_audio": "wbw/111_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿanhu",
+          "wbw_audio": "wbw/111_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "māluhu",
+          "wbw_audio": "wbw/111_002_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/111_002_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kasaba",
+          "wbw_audio": "wbw/111_002_006.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "111:3",
+      "arabic_tajweed_html": "سَيَصْلَىٰ نَا<tajweed class=ikhafa>رًا ذ</tajweed>َاتَ لَهَ<tajweed class=qalaqah>ب</tajweed>ٍ <span class=end>٣</span>",
+      "bangla": "he will burn in the Flaming Fire––",
+      "words": [
+        {
+          "ar": "",
+          "tr": "sayaṣlā",
+          "wbw_audio": "wbw/111_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "nāran",
+          "wbw_audio": "wbw/111_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dhāta",
+          "wbw_audio": "wbw/111_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lahabin",
+          "wbw_audio": "wbw/111_003_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "111:4",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed>مْرَأَتُهُ<tajweed class=madda_normal>ۥ</tajweed> حَ<tajweed class=ghunnah>مّ</tajweed>َالَةَ <tajweed class=ham_wasl>ٱ</tajweed>لْحَطَ<tajweed class=qalaqah>ب</tajweed>ِ <span class=end>٤</span>",
+      "bangla": "and so will his wife, the firewood-carrier,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-im'ra-atuhu",
+          "wbw_audio": "wbw/111_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ḥammālata",
+          "wbw_audio": "wbw/111_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ḥaṭabi",
+          "wbw_audio": "wbw/111_004_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "111:5",
+      "arabic_tajweed_html": "فِى جِيدِهَا حَ<tajweed class=qalaqah>بْ</tajweed><tajweed class=idgham_ghunnah>لٌ م</tajweed>ّ<tajweed class=idgham_ghunnah>ِن م</tajweed>َّسَ<tajweed class=qalaqah>د</tajweed>ِۭ <span class=end>٥</span>",
+      "bangla": "with a palm-fibre rope around her neck.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/111_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "jīdihā",
+          "wbw_audio": "wbw/111_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ḥablun",
+          "wbw_audio": "wbw/111_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "min",
+          "wbw_audio": "wbw/111_005_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "masadin",
+          "wbw_audio": "wbw/111_005_005.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

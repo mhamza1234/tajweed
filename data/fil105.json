@@ -1,0 +1,181 @@
+{
+  "surah": 105,
+  "name_ar": "الفيل",
+  "name_bn": "হাতি",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "105:1",
+      "arabic_tajweed_html": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَ<tajweed class=madda_normal>ـٰ</tajweed>بِ <tajweed class=ham_wasl>ٱ</tajweed>لْف<tajweed class=madda_permissible>ِي</tajweed>لِ <span class=end>١</span>",
+      "bangla": "Do you [Prophet] not see how your Lord dealt with the army of the elephant?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alam",
+          "wbw_audio": "wbw/105_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "tara",
+          "wbw_audio": "wbw/105_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kayfa",
+          "wbw_audio": "wbw/105_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "faʿala",
+          "wbw_audio": "wbw/105_001_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbuka",
+          "wbw_audio": "wbw/105_001_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bi-aṣḥābi",
+          "wbw_audio": "wbw/105_001_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-fīli",
+          "wbw_audio": "wbw/105_001_007.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "105:2",
+      "arabic_tajweed_html": "أَلَمْ يَ<tajweed class=qalaqah>جْ</tajweed>عَلْ كَيْدَهُمْ فِى تَضْل<tajweed class=madda_permissible>ِي</tajweed>لٍ <span class=end>٢</span>",
+      "bangla": "Did He not utterly confound their plans?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alam",
+          "wbw_audio": "wbw/105_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yajʿal",
+          "wbw_audio": "wbw/105_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kaydahum",
+          "wbw_audio": "wbw/105_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/105_002_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taḍlīlin",
+          "wbw_audio": "wbw/105_002_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "105:3",
+      "arabic_tajweed_html": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَاب<tajweed class=madda_permissible>ِي</tajweed>لَ <span class=end>٣</span>",
+      "bangla": "He sent ranks of birds against them,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-arsala",
+          "wbw_audio": "wbw/105_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿalayhim",
+          "wbw_audio": "wbw/105_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ṭayran",
+          "wbw_audio": "wbw/105_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "abābīla",
+          "wbw_audio": "wbw/105_003_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "105:4",
+      "arabic_tajweed_html": "تَرْمِيه<tajweed class=ikhafa_shafawi>ِم ب</tajweed>ِحِجَارَ<tajweed class=idgham_ghunnah>ةٍ م</tajweed>ِّ<tajweed class=ikhafa>ن س</tajweed>ِجّ<tajweed class=madda_permissible>ِي</tajweed>لٍ <span class=end>٤</span>",
+      "bangla": "pelting them with pellets of hard-baked clay:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "tarmīhim",
+          "wbw_audio": "wbw/105_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "biḥijāratin",
+          "wbw_audio": "wbw/105_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "min",
+          "wbw_audio": "wbw/105_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sijjīlin",
+          "wbw_audio": "wbw/105_004_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "105:5",
+      "arabic_tajweed_html": "فَجَعَلَهُمْ كَعَصْ<tajweed class=idgham_ghunnah>فٍ م</tajweed>َّأْك<tajweed class=madda_permissible>ُو</tajweed>لِۭ <span class=end>٥</span>",
+      "bangla": "He made them [like] cropped stubble.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fajaʿalahum",
+          "wbw_audio": "wbw/105_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kaʿaṣfin",
+          "wbw_audio": "wbw/105_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "makūlin",
+          "wbw_audio": "wbw/105_005_003.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "surah": 97,
+  "name_ar": "القدر",
+  "name_bn": "মহিমান্বিত",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "97:1",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نز</tajweed>َلْنَ<tajweed class=madda_normal>ـٰ</tajweed>هُ فِى لَيْلَةِ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=qalaqah>دْ</tajweed>رِ <span class=end>١</span>",
+      "bangla": "We sent it down on the Night of Glory.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "innā",
+          "wbw_audio": "wbw/097_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "anzalnāhu",
+          "wbw_audio": "wbw/097_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/097_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "laylati",
+          "wbw_audio": "wbw/097_001_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-qadri",
+          "wbw_audio": "wbw/097_001_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "97:2",
+      "arabic_tajweed_html": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=qalaqah>دْ</tajweed>رَ<tajweed class=madda_normal>ٮٰ</tajweed>كَ مَا لَيْلَةُ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=qalaqah>دْ</tajweed>رِ <span class=end>٢</span>",
+      "bangla": "What will explain to you what that Night of Glory is?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/097_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "adrāka",
+          "wbw_audio": "wbw/097_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/097_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "laylatu",
+          "wbw_audio": "wbw/097_002_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-qadri",
+          "wbw_audio": "wbw/097_002_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "97:3",
+      "arabic_tajweed_html": "لَيْلَةُ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=qalaqah>دْ</tajweed>رِ خَيْ<tajweed class=idgham_ghunnah>رٌ م</tajweed>ِّنْ أَلْفِ شَهْرٍ <span class=end>٣</span>",
+      "bangla": "The Night of Glory is better than a thousand months;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "laylatu",
+          "wbw_audio": "wbw/097_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-qadri",
+          "wbw_audio": "wbw/097_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "khayrun",
+          "wbw_audio": "wbw/097_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "min",
+          "wbw_audio": "wbw/097_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "alfi",
+          "wbw_audio": "wbw/097_003_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "shahrin",
+          "wbw_audio": "wbw/097_003_006.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "97:4",
+      "arabic_tajweed_html": "تَنَزَّلُ <tajweed class=ham_wasl>ٱ</tajweed>لْمَلَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَةُ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رُّوحُ فِيهَا بِإِذْنِ رَبِّه<tajweed class=idgham_shafawi>ِم م</tajweed>ِّ<tajweed class=ikhafa>ن ك</tajweed>ُلِّ أَمْرٍ <span class=end>٤</span>",
+      "bangla": "on that night the angels and the Spirit descend again and again with their Lord’s permission on every task;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "tanazzalu",
+          "wbw_audio": "wbw/097_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-malāikatu",
+          "wbw_audio": "wbw/097_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wal-rūḥu",
+          "wbw_audio": "wbw/097_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fīhā",
+          "wbw_audio": "wbw/097_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bi-idh'ni",
+          "wbw_audio": "wbw/097_004_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbihim",
+          "wbw_audio": "wbw/097_004_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "min",
+          "wbw_audio": "wbw/097_004_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kulli",
+          "wbw_audio": "wbw/097_004_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "amrin",
+          "wbw_audio": "wbw/097_004_009.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "97:5",
+      "arabic_tajweed_html": "سَلَ<tajweed class=madda_normal>ـٰ</tajweed>مٌ هِىَ حَتَّىٰ مَ<tajweed class=qalaqah>طْ</tajweed>لَعِ <tajweed class=ham_wasl>ٱ</tajweed>لْفَ<tajweed class=qalaqah>جْ</tajweed>رِ <span class=end>٥</span>",
+      "bangla": "[there is] peace that night until the break of dawn.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "salāmun",
+          "wbw_audio": "wbw/097_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "hiya",
+          "wbw_audio": "wbw/097_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ḥattā",
+          "wbw_audio": "wbw/097_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "maṭlaʿi",
+          "wbw_audio": "wbw/097_005_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-fajri",
+          "wbw_audio": "wbw/097_005_005.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

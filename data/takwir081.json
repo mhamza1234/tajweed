@@ -1,0 +1,835 @@
+{
+  "surah": 81,
+  "name_ar": "التكوير",
+  "name_bn": "অন্ধকারাচ্ছন্ন",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "81:1",
+      "arabic_tajweed_html": "إِذَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شَّمْسُ كُوِّرَتْ <span class=end>١</span>",
+      "bangla": "When the sun is shrouded in darkness,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "idhā",
+          "wbw_audio": "wbw/081_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-shamsu",
+          "wbw_audio": "wbw/081_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kuwwirat",
+          "wbw_audio": "wbw/081_001_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:2",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>ُجُومُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=ikhafa>نك</tajweed>َدَرَتْ <span class=end>٢</span>",
+      "bangla": "when the stars are dimmed,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-nujūmu",
+          "wbw_audio": "wbw/081_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "inkadarat",
+          "wbw_audio": "wbw/081_002_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:3",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْجِبَالُ سُيِّرَتْ <span class=end>٣</span>",
+      "bangla": "when the mountains are set in motion,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-jibālu",
+          "wbw_audio": "wbw/081_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "suyyirat",
+          "wbw_audio": "wbw/081_003_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:4",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْعِشَارُ عُطِّلَتْ <span class=end>٤</span>",
+      "bangla": "when pregnant camels are abandoned,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ʿishāru",
+          "wbw_audio": "wbw/081_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿuṭṭilat",
+          "wbw_audio": "wbw/081_004_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:5",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْوُحُوشُ حُشِرَتْ <span class=end>٥</span>",
+      "bangla": "when wild beasts are herded together,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-wuḥūshu",
+          "wbw_audio": "wbw/081_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ḥushirat",
+          "wbw_audio": "wbw/081_005_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:6",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْبِحَارُ سُجِّرَتْ <span class=end>٦</span>",
+      "bangla": "when the seas boil over,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-biḥāru",
+          "wbw_audio": "wbw/081_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sujjirat",
+          "wbw_audio": "wbw/081_006_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:7",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>ُفُوسُ زُوِّجَتْ <span class=end>٧</span>",
+      "bangla": "when souls are sorted into classes,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-nufūsu",
+          "wbw_audio": "wbw/081_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "zuwwijat",
+          "wbw_audio": "wbw/081_007_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:8",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْمَوْءُ<tajweed class=madda_normal>ۥ</tajweed>دَةُ سُئِلَتْ <span class=end>٨</span>",
+      "bangla": "when the baby girl buried alive is asked",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-mawūdatu",
+          "wbw_audio": "wbw/081_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "su-ilat",
+          "wbw_audio": "wbw/081_008_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:9",
+      "arabic_tajweed_html": "بِأَىِّ ذَ<tajweed class=iqlab>نۢب</tajweed><tajweed class=ikhafa>ٍ ق</tajweed>ُتِلَتْ <span class=end>٩</span>",
+      "bangla": "for what sin she was killed,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "bi-ayyi",
+          "wbw_audio": "wbw/081_009_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dhanbin",
+          "wbw_audio": "wbw/081_009_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "qutilat",
+          "wbw_audio": "wbw/081_009_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:10",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صُّحُفُ نُشِرَتْ <span class=end>١٠</span>",
+      "bangla": "when the records of deeds are spread open,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_010_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ṣuḥufu",
+          "wbw_audio": "wbw/081_010_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "nushirat",
+          "wbw_audio": "wbw/081_010_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:11",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّم<tajweed class=madda_obligatory>َا</tajweed>ٓءُ كُشِطَتْ <span class=end>١١</span>",
+      "bangla": "when the sky is stripped away,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_011_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-samāu",
+          "wbw_audio": "wbw/081_011_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kushiṭat",
+          "wbw_audio": "wbw/081_011_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:12",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْجَحِيمُ سُعِّرَتْ <span class=end>١٢</span>",
+      "bangla": "when Hell is made to blaze",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_012_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-jaḥīmu",
+          "wbw_audio": "wbw/081_012_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "suʿʿirat",
+          "wbw_audio": "wbw/081_012_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:13",
+      "arabic_tajweed_html": "وَإِذَا <tajweed class=ham_wasl>ٱ</tajweed>لْجَ<tajweed class=ghunnah>نّ</tajweed>َةُ أُزْلِفَتْ <span class=end>١٣</span>",
+      "bangla": "and Paradise brought near:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-idhā",
+          "wbw_audio": "wbw/081_013_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-janatu",
+          "wbw_audio": "wbw/081_013_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "uz'lifat",
+          "wbw_audio": "wbw/081_013_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:14",
+      "arabic_tajweed_html": "عَلِمَتْ نَفْ<tajweed class=idgham_ghunnah>سٌ م</tajweed>ّ<tajweed class=madda_obligatory>َآ</tajweed> أَحْضَرَتْ <span class=end>١٤</span>",
+      "bangla": "then every soul will know what it has brought about.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "ʿalimat",
+          "wbw_audio": "wbw/081_014_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "nafsun",
+          "wbw_audio": "wbw/081_014_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/081_014_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aḥḍarat",
+          "wbw_audio": "wbw/081_014_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:15",
+      "arabic_tajweed_html": "فَل<tajweed class=madda_obligatory>َآ</tajweed> أُ<tajweed class=qalaqah>قْ</tajweed>سِمُ بِ<tajweed class=ham_wasl>ٱ</tajweed>لْخُ<tajweed class=ghunnah>نّ</tajweed>َسِ <span class=end>١٥</span>",
+      "bangla": "I swear by the planets",
+      "words": [
+        {
+          "ar": "",
+          "tr": "falā",
+          "wbw_audio": "wbw/081_015_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "uq'simu",
+          "wbw_audio": "wbw/081_015_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bil-khunasi",
+          "wbw_audio": "wbw/081_015_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:16",
+      "arabic_tajweed_html": "ٱلْجَوَارِ <tajweed class=ham_wasl>ٱ</tajweed>لْكُ<tajweed class=ghunnah>نّ</tajweed>َسِ <span class=end>١٦</span>",
+      "bangla": "that recede, move, and hide,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "al-jawāri",
+          "wbw_audio": "wbw/081_016_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-kunasi",
+          "wbw_audio": "wbw/081_016_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:17",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لَّيْلِ إِذَا عَسْعَسَ <span class=end>١٧</span>",
+      "bangla": "by the night that descends,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-al-layli",
+          "wbw_audio": "wbw/081_017_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "idhā",
+          "wbw_audio": "wbw/081_017_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿasʿasa",
+          "wbw_audio": "wbw/081_017_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:18",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صُّ<tajweed class=qalaqah>بْ</tajweed>حِ إِذَا تَنَفَّسَ <span class=end>١٨</span>",
+      "bangla": "by the dawn that softly breathes:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wal-ṣub'ḥi",
+          "wbw_audio": "wbw/081_018_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "idhā",
+          "wbw_audio": "wbw/081_018_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "tanaffasa",
+          "wbw_audio": "wbw/081_018_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:19",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed>َهُ<tajweed class=madda_normal>ۥ</tajweed> لَقَوْلُ رَسُو<tajweed class=ikhafa>لٍ ك</tajweed>َر<tajweed class=madda_permissible>ِي</tajweed>مٍ <span class=end>١٩</span>",
+      "bangla": "this is the speech of a noble messenger,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "innahu",
+          "wbw_audio": "wbw/081_019_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "laqawlu",
+          "wbw_audio": "wbw/081_019_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rasūlin",
+          "wbw_audio": "wbw/081_019_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "karīmin",
+          "wbw_audio": "wbw/081_019_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:20",
+      "arabic_tajweed_html": "ذِى قُوَّةٍ عِ<tajweed class=ikhafa>ند</tajweed>َ ذِى <tajweed class=ham_wasl>ٱ</tajweed>لْعَرْشِ مَك<tajweed class=madda_permissible>ِي</tajweed>نٍ <span class=end>٢٠</span>",
+      "bangla": "who possesses great strength and is held in honour by the Lord of the Throne––",
+      "words": [
+        {
+          "ar": "",
+          "tr": "dhī",
+          "wbw_audio": "wbw/081_020_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "quwwatin",
+          "wbw_audio": "wbw/081_020_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿinda",
+          "wbw_audio": "wbw/081_020_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dhī",
+          "wbw_audio": "wbw/081_020_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ʿarshi",
+          "wbw_audio": "wbw/081_020_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "makīnin",
+          "wbw_audio": "wbw/081_020_006.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:21",
+      "arabic_tajweed_html": "مُّطَا<tajweed class=ikhafa>عٍ ث</tajweed>َ<tajweed class=ghunnah>مّ</tajweed>َ أَم<tajweed class=madda_permissible>ِي</tajweed>نٍ <span class=end>٢١</span>",
+      "bangla": "he is obeyed there and worthy of trust.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "muṭāʿin",
+          "wbw_audio": "wbw/081_021_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "thamma",
+          "wbw_audio": "wbw/081_021_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "amīnin",
+          "wbw_audio": "wbw/081_021_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:22",
+      "arabic_tajweed_html": "وَمَا صَاحِبُك<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِمَ<tajweed class=qalaqah>جْ</tajweed>ن<tajweed class=madda_permissible>ُو</tajweed>نٍ <span class=end>٢٢</span>",
+      "bangla": "Your companion is not mad:",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/081_022_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ṣāḥibukum",
+          "wbw_audio": "wbw/081_022_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bimajnūnin",
+          "wbw_audio": "wbw/081_022_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:23",
+      "arabic_tajweed_html": "وَلَقَ<tajweed class=qalaqah>دْ</tajweed> رَءَاهُ بِ<tajweed class=ham_wasl>ٱ</tajweed>لْأُفُقِ <tajweed class=ham_wasl>ٱ</tajweed>لْمُب<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٢٣</span>",
+      "bangla": "he did see him on the clear horizon.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walaqad",
+          "wbw_audio": "wbw/081_023_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "raāhu",
+          "wbw_audio": "wbw/081_023_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bil-ufuqi",
+          "wbw_audio": "wbw/081_023_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-mubīni",
+          "wbw_audio": "wbw/081_023_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:24",
+      "arabic_tajweed_html": "وَمَا هُوَ عَلَى <tajweed class=ham_wasl>ٱ</tajweed>لْغَيْبِ بِضَن<tajweed class=madda_permissible>ِي</tajweed>نٍ <span class=end>٢٤</span>",
+      "bangla": "He does not withhold what is revealed to him from beyond.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/081_024_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "huwa",
+          "wbw_audio": "wbw/081_024_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/081_024_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ghaybi",
+          "wbw_audio": "wbw/081_024_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "biḍanīnin",
+          "wbw_audio": "wbw/081_024_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:25",
+      "arabic_tajweed_html": "وَمَا هُوَ بِقَوْلِ شَيْطَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_wo_ghunnah>نٍ ر</tajweed>َّج<tajweed class=madda_permissible>ِي</tajweed>مٍ <span class=end>٢٥</span>",
+      "bangla": "This is not the word of an outcast devil.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/081_025_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "huwa",
+          "wbw_audio": "wbw/081_025_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "biqawli",
+          "wbw_audio": "wbw/081_025_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "shayṭānin",
+          "wbw_audio": "wbw/081_025_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rajīmin",
+          "wbw_audio": "wbw/081_025_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:26",
+      "arabic_tajweed_html": "فَأَيْنَ تَذْهَب<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢٦</span>",
+      "bangla": "So where are you [people] going?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fa-ayna",
+          "wbw_audio": "wbw/081_026_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "tadhhabūna",
+          "wbw_audio": "wbw/081_026_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:27",
+      "arabic_tajweed_html": "إِنْ هُوَ إِلَّا ذِكْ<tajweed class=idgham_wo_ghunnah>رٌ ل</tajweed>ِّلْعَ<tajweed class=madda_normal>ـٰ</tajweed>لَم<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٢٧</span>",
+      "bangla": "This is a message for all people;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "in",
+          "wbw_audio": "wbw/081_027_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "huwa",
+          "wbw_audio": "wbw/081_027_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "illā",
+          "wbw_audio": "wbw/081_027_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dhik'run",
+          "wbw_audio": "wbw/081_027_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lil'ʿālamīna",
+          "wbw_audio": "wbw/081_027_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:28",
+      "arabic_tajweed_html": "لِمَ<tajweed class=ikhafa>ن ش</tajweed><tajweed class=madda_obligatory>َا</tajweed>ٓءَ مِ<tajweed class=ikhafa>نك</tajweed>ُمْ أ<tajweed class=idgham_ghunnah>َن ي</tajweed>َسْتَق<tajweed class=madda_permissible>ِي</tajweed>مَ <span class=end>٢٨</span>",
+      "bangla": "for those who wish to take the straight path.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "liman",
+          "wbw_audio": "wbw/081_028_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "shāa",
+          "wbw_audio": "wbw/081_028_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "minkum",
+          "wbw_audio": "wbw/081_028_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "an",
+          "wbw_audio": "wbw/081_028_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yastaqīma",
+          "wbw_audio": "wbw/081_028_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "81:29",
+      "arabic_tajweed_html": "وَمَا تَش<tajweed class=madda_obligatory>َا</tajweed>ٓءُونَ إِلّ<tajweed class=madda_obligatory>َآ</tajweed> أ<tajweed class=idgham_ghunnah>َن ي</tajweed>َش<tajweed class=madda_obligatory>َا</tajweed>ٓءَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ رَبُّ <tajweed class=ham_wasl>ٱ</tajweed>لْعَ<tajweed class=madda_normal>ـٰ</tajweed>لَم<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٢٩</span>",
+      "bangla": "But you will only wish to do so by the will of God, the Lord of all people.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/081_029_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "tashāūna",
+          "wbw_audio": "wbw/081_029_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "illā",
+          "wbw_audio": "wbw/081_029_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "an",
+          "wbw_audio": "wbw/081_029_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yashāa",
+          "wbw_audio": "wbw/081_029_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/081_029_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbu",
+          "wbw_audio": "wbw/081_029_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ʿālamīna",
+          "wbw_audio": "wbw/081_029_008.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

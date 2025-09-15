@@ -1,0 +1,62 @@
+[
+  {
+    "ayahIndex": 0,
+    "wordIndex": 0,
+    "start": 0,
+    "end": 1.5412244897959184
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 1,
+    "start": 1.5412244897959184,
+    "end": 3.186938775510204
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 2,
+    "start": 3.186938775510204,
+    "end": 4.70204081632653
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 0,
+    "start": 4.95204081632653,
+    "end": 6.179795918367347
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 1,
+    "start": 6.179795918367347,
+    "end": 7.3553061224489795
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 2,
+    "start": 7.3553061224489795,
+    "end": 8.478571428571428
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 0,
+    "start": 8.728571428571428,
+    "end": 9.851836734693876
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 1,
+    "start": 9.851836734693876,
+    "end": 11.18408163265306
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 2,
+    "start": 11.18408163265306,
+    "end": 11.941632653061223
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 3,
+    "start": 11.941632653061223,
+    "end": 13.378367346938774
+  }
+]

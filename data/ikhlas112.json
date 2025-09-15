@@ -1,0 +1,126 @@
+{
+  "surah": 112,
+  "name_ar": "الإخلاص",
+  "name_bn": "আন্তরিকতা",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "112:1",
+      "arabic_tajweed_html": "قُلْ هُوَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ أَحَ<tajweed class=qalaqah>د</tajweed>ٌ <span class=end>١</span>",
+      "bangla": "Say, ‘He is God the One,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "qul",
+          "wbw_audio": "wbw/112_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "huwa",
+          "wbw_audio": "wbw/112_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/112_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aḥadun",
+          "wbw_audio": "wbw/112_001_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "112:2",
+      "arabic_tajweed_html": "ٱللَّهُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّمَ<tajweed class=qalaqah>د</tajweed>ُ <span class=end>٢</span>",
+      "bangla": "God the eternal.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "al-lahu",
+          "wbw_audio": "wbw/112_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ṣamadu",
+          "wbw_audio": "wbw/112_002_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "112:3",
+      "arabic_tajweed_html": "لَمْ يَلِ<tajweed class=qalaqah>دْ</tajweed> وَلَمْ يُولَ<tajweed class=qalaqah>دْ</tajweed> <span class=end>٣</span>",
+      "bangla": "He begot no one nor was He begotten.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "lam",
+          "wbw_audio": "wbw/112_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yalid",
+          "wbw_audio": "wbw/112_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "walam",
+          "wbw_audio": "wbw/112_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yūlad",
+          "wbw_audio": "wbw/112_003_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "112:4",
+      "arabic_tajweed_html": "وَلَمْ يَك<tajweed class=idgham_wo_ghunnah>ُن ل</tajweed>َّهُ<tajweed class=madda_normal>ۥ</tajweed> كُفُوًا أَحَ<tajweed class=qalaqah>د</tajweed>ُۢ <span class=end>٤</span>",
+      "bangla": "No one is comparable to Him.’",
+      "words": [
+        {
+          "ar": "",
+          "tr": "walam",
+          "wbw_audio": "wbw/112_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yakun",
+          "wbw_audio": "wbw/112_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lahu",
+          "wbw_audio": "wbw/112_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kufuwan",
+          "wbw_audio": "wbw/112_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aḥadun",
+          "wbw_audio": "wbw/112_004_005.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "ayahIndex": 0,
+    "wordIndex": 0,
+    "start": 0,
+    "end": 0.8620408163265306
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 1,
+    "start": 0.8620408163265306,
+    "end": 1.5151020408163265
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 2,
+    "start": 1.5151020408163265,
+    "end": 2.5338775510204083
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 3,
+    "start": 2.5338775510204083,
+    "end": 3.474285714285714
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 4,
+    "start": 3.474285714285714,
+    "end": 4.597551020408163
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 5,
+    "start": 4.597551020408163,
+    "end": 6.243265306122449
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 6,
+    "start": 6.243265306122449,
+    "end": 7.758367346938776
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 0,
+    "start": 8.008367346938776,
+    "end": 8.870408163265306
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 1,
+    "start": 8.870408163265306,
+    "end": 9.889183673469388
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 2,
+    "start": 9.889183673469388,
+    "end": 11.06469387755102
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 3,
+    "start": 11.06469387755102,
+    "end": 11.796122448979592
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 4,
+    "start": 11.796122448979592,
+    "end": 13.676938775510203
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 0,
+    "start": 13.926938775510203,
+    "end": 15.15469387755102
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 1,
+    "start": 15.15469387755102,
+    "end": 16.408571428571427
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 2,
+    "start": 16.408571428571427,
+    "end": 17.375102040816326
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 3,
+    "start": 17.375102040816326,
+    "end": 19.7
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 0,
+    "start": 19.95,
+    "end": 21.412857142857142
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 1,
+    "start": 21.412857142857142,
+    "end": 23.163061224489795
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 2,
+    "start": 23.163061224489795,
+    "end": 23.94673469387755
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 3,
+    "start": 23.94673469387755,
+    "end": 26.010408163265303
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 0,
+    "start": 26.260408163265303,
+    "end": 27.723265306122446
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 1,
+    "start": 27.723265306122446,
+    "end": 29.238367346938773
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 2,
+    "start": 29.238367346938773,
+    "end": 31.17142857142857
+  }
+]

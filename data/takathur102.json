@@ -1,0 +1,232 @@
+{
+  "surah": 102,
+  "name_ar": "التكاثر",
+  "name_bn": "প্রাচুর্যের প্রতিযোগিতা",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "102:1",
+      "arabic_tajweed_html": "أَلْهَ<tajweed class=madda_normal>ـٰ</tajweed>كُمُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>تَّكَاثُرُ <span class=end>١</span>",
+      "bangla": "Striving for more distracts you",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alhākumu",
+          "wbw_audio": "wbw/102_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-takāthuru",
+          "wbw_audio": "wbw/102_001_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:2",
+      "arabic_tajweed_html": "حَتَّىٰ زُرْتُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْمَقَابِرَ <span class=end>٢</span>",
+      "bangla": "until you go into your graves.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "ḥattā",
+          "wbw_audio": "wbw/102_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "zur'tumu",
+          "wbw_audio": "wbw/102_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-maqābira",
+          "wbw_audio": "wbw/102_002_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:3",
+      "arabic_tajweed_html": "كَلَّا سَوْفَ تَعْلَم<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٣</span>",
+      "bangla": "No indeed! You will come to know.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "kallā",
+          "wbw_audio": "wbw/102_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sawfa",
+          "wbw_audio": "wbw/102_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taʿlamūna",
+          "wbw_audio": "wbw/102_003_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:4",
+      "arabic_tajweed_html": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ كَلَّا سَوْفَ تَعْلَم<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٤</span>",
+      "bangla": "No indeed! In the end you will come to know.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "thumma",
+          "wbw_audio": "wbw/102_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kallā",
+          "wbw_audio": "wbw/102_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sawfa",
+          "wbw_audio": "wbw/102_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taʿlamūna",
+          "wbw_audio": "wbw/102_004_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:5",
+      "arabic_tajweed_html": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ <tajweed class=ham_wasl>ٱ</tajweed>لْيَق<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٥</span>",
+      "bangla": "No indeed! If only you knew for certain.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "kallā",
+          "wbw_audio": "wbw/102_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "law",
+          "wbw_audio": "wbw/102_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taʿlamūna",
+          "wbw_audio": "wbw/102_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿil'ma",
+          "wbw_audio": "wbw/102_005_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-yaqīni",
+          "wbw_audio": "wbw/102_005_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:6",
+      "arabic_tajweed_html": "لَتَرَوُ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْجَح<tajweed class=madda_permissible>ِي</tajweed>مَ <span class=end>٦</span>",
+      "bangla": "You will most definitely see Hellfire,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "latarawunna",
+          "wbw_audio": "wbw/102_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-jaḥīma",
+          "wbw_audio": "wbw/102_006_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:7",
+      "arabic_tajweed_html": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ لَتَرَوُ<tajweed class=ghunnah>نّ</tajweed>َهَا عَيْنَ <tajweed class=ham_wasl>ٱ</tajweed>لْيَق<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٧</span>",
+      "bangla": "you will see it with the eye of certainty.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "thumma",
+          "wbw_audio": "wbw/102_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "latarawunnahā",
+          "wbw_audio": "wbw/102_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿayna",
+          "wbw_audio": "wbw/102_007_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-yaqīni",
+          "wbw_audio": "wbw/102_007_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "102:8",
+      "arabic_tajweed_html": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ لَتُسْــَٔلُ<tajweed class=ghunnah>نّ</tajweed>َ يَوْمَئِذٍ عَنِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َع<tajweed class=madda_permissible>ِي</tajweed>مِ <span class=end>٨</span>",
+      "bangla": "On that Day, you will be asked about your pleasures.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "thumma",
+          "wbw_audio": "wbw/102_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "latus'alunna",
+          "wbw_audio": "wbw/102_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yawma-idhin",
+          "wbw_audio": "wbw/102_008_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿani",
+          "wbw_audio": "wbw/102_008_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-naʿīmi",
+          "wbw_audio": "wbw/102_008_005.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "surah": 95,
+  "name_ar": "التين",
+  "name_bn": "ডুমুর",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "95:1",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>تِّينِ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>زَّيْت<tajweed class=madda_permissible>ُو</tajweed>نِ <span class=end>١</span>",
+      "bangla": "By the fig, by the olive,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wal-tīni",
+          "wbw_audio": "wbw/095_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wal-zaytūni",
+          "wbw_audio": "wbw/095_001_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:2",
+      "arabic_tajweed_html": "وَطُورِ سِين<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٢</span>",
+      "bangla": "by Mount Sinai,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "waṭūri",
+          "wbw_audio": "wbw/095_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sīnīna",
+          "wbw_audio": "wbw/095_002_002.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:3",
+      "arabic_tajweed_html": "وَهَ<tajweed class=madda_normal>ـٰ</tajweed>ذَا <tajweed class=ham_wasl>ٱ</tajweed>لْبَلَدِ <tajweed class=ham_wasl>ٱ</tajweed>لْأَم<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٣</span>",
+      "bangla": "by this safe town,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wahādhā",
+          "wbw_audio": "wbw/095_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-baladi",
+          "wbw_audio": "wbw/095_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-amīni",
+          "wbw_audio": "wbw/095_003_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:4",
+      "arabic_tajweed_html": "لَقَ<tajweed class=qalaqah>دْ</tajweed> خَلَ<tajweed class=qalaqah>قْ</tajweed>نَا <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ ف<tajweed class=madda_obligatory>ِىٓ</tajweed> أَحْسَنِ تَ<tajweed class=qalaqah>قْ</tajweed>و<tajweed class=madda_permissible>ِي</tajweed>مٍ <span class=end>٤</span>",
+      "bangla": "We create man in the finest state",
+      "words": [
+        {
+          "ar": "",
+          "tr": "laqad",
+          "wbw_audio": "wbw/095_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "khalaqnā",
+          "wbw_audio": "wbw/095_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-insāna",
+          "wbw_audio": "wbw/095_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/095_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "aḥsani",
+          "wbw_audio": "wbw/095_004_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taqwīmin",
+          "wbw_audio": "wbw/095_004_006.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:5",
+      "arabic_tajweed_html": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ رَدَ<tajweed class=qalaqah>دْ</tajweed>نَ<tajweed class=madda_normal>ـٰ</tajweed>هُ أَسْفَلَ سَ<tajweed class=madda_normal>ـٰ</tajweed>فِل<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٥</span>",
+      "bangla": "then reduce him to the lowest of the low,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "thumma",
+          "wbw_audio": "wbw/095_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "radadnāhu",
+          "wbw_audio": "wbw/095_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "asfala",
+          "wbw_audio": "wbw/095_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "sāfilīna",
+          "wbw_audio": "wbw/095_005_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:6",
+      "arabic_tajweed_html": "إِلَّا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> وَعَمِلُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=madda_normal>ـٰ</tajweed>لِحَ<tajweed class=madda_normal>ـٰ</tajweed>تِ فَلَهُمْ أَ<tajweed class=qalaqah>جْ</tajweed>رٌ غَيْرُ مَمْن<tajweed class=madda_permissible>ُو</tajweed>نٍ <span class=end>٦</span>",
+      "bangla": "except those who believe and do good deeds–– they will have an unfailing reward.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "illā",
+          "wbw_audio": "wbw/095_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/095_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "āmanū",
+          "wbw_audio": "wbw/095_006_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "waʿamilū",
+          "wbw_audio": "wbw/095_006_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ṣāliḥāti",
+          "wbw_audio": "wbw/095_006_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "falahum",
+          "wbw_audio": "wbw/095_006_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ajrun",
+          "wbw_audio": "wbw/095_006_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ghayru",
+          "wbw_audio": "wbw/095_006_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mamnūnin",
+          "wbw_audio": "wbw/095_006_009.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:7",
+      "arabic_tajweed_html": "فَمَا يُكَذِّبُكَ بَعْدُ بِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دّ<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٧</span>",
+      "bangla": "After this, what makes you [man] deny the Judgement?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "famā",
+          "wbw_audio": "wbw/095_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yukadhibuka",
+          "wbw_audio": "wbw/095_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "baʿdu",
+          "wbw_audio": "wbw/095_007_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bil-dīni",
+          "wbw_audio": "wbw/095_007_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "95:8",
+      "arabic_tajweed_html": "أَلَيْسَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ بِأَحْكَمِ <tajweed class=ham_wasl>ٱ</tajweed>لْحَ<tajweed class=madda_normal>ـٰ</tajweed>كِم<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٨</span>",
+      "bangla": "Is God not the most decisive of judges?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alaysa",
+          "wbw_audio": "wbw/095_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/095_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "bi-aḥkami",
+          "wbw_audio": "wbw/095_008_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ḥākimīna",
+          "wbw_audio": "wbw/095_008_004.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

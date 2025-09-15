@@ -1,0 +1,428 @@
+[
+  {
+    "ayahIndex": 0,
+    "wordIndex": 0,
+    "start": 0,
+    "end": 1.0710204081632653
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 1,
+    "start": 1.0710204081632653,
+    "end": 1.8285714285714285
+  },
+  {
+    "ayahIndex": 0,
+    "wordIndex": 2,
+    "start": 1.8285714285714285,
+    "end": 2.7951020408163263
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 0,
+    "start": 3.0451020408163263,
+    "end": 4.743061224489796
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 1,
+    "start": 4.743061224489796,
+    "end": 5.52673469387755
+  },
+  {
+    "ayahIndex": 1,
+    "wordIndex": 2,
+    "start": 5.52673469387755,
+    "end": 6.676122448979591
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 0,
+    "start": 6.926122448979591,
+    "end": 7.76204081632653
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 1,
+    "start": 7.76204081632653,
+    "end": 8.650204081632651
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 2,
+    "start": 8.650204081632651,
+    "end": 9.74734693877551
+  },
+  {
+    "ayahIndex": 2,
+    "wordIndex": 3,
+    "start": 9.74734693877551,
+    "end": 11.654285714285713
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 0,
+    "start": 11.904285714285713,
+    "end": 12.949183673469387
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 1,
+    "start": 12.949183673469387,
+    "end": 14.098571428571427
+  },
+  {
+    "ayahIndex": 3,
+    "wordIndex": 2,
+    "start": 14.098571428571427,
+    "end": 15.378571428571426
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 0,
+    "start": 15.628571428571426,
+    "end": 17.09142857142857
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 1,
+    "start": 17.09142857142857,
+    "end": 17.744489795918366
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 2,
+    "start": 17.744489795918366,
+    "end": 18.632653061224488
+  },
+  {
+    "ayahIndex": 4,
+    "wordIndex": 3,
+    "start": 18.632653061224488,
+    "end": 19.80816326530612
+  },
+  {
+    "ayahIndex": 5,
+    "wordIndex": 0,
+    "start": 20.05816326530612,
+    "end": 21.259795918367345
+  },
+  {
+    "ayahIndex": 5,
+    "wordIndex": 1,
+    "start": 21.259795918367345,
+    "end": 22.487551020408162
+  },
+  {
+    "ayahIndex": 6,
+    "wordIndex": 0,
+    "start": 22.737551020408162,
+    "end": 24.748979591836733
+  },
+  {
+    "ayahIndex": 6,
+    "wordIndex": 1,
+    "start": 24.748979591836733,
+    "end": 26.26408163265306
+  },
+  {
+    "ayahIndex": 7,
+    "wordIndex": 0,
+    "start": 26.51408163265306,
+    "end": 27.898571428571426
+  },
+  {
+    "ayahIndex": 7,
+    "wordIndex": 1,
+    "start": 27.898571428571426,
+    "end": 28.577755102040815
+  },
+  {
+    "ayahIndex": 7,
+    "wordIndex": 2,
+    "start": 28.577755102040815,
+    "end": 29.439795918367345
+  },
+  {
+    "ayahIndex": 7,
+    "wordIndex": 3,
+    "start": 29.439795918367345,
+    "end": 30.850408163265303
+  },
+  {
+    "ayahIndex": 8,
+    "wordIndex": 0,
+    "start": 31.100408163265303,
+    "end": 32.302040816326524
+  },
+  {
+    "ayahIndex": 8,
+    "wordIndex": 1,
+    "start": 32.302040816326524,
+    "end": 33.73877551020408
+  },
+  {
+    "ayahIndex": 9,
+    "wordIndex": 0,
+    "start": 33.98877551020408,
+    "end": 35.94795918367347
+  },
+  {
+    "ayahIndex": 9,
+    "wordIndex": 1,
+    "start": 35.94795918367347,
+    "end": 37.33244897959184
+  },
+  {
+    "ayahIndex": 10,
+    "wordIndex": 0,
+    "start": 37.58244897959184,
+    "end": 38.41836734693878
+  },
+  {
+    "ayahIndex": 10,
+    "wordIndex": 1,
+    "start": 38.41836734693878,
+    "end": 39.489387755102044
+  },
+  {
+    "ayahIndex": 10,
+    "wordIndex": 2,
+    "start": 39.489387755102044,
+    "end": 40.45591836734694
+  },
+  {
+    "ayahIndex": 10,
+    "wordIndex": 3,
+    "start": 40.45591836734694,
+    "end": 41.60530612244898
+  },
+  {
+    "ayahIndex": 10,
+    "wordIndex": 4,
+    "start": 41.60530612244898,
+    "end": 42.44122448979592
+  },
+  {
+    "ayahIndex": 10,
+    "wordIndex": 5,
+    "start": 42.44122448979592,
+    "end": 43.66897959183674
+  },
+  {
+    "ayahIndex": 11,
+    "wordIndex": 0,
+    "start": 43.91897959183674,
+    "end": 44.83326530612245
+  },
+  {
+    "ayahIndex": 11,
+    "wordIndex": 1,
+    "start": 44.83326530612245,
+    "end": 45.90428571428571
+  },
+  {
+    "ayahIndex": 11,
+    "wordIndex": 2,
+    "start": 45.90428571428571,
+    "end": 47.13204081632653
+  },
+  {
+    "ayahIndex": 12,
+    "wordIndex": 0,
+    "start": 47.38204081632653,
+    "end": 48.53142857142857
+  },
+  {
+    "ayahIndex": 12,
+    "wordIndex": 1,
+    "start": 48.53142857142857,
+    "end": 49.419591836734696
+  },
+  {
+    "ayahIndex": 12,
+    "wordIndex": 2,
+    "start": 49.419591836734696,
+    "end": 51.06530612244898
+  },
+  {
+    "ayahIndex": 12,
+    "wordIndex": 3,
+    "start": 51.06530612244898,
+    "end": 52.502040816326534
+  },
+  {
+    "ayahIndex": 13,
+    "wordIndex": 0,
+    "start": 52.752040816326534,
+    "end": 54.99857142857143
+  },
+  {
+    "ayahIndex": 13,
+    "wordIndex": 1,
+    "start": 54.99857142857143,
+    "end": 56.09571428571429
+  },
+  {
+    "ayahIndex": 13,
+    "wordIndex": 2,
+    "start": 56.09571428571429,
+    "end": 57.27122448979592
+  },
+  {
+    "ayahIndex": 14,
+    "wordIndex": 0,
+    "start": 57.52122448979592,
+    "end": 58.278775510204085
+  },
+  {
+    "ayahIndex": 14,
+    "wordIndex": 1,
+    "start": 58.278775510204085,
+    "end": 59.61102040816327
+  },
+  {
+    "ayahIndex": 14,
+    "wordIndex": 2,
+    "start": 59.61102040816327,
+    "end": 60.52530612244898
+  },
+  {
+    "ayahIndex": 14,
+    "wordIndex": 3,
+    "start": 60.52530612244898,
+    "end": 61.93591836734694
+  },
+  {
+    "ayahIndex": 15,
+    "wordIndex": 0,
+    "start": 62.18591836734694,
+    "end": 63.2830612244898
+  },
+  {
+    "ayahIndex": 15,
+    "wordIndex": 1,
+    "start": 63.2830612244898,
+    "end": 64.2495918367347
+  },
+  {
+    "ayahIndex": 15,
+    "wordIndex": 2,
+    "start": 64.2495918367347,
+    "end": 65.55571428571429
+  },
+  {
+    "ayahIndex": 16,
+    "wordIndex": 0,
+    "start": 65.80571428571429,
+    "end": 68.60081632653062
+  },
+  {
+    "ayahIndex": 16,
+    "wordIndex": 1,
+    "start": 68.60081632653062,
+    "end": 70.11591836734695
+  },
+  {
+    "ayahIndex": 17,
+    "wordIndex": 0,
+    "start": 70.36591836734695,
+    "end": 71.4630612244898
+  },
+  {
+    "ayahIndex": 17,
+    "wordIndex": 1,
+    "start": 71.4630612244898,
+    "end": 72.48183673469389
+  },
+  {
+    "ayahIndex": 17,
+    "wordIndex": 2,
+    "start": 72.48183673469389,
+    "end": 73.76183673469389
+  },
+  {
+    "ayahIndex": 17,
+    "wordIndex": 3,
+    "start": 73.76183673469389,
+    "end": 75.38142857142859
+  },
+  {
+    "ayahIndex": 18,
+    "wordIndex": 0,
+    "start": 75.63142857142859,
+    "end": 76.49346938775511
+  },
+  {
+    "ayahIndex": 18,
+    "wordIndex": 1,
+    "start": 76.49346938775511,
+    "end": 77.7995918367347
+  },
+  {
+    "ayahIndex": 18,
+    "wordIndex": 2,
+    "start": 77.7995918367347,
+    "end": 79.445306122449
+  },
+  {
+    "ayahIndex": 18,
+    "wordIndex": 3,
+    "start": 79.445306122449,
+    "end": 80.0722448979592
+  },
+  {
+    "ayahIndex": 18,
+    "wordIndex": 4,
+    "start": 80.0722448979592,
+    "end": 81.37836734693879
+  },
+  {
+    "ayahIndex": 18,
+    "wordIndex": 5,
+    "start": 81.37836734693879,
+    "end": 82.39714285714287
+  },
+  {
+    "ayahIndex": 19,
+    "wordIndex": 0,
+    "start": 82.64714285714287,
+    "end": 83.56142857142858
+  },
+  {
+    "ayahIndex": 19,
+    "wordIndex": 1,
+    "start": 83.56142857142858,
+    "end": 85.93857142857144
+  },
+  {
+    "ayahIndex": 19,
+    "wordIndex": 2,
+    "start": 85.93857142857144,
+    "end": 86.85285714285715
+  },
+  {
+    "ayahIndex": 19,
+    "wordIndex": 3,
+    "start": 86.85285714285715,
+    "end": 87.95
+  },
+  {
+    "ayahIndex": 19,
+    "wordIndex": 4,
+    "start": 87.95,
+    "end": 89.38673469387756
+  },
+  {
+    "ayahIndex": 20,
+    "wordIndex": 0,
+    "start": 89.63673469387756,
+    "end": 90.94285714285715
+  },
+  {
+    "ayahIndex": 20,
+    "wordIndex": 1,
+    "start": 90.94285714285715,
+    "end": 92.0661224489796
+  }
+]

@@ -1,0 +1,269 @@
+{
+  "surah": 104,
+  "name_ar": "الهمزة",
+  "name_bn": "পরনিন্দাকারী",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "104:1",
+      "arabic_tajweed_html": "وَيْ<tajweed class=idgham_wo_ghunnah>لٌ ل</tajweed>ِّكُلِّ هُمَزَ<tajweed class=idgham_wo_ghunnah>ةٍ ل</tajweed>ُّمَزَةٍ <span class=end>١</span>",
+      "bangla": "Woe to every fault-finding backbiter",
+      "words": [
+        {
+          "ar": "",
+          "tr": "waylun",
+          "wbw_audio": "wbw/104_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "likulli",
+          "wbw_audio": "wbw/104_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "humazatin",
+          "wbw_audio": "wbw/104_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "lumazatin",
+          "wbw_audio": "wbw/104_001_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:2",
+      "arabic_tajweed_html": "ٱلَّذِى جَمَعَ مَال<tajweed class=idgham_ghunnah>اً و</tajweed>َعَدَّدَهُۥ <span class=end>٢</span>",
+      "bangla": "who amasses riches, counting them over,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/104_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "jamaʿa",
+          "wbw_audio": "wbw/104_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mālan",
+          "wbw_audio": "wbw/104_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "waʿaddadahu",
+          "wbw_audio": "wbw/104_002_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:3",
+      "arabic_tajweed_html": "يَحْسَبُ أَ<tajweed class=ghunnah>نّ</tajweed>َ مَالَهُ<tajweed class=madda_obligatory>ۥٓ</tajweed> أَخْلَدَهُۥ <span class=end>٣</span>",
+      "bangla": "thinking they will make him live for ever.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "yaḥsabu",
+          "wbw_audio": "wbw/104_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "anna",
+          "wbw_audio": "wbw/104_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mālahu",
+          "wbw_audio": "wbw/104_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "akhladahu",
+          "wbw_audio": "wbw/104_003_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:4",
+      "arabic_tajweed_html": "كَلَّا‌ۖ لَيُ<tajweed class=iqlab>نۢب</tajweed>َذَ<tajweed class=ghunnah>نّ</tajweed>َ فِى <tajweed class=ham_wasl>ٱ</tajweed>لْحُطَمَةِ <span class=end>٤</span>",
+      "bangla": "No indeed! He will be thrust into the Crusher!",
+      "words": [
+        {
+          "ar": "",
+          "tr": "kallā",
+          "wbw_audio": "wbw/104_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "layunbadhanna",
+          "wbw_audio": "wbw/104_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/104_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ḥuṭamati",
+          "wbw_audio": "wbw/104_004_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:5",
+      "arabic_tajweed_html": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=qalaqah>دْ</tajweed>رَ<tajweed class=madda_normal>ٮٰ</tajweed>كَ مَا <tajweed class=ham_wasl>ٱ</tajweed>لْحُطَمَةُ <span class=end>٥</span>",
+      "bangla": "What will explain to you what the Crusher is?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wamā",
+          "wbw_audio": "wbw/104_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "adrāka",
+          "wbw_audio": "wbw/104_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mā",
+          "wbw_audio": "wbw/104_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ḥuṭamatu",
+          "wbw_audio": "wbw/104_005_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:6",
+      "arabic_tajweed_html": "نَارُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ <tajweed class=ham_wasl>ٱ</tajweed>لْمُوقَدَةُ <span class=end>٦</span>",
+      "bangla": "It is God’s Fire, made to blaze,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "nāru",
+          "wbw_audio": "wbw/104_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/104_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-mūqadatu",
+          "wbw_audio": "wbw/104_006_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:7",
+      "arabic_tajweed_html": "ٱلَّتِى تَطَّلِعُ عَلَى <tajweed class=ham_wasl>ٱ</tajweed>لْأَفْــِٔدَةِ <span class=end>٧</span>",
+      "bangla": "which rises over people’s hearts.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "allatī",
+          "wbw_audio": "wbw/104_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "taṭṭaliʿu",
+          "wbw_audio": "wbw/104_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/104_007_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-afidati",
+          "wbw_audio": "wbw/104_007_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:8",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed>َهَا عَلَيْه<tajweed class=idgham_shafawi>ِم م</tajweed>ُّؤْصَدَةٌ <span class=end>٨</span>",
+      "bangla": "It closes in on them",
+      "words": [
+        {
+          "ar": "",
+          "tr": "innahā",
+          "wbw_audio": "wbw/104_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿalayhim",
+          "wbw_audio": "wbw/104_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mu'ṣadatun",
+          "wbw_audio": "wbw/104_008_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "104:9",
+      "arabic_tajweed_html": "فِى عَمَ<tajweed class=idgham_ghunnah>دٍ م</tajweed>ُّمَدَّدَةِۭ <span class=end>٩</span>",
+      "bangla": "in towering columns.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/104_009_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿamadin",
+          "wbw_audio": "wbw/104_009_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "mumaddadatin",
+          "wbw_audio": "wbw/104_009_003.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

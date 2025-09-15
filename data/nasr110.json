@@ -1,0 +1,143 @@
+{
+  "surah": 110,
+  "name_ar": "النصر",
+  "name_bn": "সাহায্য",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "110:1",
+      "arabic_tajweed_html": "إِذَا ج<tajweed class=madda_obligatory>َا</tajweed>ٓءَ نَصْرُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْفَتْحُ <span class=end>١</span>",
+      "bangla": "When God’s help comes and He opens up your way [Prophet],",
+      "words": [
+        {
+          "ar": "",
+          "tr": "idhā",
+          "wbw_audio": "wbw/110_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "jāa",
+          "wbw_audio": "wbw/110_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "naṣru",
+          "wbw_audio": "wbw/110_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/110_001_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wal-fatḥu",
+          "wbw_audio": "wbw/110_001_005.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "110:2",
+      "arabic_tajweed_html": "وَرَأَيْتَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسَ يَ<tajweed class=qalaqah>دْ</tajweed>خُلُونَ فِى دِينِ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ أَفْوَاجًا <span class=end>٢</span>",
+      "bangla": "when you see people embracing God’s faith in crowds,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wara-ayta",
+          "wbw_audio": "wbw/110_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-nāsa",
+          "wbw_audio": "wbw/110_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yadkhulūna",
+          "wbw_audio": "wbw/110_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fī",
+          "wbw_audio": "wbw/110_002_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dīni",
+          "wbw_audio": "wbw/110_002_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/110_002_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "afwājan",
+          "wbw_audio": "wbw/110_002_007.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "110:3",
+      "arabic_tajweed_html": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَ<tajweed class=ham_wasl>ٱ</tajweed>سْتَغْفِرْهُ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َهُ<tajweed class=madda_normal>ۥ</tajweed> كَانَ تَوَّابَۢا <span class=end>٣</span>",
+      "bangla": "celebrate the praise of your Lord and ask His forgiveness: He is always ready to accept repentance.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fasabbiḥ",
+          "wbw_audio": "wbw/110_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "biḥamdi",
+          "wbw_audio": "wbw/110_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbika",
+          "wbw_audio": "wbw/110_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wa-is'taghfir'hu",
+          "wbw_audio": "wbw/110_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "innahu",
+          "wbw_audio": "wbw/110_003_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "kāna",
+          "wbw_audio": "wbw/110_003_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "tawwāban",
+          "wbw_audio": "wbw/110_003_008.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}

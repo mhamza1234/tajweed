@@ -1,0 +1,226 @@
+{
+  "surah": 94,
+  "name_ar": "الشرح",
+  "name_bn": "বক্ষ প্রশস্তকরণ",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "94:1",
+      "arabic_tajweed_html": "أَلَمْ نَشْرَحْ لَكَ صَ<tajweed class=qalaqah>دْ</tajweed>رَكَ <span class=end>١</span>",
+      "bangla": "Did We not relieve your heart for you [Prophet],",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alam",
+          "wbw_audio": "wbw/094_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "nashraḥ",
+          "wbw_audio": "wbw/094_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "laka",
+          "wbw_audio": "wbw/094_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ṣadraka",
+          "wbw_audio": "wbw/094_001_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:2",
+      "arabic_tajweed_html": "وَوَضَعْنَا عَ<tajweed class=ikhafa>نك</tajweed>َ وِزْرَكَ <span class=end>٢</span>",
+      "bangla": "and remove the burden",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wawaḍaʿnā",
+          "wbw_audio": "wbw/094_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ʿanka",
+          "wbw_audio": "wbw/094_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "wiz'raka",
+          "wbw_audio": "wbw/094_002_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:3",
+      "arabic_tajweed_html": "ٱلَّذ<tajweed class=madda_obligatory>ِىٓ</tajweed> أَ<tajweed class=ikhafa>نق</tajweed>َضَ ظَهْرَكَ <span class=end>٣</span>",
+      "bangla": "that weighed so heavily on your back,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/094_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "anqaḍa",
+          "wbw_audio": "wbw/094_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "ẓahraka",
+          "wbw_audio": "wbw/094_003_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:4",
+      "arabic_tajweed_html": "وَرَفَعْنَا لَكَ ذِكْرَكَ <span class=end>٤</span>",
+      "bangla": "and raise your reputation high?",
+      "words": [
+        {
+          "ar": "",
+          "tr": "warafaʿnā",
+          "wbw_audio": "wbw/094_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "laka",
+          "wbw_audio": "wbw/094_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "dhik'raka",
+          "wbw_audio": "wbw/094_004_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:5",
+      "arabic_tajweed_html": "فَإِ<tajweed class=ghunnah>نّ</tajweed>َ مَعَ <tajweed class=ham_wasl>ٱ</tajweed>لْعُسْرِ يُسْرًا <span class=end>٥</span>",
+      "bangla": "So truly where there is hardship there is also ease;",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fa-inna",
+          "wbw_audio": "wbw/094_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "maʿa",
+          "wbw_audio": "wbw/094_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ʿus'ri",
+          "wbw_audio": "wbw/094_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yus'ran",
+          "wbw_audio": "wbw/094_005_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:6",
+      "arabic_tajweed_html": "إِ<tajweed class=ghunnah>نّ</tajweed>َ مَعَ <tajweed class=ham_wasl>ٱ</tajweed>لْعُسْرِ يُسْرًا <span class=end>٦</span>",
+      "bangla": "truly where there is hardship there is also ease.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "inna",
+          "wbw_audio": "wbw/094_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "maʿa",
+          "wbw_audio": "wbw/094_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "l-ʿus'ri",
+          "wbw_audio": "wbw/094_006_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "yus'ran",
+          "wbw_audio": "wbw/094_006_004.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:7",
+      "arabic_tajweed_html": "فَإِذَا فَرَغْتَ فَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=ikhafa>نص</tajweed>َ<tajweed class=qalaqah>بْ</tajweed> <span class=end>٧</span>",
+      "bangla": "The moment you are freed [of one task] work on,",
+      "words": [
+        {
+          "ar": "",
+          "tr": "fa-idhā",
+          "wbw_audio": "wbw/094_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "faraghta",
+          "wbw_audio": "wbw/094_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fa-inṣab",
+          "wbw_audio": "wbw/094_007_003.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "94:8",
+      "arabic_tajweed_html": "وَإِلَىٰ رَبِّكَ فَ<tajweed class=ham_wasl>ٱ</tajweed>رْغَ<tajweed class=qalaqah>ب</tajweed> <span class=end>٨</span>",
+      "bangla": "and turn to your Lord for everything.",
+      "words": [
+        {
+          "ar": "",
+          "tr": "wa-ilā",
+          "wbw_audio": "wbw/094_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "rabbika",
+          "wbw_audio": "wbw/094_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "",
+          "tr": "fa-ir'ghab",
+          "wbw_audio": "wbw/094_008_003.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}
