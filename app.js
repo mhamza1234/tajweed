@@ -1,23 +1,33 @@
 // === Config ===
-const SURAH_JSON   = id => `data/${id}.json`;
-const SURAH_TIMES  = id => `data/${id}.words.json`;
+// Juz 30 short names (for filenames like naba078.json, naas114.json)
+const SHORT_NAMES = {
+  "078":"naba","079":"naziat","080":"abasa","081":"takwir","082":"infitar","083":"mutaffifin",
+  "084":"inshiqaq","085":"buruj","086":"tariq","087":"ala","088":"ghashiyah","089":"fajr",
+  "090":"balad","091":"shams","092":"layl","093":"duha","094":"sharh","095":"tin","096":"alaq",
+  "097":"qadr","098":"bayyinah","099":"zalzalah","100":"adiyat","101":"qariah","102":"takathur",
+  "103":"asr","104":"humazah","105":"fil","106":"quraish","107":"maun","108":"kauthar",
+  "109":"kafiroon","110":"nasr","111":"masad","112":"ikhlas","113":"falaq","114":"naas"
+};
+
+const SURAH_JSON   = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.json`;
+const SURAH_TIMES  = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.words.json`;
 const LEGEND_JSON  = 'data/legend.json';
 const MANIFEST_JSON= 'data/manifest.json';
 
-// Build & set audio with fallback candidates
+// Build CDN backups (we will prepend audio_full from JSON)
 function buildAudioCandidates(id) {
-  const n   = String(parseInt(id,10));   // "1", "113"
-  const p3  = id.padStart(3,'0');        // "001", "113"
+  const n   = String(parseInt(id,10));   // "78", "114"
+  const p3  = id.padStart(3,'0');        // "078", "114"
   return [
-    `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${n}.mp3`,   // primary
-    `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${p3}.mp3`,  // padded try
-    `https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/${n}.mp3` // mirror
+    `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${n}.mp3`,
+    `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${p3}.mp3`,
+    `https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/${n}.mp3`
   ];
 }
 function setAudioWithFallback(audioEl, urls, onResolvedUrl) {
   let i = 0;
   const tryNext = () => {
-    if (i >= urls.length) return; // give up
+    if (i >= urls.length) return; // stop
     const url = urls[i];
     audioEl.src = url;
     onResolvedUrl?.(url);
@@ -70,9 +80,11 @@ const hexAlpha = (hex,a)=>{const c=hex.replace('#','');const n=parseInt(c,16);co
 
 // === Init ===
 (async function init(){
+  // legend
   legend = await (await fetch(LEGEND_JSON)).json();
   renderLegend(legend);
 
+  // manifest → dropdown
   const manifest = await (await fetch(MANIFEST_JSON)).json();
   surahSelect.innerHTML = '';
   manifest.surahs.forEach(s => {
@@ -96,6 +108,7 @@ function bindTransport(){
   player.addEventListener('timeupdate', () => {
     if (!segments.length) return;
     const t = player.currentTime;
+    // naive linear scan is fine for short surahs
     for (let k=0;k<segments.length;k++){
       const s = segments[k];
       if (t>=s.start && t<s.end){ highlight(s.ayahIndex, s.wordIndex); break; }
@@ -121,18 +134,21 @@ async function loadSurah(id){
   // reset
   clearActive(); ayahList.innerHTML=''; trOut.textContent=''; bnOut.textContent=''; spanRefs=[]; segments=[];
 
-  // set audio with fallbacks (both players). Also set download link to the first tried URL (updated if fallback used).
-  const candidates = buildAudioCandidates(id);
+  // load data first (to get audio_full)
+  const data = await (await fetch(SURAH_JSON(id))).json();
+
+  // titles & meta
+  surahTitle.textContent = `${data.name_ar} — ${data.name_bn}`;
+  heroTitle.textContent  = `${data.name_ar} — ${data.name_bn}`;
+  heroMeta.textContent   = `Sūrah ${String(data.surah).toString().padStart(3,'0')} • ${data.verses.length} āyāt`;
+
+  // audio: prefer audio_full from JSON, then CDN backups
+  const cdnBackups = buildAudioCandidates(id);
+  const candidates = [ data.audio_full, ...cdnBackups ].filter(Boolean);
   setAudioWithFallback(player, candidates, url => { downloadMp3.href = url; });
   setAudioWithFallback(fullSurah, candidates);
 
-  // data
-  const data = await (await fetch(SURAH_JSON(id))).json();
-  surahTitle.textContent = `${data.name_ar} — ${data.name_bn}`;
-  heroTitle.textContent  = `${data.name_ar} — ${data.name_bn}`;
-  heroMeta.textContent   = `Sūrah ${String(data.surah).padStart(3,'0')} • ${data.verses.length} āyāt`;
-
-  // render words
+  // render Arabic words with basic rule coloring
   data.verses.forEach((ayah,i)=>{
     const li=document.createElement('li'); li.setAttribute('dir','rtl');
     const container=document.createElement('div'); container.className='ayah';
@@ -154,6 +170,7 @@ async function loadSurah(id){
 
   if (data.verses[0]) setExplain(data.verses[0]);
 
+  // timings
   try{
     const times = await (await fetch(SURAH_TIMES(id))).json();
     segments = times.map(t=>({start:t.start,end:t.end,ayahIndex:t.ayahIndex,wordIndex:t.wordIndex}));
