@@ -1,7 +1,11 @@
 :root { --bg:#0f1115; --card:#171a21; --ink:#e9eef6; --muted:#aeb6c3; --ring:#8ab4f8; }
-*{box-sizing:border-box} html,body{height:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:ui-sans-serif,system-ui,-apple-system,"Noto Naskh Arabic","Scheherazade New",Segoe UI,Arial,sans-serif}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Noto Naskh Arabic","Scheherazade New",Segoe UI,Arial,sans-serif
+}
 
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 1rem;background:#12151b;border-bottom:1px solid #212632}
 .brand{font-weight:700;letter-spacing:.2px}
