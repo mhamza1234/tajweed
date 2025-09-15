@@ -10,19 +10,19 @@
       "bangla": "Say [Prophet], ‘Disbelievers:",
       "words": [
         {
-          "ar": "",
+          "ar": "قُلْ",
           "tr": "qul",
           "wbw_audio": "wbw/109_001_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَـٰٓأَيُّهَا",
           "tr": "yāayyuhā",
           "wbw_audio": "wbw/109_001_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْكَـٰفِرُونَ",
           "tr": "l-kāfirūna",
           "wbw_audio": "wbw/109_001_003.mp3",
           "rules": []
@@ -35,25 +35,25 @@
       "bangla": "I do not worship what you worship,",
       "words": [
         {
-          "ar": "",
+          "ar": "لَآ",
           "tr": "lā",
           "wbw_audio": "wbw/109_002_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَعْبُدُ",
           "tr": "aʿbudu",
           "wbw_audio": "wbw/109_002_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَا",
           "tr": "mā",
           "wbw_audio": "wbw/109_002_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "تَعْبُدُونَ",
           "tr": "taʿbudūna",
           "wbw_audio": "wbw/109_002_004.mp3",
           "rules": []
@@ -66,31 +66,31 @@
       "bangla": "you do not worship what I worship,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَلَآ",
           "tr": "walā",
           "wbw_audio": "wbw/109_003_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَنتُمْ",
           "tr": "antum",
           "wbw_audio": "wbw/109_003_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَـٰبِدُونَ",
           "tr": "ʿābidūna",
           "wbw_audio": "wbw/109_003_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَآ",
           "tr": "mā",
           "wbw_audio": "wbw/109_003_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَعْبُدُ",
           "tr": "aʿbudu",
           "wbw_audio": "wbw/109_003_005.mp3",
           "rules": []
@@ -103,31 +103,31 @@
       "bangla": "I will never worship what you worship,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَلَآ",
           "tr": "walā",
           "wbw_audio": "wbw/109_004_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَنَا۠",
           "tr": "anā",
           "wbw_audio": "wbw/109_004_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَابِدٌۭ",
           "tr": "ʿābidun",
           "wbw_audio": "wbw/109_004_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَّا",
           "tr": "mā",
           "wbw_audio": "wbw/109_004_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَبَدتُّمْ",
           "tr": "ʿabadttum",
           "wbw_audio": "wbw/109_004_005.mp3",
           "rules": []
@@ -140,31 +140,31 @@
       "bangla": "you will never worship what I worship:",
       "words": [
         {
-          "ar": "",
+          "ar": "وَلَآ",
           "tr": "walā",
           "wbw_audio": "wbw/109_005_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَنتُمْ",
           "tr": "antum",
           "wbw_audio": "wbw/109_005_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَـٰبِدُونَ",
           "tr": "ʿābidūna",
           "wbw_audio": "wbw/109_005_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَآ",
           "tr": "mā",
           "wbw_audio": "wbw/109_005_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَعْبُدُ",
           "tr": "aʿbudu",
           "wbw_audio": "wbw/109_005_005.mp3",
           "rules": []
@@ -177,25 +177,25 @@
       "bangla": "you have your religion and I have mine.’",
       "words": [
         {
-          "ar": "",
+          "ar": "لَكُمْ",
           "tr": "lakum",
           "wbw_audio": "wbw/109_006_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "دِينُكُمْ",
           "tr": "dīnukum",
           "wbw_audio": "wbw/109_006_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَلِىَ",
           "tr": "waliya",
           "wbw_audio": "wbw/109_006_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "دِينِ",
           "tr": "dīni",
           "wbw_audio": "wbw/109_006_004.mp3",
           "rules": []

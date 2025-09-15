@@ -10,13 +10,13 @@
       "bangla": "By the forceful chargers",
       "words": [
         {
-          "ar": "",
+          "ar": "وَٱلنَّـٰزِعَـٰتِ",
           "tr": "wal-nāziʿāti",
           "wbw_audio": "wbw/079_001_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "غَرْقًۭا",
           "tr": "gharqan",
           "wbw_audio": "wbw/079_001_002.mp3",
           "rules": []
@@ -29,13 +29,13 @@
       "bangla": "raring to go,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَٱلنَّـٰشِطَـٰتِ",
           "tr": "wal-nāshiṭāti",
           "wbw_audio": "wbw/079_002_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "نَشْطًۭا",
           "tr": "nashṭan",
           "wbw_audio": "wbw/079_002_002.mp3",
           "rules": []
@@ -48,13 +48,13 @@
       "bangla": "sweeping ahead at full stretch,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَٱلسَّـٰبِحَـٰتِ",
           "tr": "wal-sābiḥāti",
           "wbw_audio": "wbw/079_003_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "سَبْحًۭا",
           "tr": "sabḥan",
           "wbw_audio": "wbw/079_003_002.mp3",
           "rules": []
@@ -67,13 +67,13 @@
       "bangla": "overtaking swiftly",
       "words": [
         {
-          "ar": "",
+          "ar": "فَٱلسَّـٰبِقَـٰتِ",
           "tr": "fal-sābiqāti",
           "wbw_audio": "wbw/079_004_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "سَبْقًۭا",
           "tr": "sabqan",
           "wbw_audio": "wbw/079_004_002.mp3",
           "rules": []
@@ -86,13 +86,13 @@
       "bangla": "to bring the matter to an end,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَٱلْمُدَبِّرَٰتِ",
           "tr": "fal-mudabirāti",
           "wbw_audio": "wbw/079_005_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَمْرًۭا",
           "tr": "amran",
           "wbw_audio": "wbw/079_005_002.mp3",
           "rules": []
@@ -105,19 +105,19 @@
       "bangla": "on the Day when the blast reverberates",
       "words": [
         {
-          "ar": "",
+          "ar": "يَوْمَ",
           "tr": "yawma",
           "wbw_audio": "wbw/079_006_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "تَرْجُفُ",
           "tr": "tarjufu",
           "wbw_audio": "wbw/079_006_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلرَّاجِفَةُ",
           "tr": "l-rājifatu",
           "wbw_audio": "wbw/079_006_003.mp3",
           "rules": []
@@ -130,13 +130,13 @@
       "bangla": "and the second blast follows,",
       "words": [
         {
-          "ar": "",
+          "ar": "تَتْبَعُهَا",
           "tr": "tatbaʿuhā",
           "wbw_audio": "wbw/079_007_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلرَّادِفَةُ",
           "tr": "l-rādifatu",
           "wbw_audio": "wbw/079_007_002.mp3",
           "rules": []
@@ -149,19 +149,19 @@
       "bangla": "hearts will tremble",
       "words": [
         {
-          "ar": "",
+          "ar": "قُلُوبٌۭ",
           "tr": "qulūbun",
           "wbw_audio": "wbw/079_008_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَوْمَئِذٍۢ",
           "tr": "yawma-idhin",
           "wbw_audio": "wbw/079_008_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَاجِفَةٌ",
           "tr": "wājifatun",
           "wbw_audio": "wbw/079_008_003.mp3",
           "rules": []
@@ -174,13 +174,13 @@
       "bangla": "and eyes will be downcast.",
       "words": [
         {
-          "ar": "",
+          "ar": "أَبْصَـٰرُهَا",
           "tr": "abṣāruhā",
           "wbw_audio": "wbw/079_009_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "خَـٰشِعَةٌۭ",
           "tr": "khāshiʿatun",
           "wbw_audio": "wbw/079_009_002.mp3",
           "rules": []
@@ -193,31 +193,31 @@
       "bangla": "They say, ‘What? shall we be brought back to life,",
       "words": [
         {
-          "ar": "",
+          "ar": "يَقُولُونَ",
           "tr": "yaqūlūna",
           "wbw_audio": "wbw/079_010_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَءِنَّا",
           "tr": "a-innā",
           "wbw_audio": "wbw/079_010_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَمَرْدُودُونَ",
           "tr": "lamardūdūna",
           "wbw_audio": "wbw/079_010_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فِى",
           "tr": "fī",
           "wbw_audio": "wbw/079_010_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْحَافِرَةِ",
           "tr": "l-ḥāfirati",
           "wbw_audio": "wbw/079_010_005.mp3",
           "rules": []
@@ -230,25 +230,25 @@
       "bangla": "after we have turned into decayed bones?’ and they say,",
       "words": [
         {
-          "ar": "",
+          "ar": "أَءِذَا",
           "tr": "a-idhā",
           "wbw_audio": "wbw/079_011_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "كُنَّا",
           "tr": "kunnā",
           "wbw_audio": "wbw/079_011_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عِظَـٰمًۭا",
           "tr": "ʿiẓāman",
           "wbw_audio": "wbw/079_011_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "نَّخِرَةًۭ",
           "tr": "nakhiratan",
           "wbw_audio": "wbw/079_011_004.mp3",
           "rules": []
@@ -261,31 +261,31 @@
       "bangla": "‘Such a return is impossible!’",
       "words": [
         {
-          "ar": "",
+          "ar": "قَالُوا۟",
           "tr": "qālū",
           "wbw_audio": "wbw/079_012_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "تِلْكَ",
           "tr": "til'ka",
           "wbw_audio": "wbw/079_012_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِذًۭا",
           "tr": "idhan",
           "wbw_audio": "wbw/079_012_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "كَرَّةٌ",
           "tr": "karratun",
           "wbw_audio": "wbw/079_012_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "خَاسِرَةٌۭ",
           "tr": "khāsiratun",
           "wbw_audio": "wbw/079_012_005.mp3",
           "rules": []
@@ -298,25 +298,25 @@
       "bangla": "But all it will take is a single blast,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَإِنَّمَا",
           "tr": "fa-innamā",
           "wbw_audio": "wbw/079_013_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "هِىَ",
           "tr": "hiya",
           "wbw_audio": "wbw/079_013_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "زَجْرَةٌۭ",
           "tr": "zajratun",
           "wbw_audio": "wbw/079_013_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَٰحِدَةٌۭ",
           "tr": "wāḥidatun",
           "wbw_audio": "wbw/079_013_004.mp3",
           "rules": []
@@ -329,19 +329,19 @@
       "bangla": "and they will be back above ground.",
       "words": [
         {
-          "ar": "",
+          "ar": "فَإِذَا",
           "tr": "fa-idhā",
           "wbw_audio": "wbw/079_014_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "هُم",
           "tr": "hum",
           "wbw_audio": "wbw/079_014_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بِٱلسَّاهِرَةِ",
           "tr": "bil-sāhirati",
           "wbw_audio": "wbw/079_014_003.mp3",
           "rules": []
@@ -354,25 +354,25 @@
       "bangla": "Have you [Prophet] heard the story of Moses?",
       "words": [
         {
-          "ar": "",
+          "ar": "هَلْ",
           "tr": "hal",
           "wbw_audio": "wbw/079_015_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَتَىٰكَ",
           "tr": "atāka",
           "wbw_audio": "wbw/079_015_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "حَدِيثُ",
           "tr": "ḥadīthu",
           "wbw_audio": "wbw/079_015_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مُوسَىٰٓ",
           "tr": "mūsā",
           "wbw_audio": "wbw/079_015_004.mp3",
           "rules": []
@@ -385,37 +385,37 @@
       "bangla": "His Lord called out to him in the sacred valley of Tuwa:",
       "words": [
         {
-          "ar": "",
+          "ar": "إِذْ",
           "tr": "idh",
           "wbw_audio": "wbw/079_016_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "نَادَىٰهُ",
           "tr": "nādāhu",
           "wbw_audio": "wbw/079_016_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "رَبُّهُۥ",
           "tr": "rabbuhu",
           "wbw_audio": "wbw/079_016_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بِٱلْوَادِ",
           "tr": "bil-wādi",
           "wbw_audio": "wbw/079_016_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْمُقَدَّسِ",
           "tr": "l-muqadasi",
           "wbw_audio": "wbw/079_016_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "طُوًى",
           "tr": "ṭuwan",
           "wbw_audio": "wbw/079_016_006.mp3",
           "rules": []
@@ -428,31 +428,31 @@
       "bangla": "‘Go to Pharaoh, for he has exceeded all bounds,",
       "words": [
         {
-          "ar": "",
+          "ar": "ٱذْهَبْ",
           "tr": "idh'hab",
           "wbw_audio": "wbw/079_017_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِلَىٰ",
           "tr": "ilā",
           "wbw_audio": "wbw/079_017_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فِرْعَوْنَ",
           "tr": "fir'ʿawna",
           "wbw_audio": "wbw/079_017_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِنَّهُۥ",
           "tr": "innahu",
           "wbw_audio": "wbw/079_017_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "طَغَىٰ",
           "tr": "ṭaghā",
           "wbw_audio": "wbw/079_017_005.mp3",
           "rules": []
@@ -465,37 +465,37 @@
       "bangla": "and ask him, “Do you want to purify yourself [of sin]?",
       "words": [
         {
-          "ar": "",
+          "ar": "فَقُلْ",
           "tr": "faqul",
           "wbw_audio": "wbw/079_018_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "هَل",
           "tr": "hal",
           "wbw_audio": "wbw/079_018_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَّكَ",
           "tr": "laka",
           "wbw_audio": "wbw/079_018_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِلَىٰٓ",
           "tr": "ilā",
           "wbw_audio": "wbw/079_018_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَن",
           "tr": "an",
           "wbw_audio": "wbw/079_018_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "تَزَكَّىٰ",
           "tr": "tazakkā",
           "wbw_audio": "wbw/079_018_006.mp3",
           "rules": []
@@ -508,25 +508,25 @@
       "bangla": "Do you want me to guide you to your Lord, so that you may hold Him in awe?” ’",
       "words": [
         {
-          "ar": "",
+          "ar": "وَأَهْدِيَكَ",
           "tr": "wa-ahdiyaka",
           "wbw_audio": "wbw/079_019_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِلَىٰ",
           "tr": "ilā",
           "wbw_audio": "wbw/079_019_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "رَبِّكَ",
           "tr": "rabbika",
           "wbw_audio": "wbw/079_019_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فَتَخْشَىٰ",
           "tr": "fatakhshā",
           "wbw_audio": "wbw/079_019_004.mp3",
           "rules": []
@@ -539,19 +539,19 @@
       "bangla": "Moses showed him the great sign,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَأَرَىٰهُ",
           "tr": "fa-arāhu",
           "wbw_audio": "wbw/079_020_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْـَٔايَةَ",
           "tr": "l-āyata",
           "wbw_audio": "wbw/079_020_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْكُبْرَىٰ",
           "tr": "l-kub'rā",
           "wbw_audio": "wbw/079_020_003.mp3",
           "rules": []
@@ -564,13 +564,13 @@
       "bangla": "but he denied it and refused [the faith].",
       "words": [
         {
-          "ar": "",
+          "ar": "فَكَذَّبَ",
           "tr": "fakadhaba",
           "wbw_audio": "wbw/079_021_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَعَصَىٰ",
           "tr": "waʿaṣā",
           "wbw_audio": "wbw/079_021_002.mp3",
           "rules": []
@@ -583,19 +583,19 @@
       "bangla": "He turned away and hastily",
       "words": [
         {
-          "ar": "",
+          "ar": "ثُمَّ",
           "tr": "thumma",
           "wbw_audio": "wbw/079_022_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَدْبَرَ",
           "tr": "adbara",
           "wbw_audio": "wbw/079_022_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَسْعَىٰ",
           "tr": "yasʿā",
           "wbw_audio": "wbw/079_022_003.mp3",
           "rules": []
@@ -608,13 +608,13 @@
       "bangla": "gathered his people, proclaiming,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَحَشَرَ",
           "tr": "faḥashara",
           "wbw_audio": "wbw/079_023_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فَنَادَىٰ",
           "tr": "fanādā",
           "wbw_audio": "wbw/079_023_002.mp3",
           "rules": []
@@ -627,25 +627,25 @@
       "bangla": "‘I am your supreme lord,’",
       "words": [
         {
-          "ar": "",
+          "ar": "فَقَالَ",
           "tr": "faqāla",
           "wbw_audio": "wbw/079_024_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَنَا۠",
           "tr": "anā",
           "wbw_audio": "wbw/079_024_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "رَبُّكُمُ",
           "tr": "rabbukumu",
           "wbw_audio": "wbw/079_024_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْأَعْلَىٰ",
           "tr": "l-aʿlā",
           "wbw_audio": "wbw/079_024_004.mp3",
           "rules": []
@@ -658,31 +658,31 @@
       "bangla": "so God condemned him to punishment in the life to come as well as in this life:",
       "words": [
         {
-          "ar": "",
+          "ar": "فَأَخَذَهُ",
           "tr": "fa-akhadhahu",
           "wbw_audio": "wbw/079_025_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱللَّهُ",
           "tr": "l-lahu",
           "wbw_audio": "wbw/079_025_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "نَكَالَ",
           "tr": "nakāla",
           "wbw_audio": "wbw/079_025_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْـَٔاخِرَةِ",
           "tr": "l-ākhirati",
           "wbw_audio": "wbw/079_025_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَٱلْأُولَىٰٓ",
           "tr": "wal-ūlā",
           "wbw_audio": "wbw/079_025_005.mp3",
           "rules": []
@@ -695,37 +695,37 @@
       "bangla": "there truly is a lesson in this for anyone who stands in awe of God.",
       "words": [
         {
-          "ar": "",
+          "ar": "إِنَّ",
           "tr": "inna",
           "wbw_audio": "wbw/079_026_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فِى",
           "tr": "fī",
           "wbw_audio": "wbw/079_026_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ذَٰلِكَ",
           "tr": "dhālika",
           "wbw_audio": "wbw/079_026_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَعِبْرَةًۭ",
           "tr": "laʿib'ratan",
           "wbw_audio": "wbw/079_026_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لِّمَن",
           "tr": "liman",
           "wbw_audio": "wbw/079_026_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَخْشَىٰٓ",
           "tr": "yakhshā",
           "wbw_audio": "wbw/079_026_006.mp3",
           "rules": []
@@ -738,37 +738,37 @@
       "bangla": "Which is harder to create: you people or the sky that He built,",
       "words": [
         {
-          "ar": "",
+          "ar": "ءَأَنتُمْ",
           "tr": "a-antum",
           "wbw_audio": "wbw/079_027_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَشَدُّ",
           "tr": "ashaddu",
           "wbw_audio": "wbw/079_027_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "خَلْقًا",
           "tr": "khalqan",
           "wbw_audio": "wbw/079_027_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَمِ",
           "tr": "ami",
           "wbw_audio": "wbw/079_027_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلسَّمَآءُ ۚ",
           "tr": "l-samāu",
           "wbw_audio": "wbw/079_027_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بَنَىٰهَا",
           "tr": "banāhā",
           "wbw_audio": "wbw/079_027_007.mp3",
           "rules": []
@@ -781,19 +781,19 @@
       "bangla": "raising it high and perfecting it,",
       "words": [
         {
-          "ar": "",
+          "ar": "رَفَعَ",
           "tr": "rafaʿa",
           "wbw_audio": "wbw/079_028_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "سَمْكَهَا",
           "tr": "samkahā",
           "wbw_audio": "wbw/079_028_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فَسَوَّىٰهَا",
           "tr": "fasawwāhā",
           "wbw_audio": "wbw/079_028_003.mp3",
           "rules": []
@@ -806,25 +806,25 @@
       "bangla": "giving darkness to its night and bringing out its morning brightness,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَأَغْطَشَ",
           "tr": "wa-aghṭasha",
           "wbw_audio": "wbw/079_029_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَيْلَهَا",
           "tr": "laylahā",
           "wbw_audio": "wbw/079_029_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَأَخْرَجَ",
           "tr": "wa-akhraja",
           "wbw_audio": "wbw/079_029_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ضُحَىٰهَا",
           "tr": "ḍuḥāhā",
           "wbw_audio": "wbw/079_029_004.mp3",
           "rules": []
@@ -837,25 +837,25 @@
       "bangla": "and the earth, too, He spread out,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَٱلْأَرْضَ",
           "tr": "wal-arḍa",
           "wbw_audio": "wbw/079_030_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بَعْدَ",
           "tr": "baʿda",
           "wbw_audio": "wbw/079_030_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ذَٰلِكَ",
           "tr": "dhālika",
           "wbw_audio": "wbw/079_030_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "دَحَىٰهَآ",
           "tr": "daḥāhā",
           "wbw_audio": "wbw/079_030_004.mp3",
           "rules": []
@@ -868,25 +868,25 @@
       "bangla": "bringing waters and pastures out of it,",
       "words": [
         {
-          "ar": "",
+          "ar": "أَخْرَجَ",
           "tr": "akhraja",
           "wbw_audio": "wbw/079_031_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مِنْهَا",
           "tr": "min'hā",
           "wbw_audio": "wbw/079_031_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَآءَهَا",
           "tr": "māahā",
           "wbw_audio": "wbw/079_031_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَمَرْعَىٰهَا",
           "tr": "wamarʿāhā",
           "wbw_audio": "wbw/079_031_004.mp3",
           "rules": []
@@ -899,13 +899,13 @@
       "bangla": "and setting firm mountains [in it]",
       "words": [
         {
-          "ar": "",
+          "ar": "وَٱلْجِبَالَ",
           "tr": "wal-jibāla",
           "wbw_audio": "wbw/079_032_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَرْسَىٰهَا",
           "tr": "arsāhā",
           "wbw_audio": "wbw/079_032_002.mp3",
           "rules": []
@@ -918,19 +918,19 @@
       "bangla": "for you and your animals to enjoy?",
       "words": [
         {
-          "ar": "",
+          "ar": "مَتَـٰعًۭا",
           "tr": "matāʿan",
           "wbw_audio": "wbw/079_033_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَّكُمْ",
           "tr": "lakum",
           "wbw_audio": "wbw/079_033_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَلِأَنْعَـٰمِكُمْ",
           "tr": "wali-anʿāmikum",
           "wbw_audio": "wbw/079_033_003.mp3",
           "rules": []
@@ -943,25 +943,25 @@
       "bangla": "When the great overwhelming event arrives",
       "words": [
         {
-          "ar": "",
+          "ar": "فَإِذَا",
           "tr": "fa-idhā",
           "wbw_audio": "wbw/079_034_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "جَآءَتِ",
           "tr": "jāati",
           "wbw_audio": "wbw/079_034_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلطَّآمَّةُ",
           "tr": "l-ṭāmatu",
           "wbw_audio": "wbw/079_034_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْكُبْرَىٰ",
           "tr": "l-kub'rā",
           "wbw_audio": "wbw/079_034_004.mp3",
           "rules": []
@@ -974,31 +974,31 @@
       "bangla": "on the Day that man remembers what he has done",
       "words": [
         {
-          "ar": "",
+          "ar": "يَوْمَ",
           "tr": "yawma",
           "wbw_audio": "wbw/079_035_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَتَذَكَّرُ",
           "tr": "yatadhakkaru",
           "wbw_audio": "wbw/079_035_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْإِنسَـٰنُ",
           "tr": "l-insānu",
           "wbw_audio": "wbw/079_035_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَا",
           "tr": "mā",
           "wbw_audio": "wbw/079_035_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "سَعَىٰ",
           "tr": "saʿā",
           "wbw_audio": "wbw/079_035_005.mp3",
           "rules": []
@@ -1011,25 +1011,25 @@
       "bangla": "and Hell is there for all to see,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَبُرِّزَتِ",
           "tr": "waburrizati",
           "wbw_audio": "wbw/079_036_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْجَحِيمُ",
           "tr": "l-jaḥīmu",
           "wbw_audio": "wbw/079_036_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لِمَن",
           "tr": "liman",
           "wbw_audio": "wbw/079_036_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَرَىٰ",
           "tr": "yarā",
           "wbw_audio": "wbw/079_036_004.mp3",
           "rules": []
@@ -1042,19 +1042,19 @@
       "bangla": "for anyone who has transgressed",
       "words": [
         {
-          "ar": "",
+          "ar": "فَأَمَّا",
           "tr": "fa-ammā",
           "wbw_audio": "wbw/079_037_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَن",
           "tr": "man",
           "wbw_audio": "wbw/079_037_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "طَغَىٰ",
           "tr": "ṭaghā",
           "wbw_audio": "wbw/079_037_003.mp3",
           "rules": []
@@ -1067,19 +1067,19 @@
       "bangla": "and preferred the present life",
       "words": [
         {
-          "ar": "",
+          "ar": "وَءَاثَرَ",
           "tr": "waāthara",
           "wbw_audio": "wbw/079_038_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْحَيَوٰةَ",
           "tr": "l-ḥayata",
           "wbw_audio": "wbw/079_038_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلدُّنْيَا",
           "tr": "l-dun'yā",
           "wbw_audio": "wbw/079_038_003.mp3",
           "rules": []
@@ -1092,25 +1092,25 @@
       "bangla": "Hell will be home;",
       "words": [
         {
-          "ar": "",
+          "ar": "فَإِنَّ",
           "tr": "fa-inna",
           "wbw_audio": "wbw/079_039_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْجَحِيمَ",
           "tr": "l-jaḥīma",
           "wbw_audio": "wbw/079_039_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "هِىَ",
           "tr": "hiya",
           "wbw_audio": "wbw/079_039_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْمَأْوَىٰ",
           "tr": "l-mawā",
           "wbw_audio": "wbw/079_039_004.mp3",
           "rules": []
@@ -1123,55 +1123,55 @@
       "bangla": "for anyone who feared the meeting with his Lord and restrained himself from base desires,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَأَمَّا",
           "tr": "wa-ammā",
           "wbw_audio": "wbw/079_040_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَنْ",
           "tr": "man",
           "wbw_audio": "wbw/079_040_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "خَافَ",
           "tr": "khāfa",
           "wbw_audio": "wbw/079_040_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَقَامَ",
           "tr": "maqāma",
           "wbw_audio": "wbw/079_040_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "رَبِّهِۦ",
           "tr": "rabbihi",
           "wbw_audio": "wbw/079_040_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "وَنَهَى",
           "tr": "wanahā",
           "wbw_audio": "wbw/079_040_006.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلنَّفْسَ",
           "tr": "l-nafsa",
           "wbw_audio": "wbw/079_040_007.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَنِ",
           "tr": "ʿani",
           "wbw_audio": "wbw/079_040_008.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْهَوَىٰ",
           "tr": "l-hawā",
           "wbw_audio": "wbw/079_040_009.mp3",
           "rules": []
@@ -1184,25 +1184,25 @@
       "bangla": "Paradise will be home.",
       "words": [
         {
-          "ar": "",
+          "ar": "فَإِنَّ",
           "tr": "fa-inna",
           "wbw_audio": "wbw/079_041_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْجَنَّةَ",
           "tr": "l-janata",
           "wbw_audio": "wbw/079_041_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "هِىَ",
           "tr": "hiya",
           "wbw_audio": "wbw/079_041_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْمَأْوَىٰ",
           "tr": "l-mawā",
           "wbw_audio": "wbw/079_041_004.mp3",
           "rules": []
@@ -1215,31 +1215,31 @@
       "bangla": "They ask you [Prophet] about the Hour,",
       "words": [
         {
-          "ar": "",
+          "ar": "يَسْـَٔلُونَكَ",
           "tr": "yasalūnaka",
           "wbw_audio": "wbw/079_042_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَنِ",
           "tr": "ʿani",
           "wbw_audio": "wbw/079_042_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلسَّاعَةِ",
           "tr": "l-sāʿati",
           "wbw_audio": "wbw/079_042_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَيَّانَ",
           "tr": "ayyāna",
           "wbw_audio": "wbw/079_042_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مُرْسَىٰهَا",
           "tr": "mur'sāhā",
           "wbw_audio": "wbw/079_042_005.mp3",
           "rules": []
@@ -1252,25 +1252,25 @@
       "bangla": "saying, ‘When will it arrive?’, but how can you tell [them that]?",
       "words": [
         {
-          "ar": "",
+          "ar": "فِيمَ",
           "tr": "fīma",
           "wbw_audio": "wbw/079_043_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَنتَ",
           "tr": "anta",
           "wbw_audio": "wbw/079_043_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مِن",
           "tr": "min",
           "wbw_audio": "wbw/079_043_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ذِكْرَىٰهَآ",
           "tr": "dhik'rāhā",
           "wbw_audio": "wbw/079_043_004.mp3",
           "rules": []
@@ -1283,19 +1283,19 @@
       "bangla": "Its time is known only to your Lord;",
       "words": [
         {
-          "ar": "",
+          "ar": "إِلَىٰ",
           "tr": "ilā",
           "wbw_audio": "wbw/079_044_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "رَبِّكَ",
           "tr": "rabbika",
           "wbw_audio": "wbw/079_044_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مُنتَهَىٰهَآ",
           "tr": "muntahāhā",
           "wbw_audio": "wbw/079_044_003.mp3",
           "rules": []
@@ -1308,31 +1308,31 @@
       "bangla": "you are only sent to warn those who fear it.",
       "words": [
         {
-          "ar": "",
+          "ar": "إِنَّمَآ",
           "tr": "innamā",
           "wbw_audio": "wbw/079_045_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَنتَ",
           "tr": "anta",
           "wbw_audio": "wbw/079_045_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مُنذِرُ",
           "tr": "mundhiru",
           "wbw_audio": "wbw/079_045_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَن",
           "tr": "man",
           "wbw_audio": "wbw/079_045_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَخْشَىٰهَا",
           "tr": "yakhshāhā",
           "wbw_audio": "wbw/079_045_005.mp3",
           "rules": []
@@ -1345,55 +1345,55 @@
       "bangla": "On the Day they see it, it will seem they lingered [in this life] an evening [at most,] or its morning.",
       "words": [
         {
-          "ar": "",
+          "ar": "كَأَنَّهُمْ",
           "tr": "ka-annahum",
           "wbw_audio": "wbw/079_046_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَوْمَ",
           "tr": "yawma",
           "wbw_audio": "wbw/079_046_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَرَوْنَهَا",
           "tr": "yarawnahā",
           "wbw_audio": "wbw/079_046_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَمْ",
           "tr": "lam",
           "wbw_audio": "wbw/079_046_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَلْبَثُوٓا۟",
           "tr": "yalbathū",
           "wbw_audio": "wbw/079_046_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِلَّا",
           "tr": "illā",
           "wbw_audio": "wbw/079_046_006.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَشِيَّةً",
           "tr": "ʿashiyyatan",
           "wbw_audio": "wbw/079_046_007.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "أَوْ",
           "tr": "aw",
           "wbw_audio": "wbw/079_046_008.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ضُحَىٰهَا",
           "tr": "ḍuḥāhā",
           "wbw_audio": "wbw/079_046_009.mp3",
           "rules": []

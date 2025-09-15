@@ -10,13 +10,13 @@
       "bangla": "By the charging steeds that pant",
       "words": [
         {
-          "ar": "",
+          "ar": "وَٱلْعَـٰدِيَـٰتِ",
           "tr": "wal-ʿādiyāti",
           "wbw_audio": "wbw/100_001_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ضَبْحًۭا",
           "tr": "ḍabḥan",
           "wbw_audio": "wbw/100_001_002.mp3",
           "rules": []
@@ -29,13 +29,13 @@
       "bangla": "and strike sparks with their hooves,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَٱلْمُورِيَـٰتِ",
           "tr": "fal-mūriyāti",
           "wbw_audio": "wbw/100_002_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "قَدْحًۭا",
           "tr": "qadḥan",
           "wbw_audio": "wbw/100_002_002.mp3",
           "rules": []
@@ -48,13 +48,13 @@
       "bangla": "who make dawn raids,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَٱلْمُغِيرَٰتِ",
           "tr": "fal-mughīrāti",
           "wbw_audio": "wbw/100_003_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "صُبْحًۭا",
           "tr": "ṣub'ḥan",
           "wbw_audio": "wbw/100_003_002.mp3",
           "rules": []
@@ -67,19 +67,19 @@
       "bangla": "raising a cloud of dust,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَأَثَرْنَ",
           "tr": "fa-atharna",
           "wbw_audio": "wbw/100_004_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بِهِۦ",
           "tr": "bihi",
           "wbw_audio": "wbw/100_004_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "نَقْعًۭا",
           "tr": "naqʿan",
           "wbw_audio": "wbw/100_004_003.mp3",
           "rules": []
@@ -92,19 +92,19 @@
       "bangla": "and plunging into the midst of the enemy,",
       "words": [
         {
-          "ar": "",
+          "ar": "فَوَسَطْنَ",
           "tr": "fawasaṭna",
           "wbw_audio": "wbw/100_005_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بِهِۦ",
           "tr": "bihi",
           "wbw_audio": "wbw/100_005_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "جَمْعًا",
           "tr": "jamʿan",
           "wbw_audio": "wbw/100_005_003.mp3",
           "rules": []
@@ -117,25 +117,25 @@
       "bangla": "man is ungrateful to his Lord––",
       "words": [
         {
-          "ar": "",
+          "ar": "إِنَّ",
           "tr": "inna",
           "wbw_audio": "wbw/100_006_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْإِنسَـٰنَ",
           "tr": "l-insāna",
           "wbw_audio": "wbw/100_006_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لِرَبِّهِۦ",
           "tr": "lirabbihi",
           "wbw_audio": "wbw/100_006_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَكَنُودٌۭ",
           "tr": "lakanūdun",
           "wbw_audio": "wbw/100_006_004.mp3",
           "rules": []
@@ -148,25 +148,25 @@
       "bangla": "and He is witness to this––",
       "words": [
         {
-          "ar": "",
+          "ar": "وَإِنَّهُۥ",
           "tr": "wa-innahu",
           "wbw_audio": "wbw/100_007_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "عَلَىٰ",
           "tr": "ʿalā",
           "wbw_audio": "wbw/100_007_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ذَٰلِكَ",
           "tr": "dhālika",
           "wbw_audio": "wbw/100_007_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَشَهِيدٌۭ",
           "tr": "lashahīdun",
           "wbw_audio": "wbw/100_007_004.mp3",
           "rules": []
@@ -179,25 +179,25 @@
       "bangla": "he is truly excessive in his love of wealth.",
       "words": [
         {
-          "ar": "",
+          "ar": "وَإِنَّهُۥ",
           "tr": "wa-innahu",
           "wbw_audio": "wbw/100_008_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لِحُبِّ",
           "tr": "liḥubbi",
           "wbw_audio": "wbw/100_008_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْخَيْرِ",
           "tr": "l-khayri",
           "wbw_audio": "wbw/100_008_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَشَدِيدٌ",
           "tr": "lashadīdun",
           "wbw_audio": "wbw/100_008_004.mp3",
           "rules": []
@@ -210,43 +210,43 @@
       "bangla": "Does he not know that when the contents of graves burst forth,",
       "words": [
         {
-          "ar": "",
+          "ar": "۞ أَفَلَا",
           "tr": "afalā",
           "wbw_audio": "wbw/100_009_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَعْلَمُ",
           "tr": "yaʿlamu",
           "wbw_audio": "wbw/100_009_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "إِذَا",
           "tr": "idhā",
           "wbw_audio": "wbw/100_009_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بُعْثِرَ",
           "tr": "buʿ'thira",
           "wbw_audio": "wbw/100_009_005.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَا",
           "tr": "mā",
           "wbw_audio": "wbw/100_009_006.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فِى",
           "tr": "fī",
           "wbw_audio": "wbw/100_009_007.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلْقُبُورِ",
           "tr": "l-qubūri",
           "wbw_audio": "wbw/100_009_008.mp3",
           "rules": []
@@ -259,25 +259,25 @@
       "bangla": "when the secrets of hearts are uncovered, on that Day,",
       "words": [
         {
-          "ar": "",
+          "ar": "وَحُصِّلَ",
           "tr": "waḥuṣṣila",
           "wbw_audio": "wbw/100_010_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "مَا",
           "tr": "mā",
           "wbw_audio": "wbw/100_010_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "فِى",
           "tr": "fī",
           "wbw_audio": "wbw/100_010_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "ٱلصُّدُورِ",
           "tr": "l-ṣudūri",
           "wbw_audio": "wbw/100_010_004.mp3",
           "rules": []
@@ -290,31 +290,31 @@
       "bangla": "their Lord will be fully aware of them all?",
       "words": [
         {
-          "ar": "",
+          "ar": "إِنَّ",
           "tr": "inna",
           "wbw_audio": "wbw/100_011_001.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "رَبَّهُم",
           "tr": "rabbahum",
           "wbw_audio": "wbw/100_011_002.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "بِهِمْ",
           "tr": "bihim",
           "wbw_audio": "wbw/100_011_003.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "يَوْمَئِذٍۢ",
           "tr": "yawma-idhin",
           "wbw_audio": "wbw/100_011_004.mp3",
           "rules": []
         },
         {
-          "ar": "",
+          "ar": "لَّخَبِيرٌۢ",
           "tr": "lakhabīrun",
           "wbw_audio": "wbw/100_011_005.mp3",
           "rules": []
