@@ -13,10 +13,12 @@
     <div class="controls">
       <label for="surahSelect">Surah:</label>
       <select id="surahSelect"></select>
+      <button id="viewToggle">View: Arabic only</button>
       <button id="legendToggle" aria-expanded="false">Legend</button>
     </div>
   </header>
 
+  <!-- HERO: Full-surah recitation -->
   <section class="hero" dir="ltr">
     <div class="hero-head">
       <div>
@@ -43,17 +45,29 @@
         <label><input type="checkbox" id="fullLoop"> Loop</label>
         <a id="downloadMp3" class="btn" download>Download MP3</a>
         <button id="startPractice" class="btn primary">Start practice ↓</button>
+        <span id="srcHint" class="mono" style="opacity:.7;margin-left:.6rem"></span>
+        <button id="alignMinus" class="btn" title="Shift −0.5s">−0.5s</button>
+        <button id="alignPlus" class="btn"  title="Shift +0.5s">+0.5s</button>
       </div>
       <div id="fullTime" class="time">0:00 / 0:00</div>
     </div>
   </section>
 
+  <!-- PRACTICE player -->
   <section class="player" dir="ltr">
+    <h3 style="margin:.2rem 0 .6rem 0">Practice player</h3>
     <audio id="player" preload="metadata" controls></audio>
     <div class="transport">
       <button id="playBtn">Play</button>
       <button id="pauseBtn">Pause</button>
       <button id="restartBtn" title="Restart">↺</button>
+      <div style="margin-left:.8rem;display:flex;gap:.35rem;align-items:center;">
+        <label>Mode:</label>
+        <button id="modeWord" class="btn active">Word</button>
+        <button id="modeAyah" class="btn">Āyah</button>
+        <button id="modeCont" class="btn">Cont.</button>
+        <label style="margin-left:.5rem"><input type="checkbox" id="loopPractice"> Loop</label>
+      </div>
     </div>
   </section>
 
@@ -81,7 +95,6 @@
   </main>
 
   <div class="sr-only" aria-live="polite" id="live"></div>
-
   <script src="app.js"></script>
 </body>
 </html>
