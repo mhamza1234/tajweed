@@ -9,12 +9,12 @@ const SHORT_NAMES = {
   "103":"asr","104":"humazah","105":"fil","106":"quraish","107":"maun","108":"kauthar",
   "109":"kafiroon","110":"nasr","111":"masad","112":"ikhlas","113":"falaq","114":"naas"
 };
-const SURAH_JSON   = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.json`;
-const SURAH_TIMES  = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.words.json`;
-const LEGEND_JSON  = 'data/legend.json';
-const MANIFEST_JSON= 'data/manifest.json';
-const TAFSIR_JSON  = id => `data/tafsir/${id}.json`;  // optional
-const MAQAM_JSON   = id => `data/maqam/${id}.json`;   // optional
+const SURAH_JSON    = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.json`;
+const SURAH_TIMES   = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.words.json`;
+const LEGEND_JSON   = 'data/legend.json';
+const MANIFEST_JSON = 'data/manifest.json';
+const TAFSIR_JSON   = id => `data/tafsir/${id}.json`;  // optional
+const MAQAM_JSON    = id => `data/maqam/${id}.json`;   // optional
 
 // ======= audio fallbacks =======
 function buildAudioCandidates(id) {
@@ -44,7 +44,7 @@ function setAudioWithFallback(audioEl, urls, onResolvedUrl) {
 // ======= elements =======
 const fullSurah   = document.getElementById('fullSurah');
 const fullRate    = document.getElementById('fullRate');
-theFullLoop = document.getElementById('fullLoop');
+const fullLoop    = document.getElementById('fullLoop');
 const downloadMp3 = document.getElementById('downloadMp3');
 const startPracticeBtn = document.getElementById('startPractice');
 const heroTitle   = document.getElementById('heroTitle');
@@ -110,7 +110,7 @@ let dockMode = 'TR';        // 'TR' | 'BN'
 
 // ======= helpers =======
 const mmss = s => (!isFinite(s) ? '0:00' : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`);
-const hexAlpha = (hex,a)=>{const c=hex.replace('#','');const n=parseInt(c,16);const r=(n>>16)&255,g=(n>>8)&255,b=n&255;return `rgba(${r},${g},${b},${a})`;};
+const hexAlpha = (hex,a)=>{const c=hex.replace('#','');const n=parseInt(c,16);const r=(n>>16)&255,g=(n>>8)&255,b=(n)&255;return `rgba(${r},${g},${b},${a})`;};
 function guessIntroOffset(url) {
   try {
     const h = new URL(url).hostname;
@@ -125,16 +125,16 @@ function setMode(m){
   modeAyahBtn.classList.toggle('active', m==='ayah');
   modeContBtn.classList.toggle('active', m==='cont');
 }
-function updateSrcHint(){
-  if (!resolvedSrc) return;
-  try{
-    srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`;
-  }catch{}
+function showBootError(err){
+  const box=document.createElement('pre');
+  box.textContent='Error loading data:\n' + (err?.stack||err);
+  box.style.cssText='color:#ff8a8a;background:#1b1111;padding:.6rem;border-radius:.4rem;margin:1rem';
+  document.body.prepend(box);
 }
 
-// Colorize custom <tajweed class=...> markup when we don't have words[]
+// Colorize custom <tajweed class=...>…</tajweed> using legend
 function colorizeTajweedHTML(html, legendMap) {
-  return (html||'').replace(
+  return html.replace(
     /<tajweed\s+class=([a-zA-Z0-9_\-]+)>(.*?)<\/tajweed>/g,
     (_, cls, inner) => {
       const e = legendMap?.[cls] || {};
@@ -143,14 +143,6 @@ function colorizeTajweedHTML(html, legendMap) {
       return `<span class="word" style="background:${bg}" title="${title}">${inner}</span>`;
     }
   );
-}
-
-// Show a quick banner if boot fails
-function showBootError(err){
-  const box=document.createElement('pre');
-  box.textContent='Error loading data:\n' + (err?.stack||err);
-  box.style.cssText='color:#ff8a8a;background:#1b1111;padding:.6rem;border-radius:.4rem;margin:1rem';
-  document.body.prepend(box);
 }
 
 // ======= init =======
@@ -166,9 +158,11 @@ function showBootError(err){
       opt.value = s.id; opt.textContent = `${s.id} — ${s.name_bn}`;
       surahSelect.appendChild(opt);
     });
+    // Default to 096 if present (handy for testing)
+    if ([...surahSelect.options].some(o=>o.value==='096')) surahSelect.value='096';
 
     bindTransport();
-    await loadSurah(surahSelect.value);
+    await loadSurah(surahSelect.value || surahSelect.options[0]?.value);
 
     surahSelect.addEventListener('change', e => loadSurah(e.target.value));
     legendBtn.addEventListener('click', () => toggleLegend());
@@ -200,7 +194,7 @@ function bindTransport(){
   fullRate.addEventListener('change', e => {
     const r = parseFloat(e.target.value||'1'); fullSurah.playbackRate = r; player.playbackRate = r;
   });
-  theFullLoop.addEventListener('change', e => { fullSurah.loop = e.target.checked; });
+  fullLoop.addEventListener('change', e => { fullSurah.loop = e.target.checked; });
   fullSurah.addEventListener('timeupdate', () => {
     fullTime.textContent = `${mmss(fullSurah.currentTime)} / ${mmss(fullSurah.duration||0)}`;
   });
@@ -254,6 +248,10 @@ function handlePracticeTick(){
   // continuous mode lets audio run; no auto-stop.
 }
 
+function updateSrcHint(){
+  if (!resolvedSrc) return;
+  try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`; }catch{}
+}
 function playCurrentAyah(){
   const first = segments.find(x => x.ayahIndex===currentAyahIndex);
   if (!first) return;
@@ -280,6 +278,7 @@ async function loadSurah(id){
 
   // overview (optional tafsir summary)
   renderOverview(String(data.surah).padStart(3,'0'));
+
   // maqam notes (optional)
   renderMaqam(String(data.surah).padStart(3,'0'));
 
@@ -412,7 +411,7 @@ function setSheetTab(which){
   [sheetTR, sheetBN, sheetTAF].forEach(b=>b.classList.remove('active'));
   if (which==='TR'){ sheetTR.classList.add('active'); sheetBody.textContent = sheetTR.dataset.text || '—'; }
   else if (which==='BN'){ sheetBN.classList.add('active'); sheetBody.textContent = sheetBN.dataset.text || '—'; }
-  else { // TAF
+  else {
     sheetTAF.classList.add('active');
     const id = String(currentData?.surah||'').padStart(3,'0');
     renderTafsirForSurah(id).then(html => { sheetBody.innerHTML = html || '<em>No tafsīr available.</em>'; });
