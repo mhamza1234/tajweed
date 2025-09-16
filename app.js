@@ -9,16 +9,17 @@ const SHORT_NAMES = {
   "103":"asr","104":"humazah","105":"fil","106":"quraish","107":"maun","108":"kauthar",
   "109":"kafiroon","110":"nasr","111":"masad","112":"ikhlas","113":"falaq","114":"naas"
 };
-const SURAH_JSON   = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.json`;
-const SURAH_TIMES  = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.words.json`;
-const LEGEND_JSON  = 'data/legend.json';
-const MANIFEST_JSON= 'data/manifest.json';
-const TAFSIR_JSON  = id => `data/tafsir/${id}.json`;
-const MAQAM_JSON   = id => `data/maqam/${id}.json`;
+const SURAH_JSON    = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.json`;
+const SURAH_TIMES   = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.words.json`;
+const LEGEND_JSON   = 'data/legend.json';
+const MANIFEST_JSON = 'data/manifest.json';
+const TAFSIR_JSON   = id => `data/tafsir/${id}.json`;   // optional
+const MAQAM_JSON    = id => `data/maqam/${id}.json`;    // optional
 
 // ======= audio fallbacks =======
 function buildAudioCandidates(id) {
-  const n = String(parseInt(id,10)), p3 = id.padStart(3,'0');
+  const n = String(parseInt(id,10));
+  const p3 = id.padStart(3,'0');
   return [
     `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${n}.mp3`,
     `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${p3}.mp3`,
@@ -34,7 +35,10 @@ function setAudioWithFallback(audioEl, urls, onResolvedUrl) {
     onResolvedUrl?.(url);
     const onError = () => { cleanup(); tryNext(); };
     const onCan = () => cleanup();
-    function cleanup(){ audioEl.removeEventListener('error', onError); audioEl.removeEventListener('canplay', onCan); }
+    function cleanup(){
+      audioEl.removeEventListener('error', onError);
+      audioEl.removeEventListener('canplay', onCan);
+    }
     audioEl.addEventListener('error', onError, { once:true });
     audioEl.addEventListener('canplay', onCan, { once:true });
   };
@@ -94,8 +98,8 @@ const maqamBox        = document.getElementById('maqamBox');
 
 // ======= state =======
 let legend = {};
-let segments = [];
-let spanRefs = [];
+let segments = [];          // [{start,end,ayahIndex,wordIndex}]
+let spanRefs = [];          // [[span,...] per ayah]
 let activeIdx = { i:-1, j:-1 };
 let currentAyahIndex = 0;
 let stackedView = false;
@@ -104,9 +108,9 @@ let currentData = null;
 let practiceMode = 'word';
 let loopPractice = false;
 
-let baseOffset = 0;
+let baseOffset = 0;         // intro offset (e.g., basmalah)
 let resolvedSrc = "";
-let dockMode = 'TR';
+let dockMode = 'TR';        // 'TR' | 'BN'
 
 // ======= helpers =======
 const mmss = s => (!isFinite(s) ? '0:00' : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`);
@@ -114,8 +118,8 @@ const hexAlpha = (hex,a)=>{const c=hex.replace('#','');const n=parseInt(c,16);co
 function guessIntroOffset(url) {
   try {
     const h = new URL(url).hostname;
-    if (h.includes("quranicaudio.com")) return 5.3;
-    if (h.includes("islamic.network")||h.includes("qurancdn.com")||h.includes("quran.com")) return 1.8;
+    if (h.includes("quranicaudio.com")) return 5.3; // ta'awwudh + basmalah
+    if (h.includes("islamic.network") || h.includes("qurancdn.com") || h.includes("quran.com")) return 1.8;
   } catch {}
   return 1.8;
 }
@@ -125,6 +129,10 @@ function setMode(m){
   modeAyahBtn.classList.toggle('active', m==='ayah');
   modeContBtn.classList.toggle('active', m==='cont');
 }
+function updateSrcHint(){
+  if (!resolvedSrc) return;
+  try { srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`; } catch {}
+}
 
 // ======= init =======
 (async function init(){
@@ -133,10 +141,10 @@ function setMode(m){
 
   const manifest = await (await fetch(MANIFEST_JSON)).json();
   surahSelect.innerHTML = '';
-  manifest.surahs.forEach(s => {
+  (manifest.surahs||[]).forEach(s => {
     const opt = document.createElement('option');
     opt.value = s.id;
-    // NEW: English name + Bangla in parentheses
+    // English name + Bangla in parentheses
     opt.textContent = `${s.id} — ${s.name_en} (${s.name_bn})`;
     surahSelect.appendChild(opt);
   });
@@ -185,6 +193,7 @@ function bindTransport(){
   alignMinus.addEventListener('click', ()=>{ baseOffset=Math.max(0,baseOffset-0.5); updateSrcHint(); });
   alignPlus .addEventListener('click', ()=>{ baseOffset+=0.5;               updateSrcHint(); });
 
+  // dock / sheet
   tabTR.addEventListener('click', ()=>{ dockMode='TR'; tabTR.classList.add('active'); tabBN.classList.remove('active'); refreshDockPreview(); });
   tabBN.addEventListener('click', ()=>{ dockMode='BN'; tabBN.classList.add('active'); tabTR.classList.remove('active'); refreshDockPreview(); });
   dockExpand.addEventListener('click', ()=> openSheet(dockMode));
@@ -195,6 +204,7 @@ function bindTransport(){
   sheetTAF.addEventListener('click', ()=> setSheetTab('TAF'));
   dockPreview.addEventListener('click', playCurrentAyah);
 
+  // small: hide popup on scroll
   document.addEventListener('scroll', ()=> hideWordPop(), { passive:true });
 }
 
@@ -202,11 +212,13 @@ function handlePracticeTick(){
   if (!segments.length) return;
   const tEff = Math.max(0, player.currentTime - baseOffset);
 
+  // highlight current word
   for (let k=0;k<segments.length;k++){
     const s = segments[k];
     if (tEff>=s.start && tEff<s.end){ highlight(s.ayahIndex, s.wordIndex); currentAyahIndex=s.ayahIndex; break; }
   }
 
+  // loop/stop behaviour (no endless run)
   if (practiceMode === 'word' && activeIdx.i>=0 && activeIdx.j>=0){
     const seg = segments.find(x => x.ayahIndex===activeIdx.i && x.wordIndex===activeIdx.j);
     if (seg && tEff >= seg.end - 0.01){
@@ -220,12 +232,9 @@ function handlePracticeTick(){
       if (loopPractice) player.currentTime = baseOffset + first.start + 0.01; else player.pause();
     }
   }
+  // continuous mode lets audio run; no auto-stop.
 }
 
-function updateSrcHint(){
-  if (!resolvedSrc) return;
-  try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`; }catch{}
-}
 function playCurrentAyah(){
   const first = segments.find(x => x.ayahIndex===currentAyahIndex);
   if (!first) return;
@@ -245,16 +254,21 @@ async function loadSurah(id){
   heroTitle.textContent  = `${data.name_ar} — ${data.name_en} (${data.name_bn})`;
   heroMeta.textContent   = `Sūrah ${String(data.surah).padStart(3,'0')} • ${data.verses.length} āyāt`;
 
+  // audio
   const candidates = [ data.audio_full, ...buildAudioCandidates(id) ].filter(Boolean);
   setAudioWithFallback(player, candidates, url => { resolvedSrc = url; baseOffset = guessIntroOffset(url); updateSrcHint(); downloadMp3.href = url; });
   setAudioWithFallback(fullSurah, candidates, url => { if (!resolvedSrc){ resolvedSrc=url; baseOffset=guessIntroOffset(url); updateSrcHint(); } });
 
+  // overview (optional tafsir summary)
   renderOverview(String(data.surah).padStart(3,'0'));
+
+  // maqam notes (optional)
   renderMaqam(String(data.surah).padStart(3,'0'));
 
   reRenderAyat();
   if (data.verses[0]) { currentAyahIndex = 0; setExplain(data.verses[0]); }
 
+  // timings
   try{
     const times = await (await fetch(SURAH_TIMES(id))).json();
     segments = times.map(t=>({start:t.start,end:t.end,ayahIndex:t.ayahIndex,wordIndex:t.wordIndex}));
@@ -311,6 +325,113 @@ function reRenderAyat(){
 function highlight(i,j){
   if(activeIdx.i===i && activeIdx.j===j) return;
   if(activeIdx.i>=0 && activeIdx.j>=0){ spanRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('active'); }
-  const span=spanRefs[i]?.[j]; if(span){ span.classList.add('active'); activeIdx={i,j}; }
+  const span=spanRefs[i]?.[j];
+  if(span){ span.classList.add('active'); activeIdx={i,j}; }
 }
-function clearActive(){ if(activeIdx.i>=0&&activeIdx.j>=0){ spanRefs[activeIdx.i]?.[activeIdx.j
+function clearActive(){
+  if(activeIdx.i>=0 && activeIdx.j>=0){
+    spanRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('active');
+  }
+  activeIdx={i:-1,j:-1};
+}
+
+// ======= legend / overview / maqam =======
+function renderLegend(obj){
+  legendList.innerHTML='';
+  Object.entries(obj).forEach(([key,val])=>{
+    const li=document.createElement('li'); li.className='legend-item';
+    const sw=document.createElement('span'); sw.className='legend-swatch'; sw.style.background=val.color||'#2a3140';
+    const text=document.createElement('span'); text.innerHTML=`<b>${val.label}</b> — ${val.desc}`;
+    li.appendChild(sw); li.appendChild(text); legendList.appendChild(li);
+  });
+}
+function toggleLegend(){
+  const hidden=legendPane.hasAttribute('hidden');
+  if(hidden) legendPane.removeAttribute('hidden'); else legendPane.setAttribute('hidden','');
+  document.getElementById('legendToggle').setAttribute('aria-expanded', String(hidden));
+}
+async function renderOverview(id){
+  try{
+    const res = await fetch(TAFSIR_JSON(id));
+    if (!res.ok) { overviewBody.textContent = '—'; return; }
+    const t = await res.json();
+    const head = `<div class="mono" style="opacity:.75">${t.source?.name||''} • ${t.source?.lang||''}</div>`;
+    const sum = (t.summary||'').split(/\n+/).map(p=>`<p>${p}</p>`).join('');
+    const secs = (t.sections||[]).map(s=>`<h4>${s.title}</h4><p>${s.body}</p>`).join('');
+    overviewBody.innerHTML = head + sum + secs;
+    if (window.innerWidth >= 1024) surahOverview.open = true; else surahOverview.open = false;
+  }catch{ overviewBody.textContent = '—'; }
+}
+async function renderMaqam(id){
+  try{
+    const r = await fetch(MAQAM_JSON(id));
+    if (!r.ok){ maqamBox.textContent='—'; return; }
+    const m = await r.json();
+    maqamBox.innerHTML = `<b>${m.melody||'—'}</b> — ${m.desc||''}`;
+  }catch{ maqamBox.textContent='—'; }
+}
+
+// ======= dock & sheet =======
+function setExplain(ayah){
+  const tr = (ayah.words||[]).map(w=>w.tr||'').join(' ');
+  const bn = ayah.bangla || '';
+
+  dock.hidden = false;
+  dockPreview.textContent = (dockMode==='TR' ? tr : bn) || '—';
+
+  dockExpand.onclick = ()=> openSheet(dockMode);
+  sheetTitle.textContent = `Āyah ${ayah.ayah_id}`;
+  // store for the sheet
+  sheetTR.dataset.text = tr;
+  sheetBN.dataset.text = bn;
+}
+function refreshDockPreview(){
+  const ayah = currentData?.verses?.[currentAyahIndex];
+  if (!ayah) return;
+  dockPreview.textContent = (dockMode==='TR' ? (sheetTR.dataset.text||'') : (sheetBN.dataset.text||'')) || '—';
+}
+function openSheet(which='TR'){
+  sheet.hidden = false; sheetBackdrop.hidden = false;
+  sheet.setAttribute('data-open','true');
+  setSheetTab(which);
+}
+function closeSheet(){
+  sheet.removeAttribute('data-open'); sheet.hidden = true; sheetBackdrop.hidden = true;
+}
+function setSheetTab(which){
+  [sheetTR, sheetBN, sheetTAF].forEach(b=>b.classList.remove('active'));
+  if (which==='TR'){ sheetTR.classList.add('active'); sheetBody.textContent = sheetTR.dataset.text || '—'; }
+  else if (which==='BN'){ sheetBN.classList.add('active'); sheetBody.textContent = sheetBN.dataset.text || '—'; }
+  else { // TAF
+    sheetTAF.classList.add('active');
+    const id = String(currentData?.surah||'').padStart(3,'0');
+    renderTafsirForSurah(id).then(html => { sheetBody.innerHTML = html || '<em>No tafsīr available.</em>'; });
+  }
+}
+async function renderTafsirForSurah(id){
+  try{
+    const r = await fetch(TAFSIR_JSON(id));
+    if(!r.ok) return '';
+    const t = await r.json();
+    const head = `<div class="mono" style="opacity:.75">${t.source?.name||''} • ${t.source?.lang||''}</div>`;
+    const sum  = (t.summary||'').split(/\n+/).map(p=>`<p>${p}</p>`).join('');
+    const secs = (t.sections||[]).map(s=>`<h4>${s.title}</h4><p>${s.body}</p>`).join('');
+    return head + sum + secs;
+  }catch{return '';}
+}
+
+// ======= inline word popup =======
+function showWordPop(anchorEl, tr, bn){
+  const pop = wordPop;
+  pop.querySelector('.tr').textContent = tr||'';
+  pop.querySelector('.bn').textContent = bn||'';
+  pop.hidden = false;
+  const r = anchorEl.getBoundingClientRect();
+  const y = window.scrollY + r.top - pop.offsetHeight - 8;
+  const x = window.scrollX + r.left + (r.width/2) - (pop.offsetWidth/2);
+  pop.style.top = `${Math.max(8,y)}px`;
+  pop.style.left = `${Math.max(8,x)}px`;
+  const closer = (e)=>{ if(!pop.contains(e.target)){ hideWordPop(); document.removeEventListener('click', closer, true);} };
+  setTimeout(()=>document.addEventListener('click', closer, true),0);
+}
+function hideWordPop(){ wordPop.hidden = true; }
