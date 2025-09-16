@@ -1,31 +1,17 @@
 :root {
   --bg:#0f1115; --card:#171a21; --ink:#e9eef6; --muted:#aeb6c3; --ring:#8ab4f8;
-
-  /* tajwīd colors (match your legend.json as closely as possible) */
-  --tw-qalaqah:#ef4444;
-  --tw-ham_wasl:#22c55e;
-  --tw-ikhafa:#f59e0b;
-  --tw-ikhafa_shafawi:#f59e0b;
-  --tw-idgham_wo_ghunnah:#06b6d4;
-  --tw-ghunnah:#a855f7;
-  --tw-madda_normal:#60a5fa;
-  --tw-madda_obligatory:#2563eb;
-  --tw-laam_shamsiyah:#f97316;
-  --tw-iqlab:#10b981;
+  /* tajwīd colors */
+  --tw-qalaqah:#ef4444; --tw-ham_wasl:#22c55e; --tw-ikhafa:#f59e0b;
+  --tw-ikhafa_shafawi:#f59e0b; --tw-idgham_wo_ghunnah:#06b6d4; --tw-ghunnah:#a855f7;
+  --tw-madda_normal:#60a5fa; --tw-madda_obligatory:#2563eb; --tw-laam_shamsiyah:#f97316; --tw-iqlab:#10b981;
 }
-
 *{box-sizing:border-box}
 html,body{height:100%}
-body{
-  margin:0;background:var(--bg);color:var(--ink);
-  font-family:ui-sans-serif,system-ui,-apple-system,"Noto Naskh Arabic","Scheherazade New",Segoe UI,Arial,sans-serif
-}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Noto Naskh Arabic","Scheherazade New",Segoe UI,Arial,sans-serif}
 
 /* buttons + inputs */
-select,button,.btn{
-  background:var(--card);color:var(--ink);border:1px solid #2a3140;
-  padding:.45rem .6rem;border-radius:.45rem
-}
+select,button,.btn{background:var(--card);color:var(--ink);border:1px solid #2a3140;padding:.45rem .6rem;border-radius:.45rem}
 button:hover,select:focus,.btn:hover{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px #8ab4f822}
 .btn{text-decoration:none}
 .btn.primary{background:#1f6feb;border-color:#2b73f0}
@@ -36,7 +22,7 @@ button:hover,select:focus,.btn:hover{outline:none;border-color:var(--ring);box-s
 .brand{font-weight:700;letter-spacing:.2px}
 .controls{display:flex;align-items:center;gap:.5rem}
 
-/* hero */
+/* hero & cards */
 .hero,.player,.panel,aside#legend{background:var(--card);padding:1rem;border-radius:.6rem;margin:1rem}
 .hero-head{display:flex;justify-content:space-between;align-items:end;gap:1rem}
 .hero-title{margin:0;font-size:1.3rem}
@@ -47,10 +33,6 @@ button:hover,select:focus,.btn:hover{outline:none;border-color:var(--ring);box-s
 .time{margin-top:.3rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .hint{opacity:.7;margin-left:.6rem}
 
-/* overview */
-.overview{margin-top:.8rem}
-.overview summary{cursor:pointer}
-
 /* practice */
 .transport{display:flex;gap:.5rem;flex-wrap:wrap}
 .mode-box{display:flex;gap:.35rem;align-items:center;margin-left:.8rem}
@@ -60,26 +42,31 @@ button:hover,select:focus,.btn:hover{outline:none;border-color:var(--ring);box-s
 .surah-title{margin:0 0 .6rem 0;font-weight:700;letter-spacing:.5px}
 .ayah-list{list-style:decimal;padding:0 1.2rem;margin:0}
 .ayah-list li{margin:.6rem 0;line-height:2.6rem;font-size:2rem;word-spacing:.35rem}
-.word{padding:.15rem .35rem;border-radius:.4rem;cursor:pointer;transition:background .12s ease,outline-color .12s ease;outline:1px solid transparent}
-.word:hover{outline:1px dashed #ffffff3a}
-.word.active{outline:2px solid var(--ring);background:#8ab4f81a}
+.ayah{transition:box-shadow .15s ease, outline-color .15s ease}
+.ayah.ayah-active{outline:2px solid var(--ring); box-shadow:0 0 0 3px #8ab4f822; border-radius:.4rem; padding:.1rem .2rem}
 
-/* stacked AR+TR */
+/* stacked AR+TR (kept for future, not used when tajwīd HTML exists) */
 .wstack{display:inline-flex;flex-direction:column;align-items:center;margin:0 .25rem .55rem .25rem}
 .wstack .ar{font-size:2rem;line-height:2.6rem}
 .wstack .tr{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;color:#aeb6c3;margin-top:.2rem;direction:ltr}
 
 /* inline popup */
 .word-pop{position:absolute;background:#11151b;border:1px solid #2a3140;border-radius:.5rem;padding:.45rem .6rem;max-width:70ch;z-index:20;box-shadow:0 6px 22px #0007}
-.word-pop .tr{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e2e8f0}
+.word-pop .tr{font-family:ui-monospace,Menlo,Consolas,monospace;color:#e2e8f0}
 .word-pop .bn{color:#aeb6c3;margin-top:.25rem}
 
-/* legend */
+/* legend (side) */
 aside#legend{height:fit-content}
 #legendList{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
 .legend-item{display:flex;align-items:center;gap:.6rem}
 .legend-swatch{width:1.25rem;height:1.25rem;border-radius:.25rem;border:1px solid #2a3140}
 .small{font-size:.95rem;color:#cbd5e1}
+
+/* inline legend (bottom of sūrah) */
+.inline-legend{margin-top:1rem;border-top:1px solid #2a3140;padding-top:.7rem}
+.inline-legend h4{margin:.25rem 0 .5rem 0;font-size:1rem}
+.inline-legend ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.45rem .8rem}
+.inline-legend li{display:flex;align-items:center;gap:.5rem}
 
 /* dock */
 .dock{position:fixed;left:0;right:0;bottom:0;background:#11151b;border-top:1px solid #2a3140;padding:.5rem .75rem;z-index:40}
@@ -105,7 +92,7 @@ aside#legend{height:fit-content}
 /* accessibility */
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap}
 
-/* tajwīd HTML coloring */
+/* ===== Tajwīd tag coloring (for arabic_tajweed_html) ===== */
 tajweed{padding:.03em .18em;border-radius:.3em}
 tajweed.qalaqah{background:color-mix(in srgb, var(--tw-qalaqah) 22%, transparent)}
 tajweed.ham_wasl{background:color-mix(in srgb, var(--tw-ham_wasl) 22%, transparent)}
@@ -117,6 +104,4 @@ tajweed.madda_normal{background:color-mix(in srgb, var(--tw-madda_normal) 22%, t
 tajweed.madda_obligatory{background:color-mix(in srgb, var(--tw-madda_obligatory) 22%, transparent)}
 tajweed.laam_shamsiyah{background:color-mix(in srgb, var(--tw-laam_shamsiyah) 22%, transparent)}
 tajweed.iqlab{background:color-mix(in srgb, var(--tw-iqlab) 22%, transparent)}
-
-/* verse-end number span in tajwīd HTML */
 span.end{font-family:ui-monospace,monospace;color:#aeb6c3;font-size:.8rem;margin-inline:.3rem}
