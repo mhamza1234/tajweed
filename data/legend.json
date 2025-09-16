@@ -1,14 +1,15 @@
 {
-  "madd_tabii": { "label": "Madd Ṭabī‘ī (2)", "color": "#6fb1ff", "desc": "Natural elongation: 2 counts" },
-  "madd_lazim": { "label": "Madd Lāzim (6)", "color": "#2e9fff", "desc": "Obligatory elongation: 6 counts" },
-  "ghunnah":    { "label": "Ghunnah", "color": "#66d39a", "desc": "Nasalization (2 counts) with ن/م" },
-  "ikhfa":      { "label": "Ikhfā’", "color": "#bda5ff", "desc": "Conceal nūn/tanwīn into next letter" },
-  "iqlab":      { "label": "Iqlāb", "color": "#f7b267", "desc": "Nūn→mīm before ب with ghunnah" },
-  "idgham_g":   { "label": "Idghām (with ghunnah)", "color": "#6fe1d6", "desc": "Assimilate with nasalization" },
-  "idgham_n":   { "label": "Idghām (no ghunnah)", "color": "#6fe1ff", "desc": "Assimilate into ل or ر (no nasalization)" },
-  "qalqalah":   { "label": "Qalqalah", "color": "#f96a6a", "desc": "Echo on ق ط ب ج د with sukūn" },
-  "tafkhim":    { "label": "Tafkhīm", "color": "#ffcc66", "desc": "Heavy letter (خ ص ض غ ط ق ظ; ر in cases)" },
-  "tarqiq":     { "label": "Tarqīq", "color": "#e2e8f0", "desc": "Light letter pronunciation" },
-  "shaddah":    { "label": "Shaddah", "color": "#9ad6f9", "desc": "Double the consonant (hold)" },
-  "sukun":      { "label": "Sukūn", "color": "#a0aec0", "desc": "No vowel; stop on the consonant" }
+  "madd_tabii":      { "label": "Madd Ṭabīʿī (2)",    "color": "#6fb1ff", "desc": "Natural elongation – 2 counts" },
+  "madd_lazim":      { "label": "Madd Lāzim (6)",     "color": "#2e9fff", "desc": "Obligatory elongation – 6 counts" },
+  "madda_normal":    { "label": "Madd (Normal 4–5)",  "color": "#9ad6f9", "desc": "Extended elongation 4–5 counts" },
+  "ghunnah":         { "label": "Ghunnah",            "color": "#66d39a", "desc": "Nasalization with ن or م" },
+  "ikhfa":           { "label": "Ikhfā’",            "color": "#bda5ff", "desc": "Conceal nūn/tanwīn into next letter" },
+  "iqlab":           { "label": "Iqlāb",             "color": "#f7b267", "desc": "Change nūn → mīm before ب with ghunnah" },
+  "idgham_ghunnah":  { "label": "Idghām (with ghunnah)", "color": "#6fe1d6", "desc": "Assimilate with nasalization" },
+  "idgham_no_ghunnah":{ "label": "Idghām (no ghunnah)",  "color": "#6fe1ff", "desc": "Assimilate into ل or ر without nasalization" },
+  "qalaqah":         { "label": "Qalqalah",          "color": "#f96a6a", "desc": "Echo on ق ط ب ج د when quiescent" },
+  "tafkhim":         { "label": "Tafkhīm",           "color": "#ffcc66", "desc": "Heavy letter (خ ص ض غ ط ق ظ)" },
+  "tarqiq":          { "label": "Tarqīq",            "color": "#e2e8f0", "desc": "Light letter pronunciation" },
+  "shaddah":         { "label": "Shaddah",          "color": "#9ad6f9", "desc": "Double the consonant (hold)" },
+  "sukun":           { "label": "Sukūn",            "color": "#a0aec0", "desc": "No vowel; stop on consonant" }
 }
