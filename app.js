@@ -1,4 +1,3 @@
-<script>
 // ======= maps & paths =======
 const SHORT_NAMES = {
   "067":"mulk","068":"qalam","069":"haqqah","070":"maarij","071":"nuh",
@@ -502,4 +501,4 @@ function hideWordPop(){ wordPop.hidden = true; }
 
 // (dup-safe) util for hint text
 function updateSrcHint(){ if (!resolvedSrc) return; try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`; }catch{} }
-</script>
+
