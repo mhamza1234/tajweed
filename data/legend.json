@@ -1,15 +1,28 @@
 {
-  "madd_tabii":      { "label": "Madd Ṭabīʿī (2)",    "color": "#6fb1ff", "desc": "Natural elongation – 2 counts" },
-  "madd_lazim":      { "label": "Madd Lāzim (6)",     "color": "#2e9fff", "desc": "Obligatory elongation – 6 counts" },
-  "madda_normal":    { "label": "Madd (Normal 4–5)",  "color": "#9ad6f9", "desc": "Extended elongation 4–5 counts" },
-  "ghunnah":         { "label": "Ghunnah",            "color": "#66d39a", "desc": "Nasalization with ن or م" },
-  "ikhfa":           { "label": "Ikhfā’",            "color": "#bda5ff", "desc": "Conceal nūn/tanwīn into next letter" },
-  "iqlab":           { "label": "Iqlāb",             "color": "#f7b267", "desc": "Change nūn → mīm before ب with ghunnah" },
-  "idgham_ghunnah":  { "label": "Idghām (with ghunnah)", "color": "#6fe1d6", "desc": "Assimilate with nasalization" },
-  "idgham_no_ghunnah":{ "label": "Idghām (no ghunnah)",  "color": "#6fe1ff", "desc": "Assimilate into ل or ر without nasalization" },
-  "qalaqah":         { "label": "Qalqalah",          "color": "#f96a6a", "desc": "Echo on ق ط ب ج د when quiescent" },
-  "tafkhim":         { "label": "Tafkhīm",           "color": "#ffcc66", "desc": "Heavy letter (خ ص ض غ ط ق ظ)" },
-  "tarqiq":          { "label": "Tarqīq",            "color": "#e2e8f0", "desc": "Light letter pronunciation" },
-  "shaddah":         { "label": "Shaddah",          "color": "#9ad6f9", "desc": "Double the consonant (hold)" },
-  "sukun":           { "label": "Sukūn",            "color": "#a0aec0", "desc": "No vowel; stop on consonant" }
+  "madd_tabii":      { "label": "Madd Ṭabīʿī (2)",          "color": "#6fb1ff", "desc": "Natural elongation — 2 counts" },
+  "madd_lazim":      { "label": "Madd Lāzim (6)",           "color": "#2e9fff", "desc": "Obligatory elongation — 6 counts" },
+  "madda_normal":    { "label": "Madd (4–5)",               "color": "#9ad6f9", "desc": "Extended elongation — 4 to 5 counts" },
+
+  "madda_obligatory":{ "label": "Madd Wājib/Lāzim",         "color": "#4cb7ff", "desc": "Compulsory elongation (context-dependent)" },
+
+  "ghunnah":         { "label": "Ghunnah",                  "color": "#66d39a", "desc": "Nasalization (ن، م with shaddah/contexts)" },
+  "ikhfa":           { "label": "Ikhfā’ (general)",         "color": "#bda5ff", "desc": "Conceal nūn/tanwīn into next letter" },
+  "ikhafa_shafawi":  { "label": "Ikhfā’ Shafawī",           "color": "#c7b3ff", "desc": "Conceal mīm sākinah before ب" },
+  "iqlab":           { "label": "Iqlāb",                    "color": "#f7b267", "desc": " ن → م before ب with ghunnah" },
+
+  "idgham_ghunnah":  { "label": "Idghām (with ghunnah)",    "color": "#6fe1d6", "desc": "Assimilation with nasalization" },
+  "idgham_no_ghunnah":{ "label": "Idghām (no ghunnah)",     "color": "#6fe1ff", "desc": "Into ل or ر without nasalization" },
+  "idgham_wo_ghunnah":{ "label": "Idghām (no ghunnah)",     "color": "#6fe1ff", "desc": "Alias for no-ghunnah (ل/ر)" },
+
+  "qalaqah":         { "label": "Qalqalah",                  "color": "#f96a6a", "desc": "Echo on ق ط ب ج د when sakin/stop" },
+  "tafkhim":         { "label": "Tafkhīm",                   "color": "#ffcc66", "desc": "Heavy letter (خ ص ض غ ط ق ظ, ر in cases)" },
+  "tarqiq":          { "label": "Tarqīq",                    "color": "#e2e8f0", "desc": "Light pronunciation" },
+  "shaddah":         { "label": "Shaddah",                   "color": "#9ad6f9", "desc": "Double/hold the consonant" },
+  "sukun":           { "label": "Sukūn",                     "color": "#a0aec0", "desc": "No vowel; stop on consonant" },
+
+  "ham_wasl":        { "label": "Hamzat al-Waṣl",            "color": "#ffd166", "desc": "Connecting hamzah; dropped in sandhi" },
+  "laam_shamsiyah":  { "label": "Lām Shamsiyyah",            "color": "#ffe599", "desc": "Assimilated lām before solar letters" },
+
+  "waqf":            { "label": "Waqf sign",                 "color": "#cccccc", "desc": "Stopping sign (general)" },
+  "sajdah":          { "label": "Sajdat al-Tilāwah",         "color": "#adc178", "desc": "Verse of prostration" }
 }
