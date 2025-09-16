@@ -45,8 +45,6 @@
         <label><input type="checkbox" id="fullLoop"> Loop</label>
         <a id="downloadMp3" class="btn" download>Download MP3</a>
         <button id="startPractice" class="btn primary">Start practice ↓</button>
-
-        <!-- Intro offset controls (affect practice player + highlighting) -->
         <span id="srcHint" class="mono hint"></span>
         <button id="alignMinus" class="btn" title="Shift −0.5s">−0.5s</button>
         <button id="alignPlus"  class="btn" title="Shift +0.5s">+0.5s</button>
@@ -82,6 +80,8 @@
     <section class="panel">
       <h2 id="surahTitle" class="surah-title" aria-live="polite"></h2>
       <ol id="ayahList" class="ayah-list" aria-live="polite"></ol>
+      <!-- auto-inserted legend block appears after this list -->
+      <div id="inlineLegendHolder"></div>
     </section>
 
     <aside id="legend" hidden>
