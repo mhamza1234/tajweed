@@ -57,6 +57,7 @@ const alignPlus   = document.getElementById('alignPlus');
 const player      = document.getElementById('player');
 const surahSelect = document.getElementById('surahSelect');
 const ayahList    = document.getElementById('ayahList');
+const inlineLegendHolder = document.getElementById('inlineLegendHolder');
 const surahTitle  = document.getElementById('surahTitle');
 const legendPane  = document.getElementById('legend');
 const legendBtn   = document.getElementById('legendToggle');
@@ -95,8 +96,9 @@ const maqamBox        = document.getElementById('maqamBox');
 // ======= state =======
 let legend = {};
 let segments = [];          // timing segments for words
-let spanRefs = [];          // [[span,...] per ayah] for karaoke mode
+let ayahEls = [];           // one element per āyah (for active highlight)
 let activeIdx = { i:-1, j:-1 };
+let lastAyahIndex = -1;
 let currentAyahIndex = 0;
 let stackedView = false;
 let currentData = null;
@@ -110,14 +112,12 @@ let dockMode = 'TR';
 
 // ======= helpers =======
 const mmss = s => (!isFinite(s) ? '0:00' : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`);
-const hexAlpha = (hex,a)=>{const c=hex.replace('#','');const n=parseInt(c,16);const r=(n>>16)&255,g=(n>>8)&255,b=n&255;return `rgba(${r},${g},${b},${a})`;};
 
-// more accurate per-source intro guess (Afasy)
+// reciter intro guess (Afasy); Sūrah 9 has no basmalah
 function reciterIntroOffset(url, surahId){
   let host = '';
   try { host = new URL(url).hostname; } catch {}
-  const isTawbah = (surahId === '009' || surahId === 9);
-  // conservative defaults for Afasy
+  const isTawbah = (String(surahId).padStart(3,'0') === '009');
   if (host.includes('quranicaudio.com')) return isTawbah ? 2.6 : 5.3;
   if (host.includes('islamic.network') || host.includes('qurancdn.com') || host.includes('quran.com')) return isTawbah ? 0.9 : 1.8;
   return isTawbah ? 1.0 : 2.0;
@@ -159,7 +159,6 @@ function setMode(m){
 // ======= transport & interactions =======
 function bindTransport(){
   playBtn.addEventListener('click', () => {
-    // If user presses Play while at 0, skip intro automatically
     if (Math.abs(player.currentTime) < 0.25) player.currentTime = baseOffset + 0.01;
     player.play();
   });
@@ -186,16 +185,14 @@ function bindTransport(){
   });
   startPracticeBtn.addEventListener('click', () => {
     fullSurah.pause();
-    player.currentTime = baseOffset + 0.01; // drop intro before starting practice
+    player.currentTime = baseOffset + 0.01;
     player.play().catch(()=>{});
     document.querySelector('.panel')?.scrollIntoView({ behavior:'smooth', block:'start' });
   });
 
-  // Manual nudge for intro offset (applies immediately)
   alignMinus.addEventListener('click', ()=>{ baseOffset=Math.max(0,baseOffset-0.5); updateSrcHint(); });
   alignPlus .addEventListener('click', ()=>{ baseOffset+=0.5;               updateSrcHint(); });
 
-  // dock / sheet
   tabTR.addEventListener('click', ()=>{ dockMode='TR'; tabTR.classList.add('active'); tabBN.classList.remove('active'); refreshDockPreview(); });
   tabBN.addEventListener('click', ()=>{ dockMode='BN'; tabBN.classList.add('active'); tabTR.classList.remove('active'); refreshDockPreview(); });
   dockExpand.addEventListener('click', ()=> openSheet(dockMode));
@@ -204,34 +201,31 @@ function bindTransport(){
   sheetTR.addEventListener('click', ()=> setSheetTab('TR'));
   sheetBN.addEventListener('click', ()=> setSheetTab('BN'));
   sheetTAF.addEventListener('click', ()=> setSheetTab('TAF'));
-  dockPreview.addEventListener('click', playCurrentAyah);
-
-  // small: hide popup on scroll
   document.addEventListener('scroll', ()=> hideWordPop(), { passive:true });
 }
 
 function handlePracticeTick(){
   if (!segments.length) return;
-
-  // effective time after skipping the intro
   const tEff = Math.max(0, player.currentTime - baseOffset);
 
-  // highlight current word
+  // find current segment
   for (let k=0;k<segments.length;k++){
     const s = segments[k];
-    if (tEff>=s.start && tEff<s.end){ highlight(s.ayahIndex, s.wordIndex); currentAyahIndex=s.ayahIndex; break; }
-  }
-
-  // loop logic
-  if (practiceMode === 'word' && activeIdx.i>=0 && activeIdx.j>=0){
-    const seg = segments.find(x => x.ayahIndex===activeIdx.i && x.wordIndex===activeIdx.j);
-    if (seg && tEff >= seg.end - 0.01){
-      if (loopPractice) player.currentTime = baseOffset + seg.start + 0.01; else player.pause();
+    if (tEff>=s.start && tEff<s.end){
+      if (lastAyahIndex !== s.ayahIndex){
+        lastAyahIndex = s.ayahIndex;
+        currentAyahIndex = s.ayahIndex;
+        setExplain(currentData.verses[s.ayahIndex]);  // UPDATE DOCK WHEN AYAH CHANGES
+        setActiveAyah(s.ayahIndex);
+      }
+      break;
     }
   }
-  if (practiceMode === 'ayah' && activeIdx.i>=0){
-    const first = segments.find(x => x.ayahIndex===activeIdx.i);
-    const last  = [...segments].reverse().find(x => x.ayahIndex===activeIdx.i);
+
+  // looping (ayah focused)
+  if (practiceMode === 'ayah' && lastAyahIndex>=0){
+    const first = segments.find(x => x.ayahIndex===lastAyahIndex);
+    const last  = [...segments].reverse().find(x => x.ayahIndex===lastAyahIndex);
     if (first && last && tEff >= last.end - 0.01){
       if (loopPractice) player.currentTime = baseOffset + first.start + 0.01; else player.pause();
     }
@@ -242,51 +236,31 @@ function updateSrcHint(){
   if (!resolvedSrc) return;
   try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • intro offset: ${baseOffset.toFixed(1)}s`; }catch{}
 }
-function playCurrentAyah(){
-  const first = segments.find(x => x.ayahIndex===currentAyahIndex);
-  if (!first) return;
-  player.currentTime = baseOffset + first.start + 0.01;
-  setMode('ayah'); player.play().catch(()=>{});
-}
 
 // ======= load/render =======
 async function loadSurah(id){
-  clearActive(); ayahList.innerHTML=''; spanRefs=[]; segments=[]; currentAyahIndex=0; setMode('word');
+  clearActive();
+  ayahList.innerHTML=''; ayahEls=[]; segments=[]; currentAyahIndex=0; lastAyahIndex=-1;
+  inlineLegendHolder.innerHTML = '';
   fullSurah.pause(); player.pause();
 
   const data = await (await fetch(SURAH_JSON(id))).json();
   currentData = data;
 
-  // titles
   surahTitle.textContent = `${data.name_ar} — ${data.name_en} (${data.name_bn})`;
   heroTitle.textContent  = `${data.name_ar} — ${data.name_en} (${data.name_bn})`;
   heroMeta.textContent   = `Sūrah ${String(data.surah).padStart(3,'0')} • ${data.verses.length} āyāt`;
 
-  // audio (practice + full)
   const candidates = [ data.audio_full, ...buildAudioCandidates(id) ].filter(Boolean);
+  setAudioWithFallback(player, candidates, url => { resolvedSrc = url; baseOffset = reciterIntroOffset(url, data.surah); updateSrcHint(); downloadMp3.href = url; });
+  setAudioWithFallback(fullSurah, candidates, url => { if (!resolvedSrc){ resolvedSrc=url; baseOffset=reciterIntroOffset(url, data.surah); updateSrcHint(); } });
 
-  setAudioWithFallback(player, candidates, url => {
-    resolvedSrc = url;
-    baseOffset = reciterIntroOffset(url, data.surah);
-    updateSrcHint();
-    downloadMp3.href = url;
-  });
-  setAudioWithFallback(fullSurah, candidates, url => {
-    if (!resolvedSrc){
-      resolvedSrc = url;
-      baseOffset   = reciterIntroOffset(url, data.surah);
-      updateSrcHint();
-    }
-  });
-
-  // overview / maqām (optional)
   renderOverview(String(data.surah).padStart(3,'0'));
   renderMaqam(String(data.surah).padStart(3,'0'));
 
   reRenderAyat();
   if (data.verses[0]) { currentAyahIndex = 0; setExplain(data.verses[0]); }
 
-  // timings (for karaoke/highlight)
   try{
     const times = await (await fetch(SURAH_TIMES(id))).json();
     segments = times.map(t=>({start:t.start,end:t.end,ayahIndex:t.ayahIndex,wordIndex:t.wordIndex}));
@@ -294,67 +268,50 @@ async function loadSurah(id){
 }
 
 function reRenderAyat(){
-  ayahList.innerHTML=''; spanRefs=[]; clearActive();
+  ayahList.innerHTML=''; ayahEls=[]; clearActive();
   const data = currentData; if (!data) return;
 
   data.verses.forEach((ayah,i)=>{
     const li=document.createElement('li'); li.setAttribute('dir','rtl');
     const container=document.createElement('div'); container.className='ayah';
+    container.dataset.ayahIndex = i;
 
-    // ==== IMPORTANT: avoid duplicates ====
-    // If pre-colored tajwīd HTML exists, use ONLY that.
+    // ONLY render tajwīd HTML line if available (no duplicates)
     if (ayah.arabic_tajweed_html) {
       container.innerHTML = ayah.arabic_tajweed_html;
-      li.appendChild(container); ayahList.appendChild(li); spanRefs.push([]);
-      return;
+    } else if (ayah.arabic) {
+      container.textContent = ayah.arabic;
+    } else {
+      container.textContent = '—';
     }
 
-    // Otherwise, fall back to words with rule coloring (so karaoke still works)
-    const safeWords = (ayah.words||[]).filter(w => w && (w.ar||'').trim().length);
-    if (!safeWords.length){
-      if (ayah.arabic) container.textContent = ayah.arabic; else container.textContent = '—';
-      li.appendChild(container); ayahList.appendChild(li); spanRefs.push([]); return;
-    }
-
-    const spans = safeWords.map((w,j)=>{
-      if (!stackedView){
-        const span=document.createElement('span'); span.className='word'; span.textContent=w.ar; span.setAttribute('lang','ar');
-        const first=(w.rules||[])[0]; if(first && legend[first]?.color){ span.style.background = hexAlpha(legend[first].color, .18); }
-        span.addEventListener('click', (ev)=>{
-          const seg=segments.find(s=>s.ayahIndex===i && s.wordIndex===j);
-          if(seg){ player.currentTime = Math.max(baseOffset + seg.start + 0.01, 0); player.play().catch(()=>{}); }
-          currentAyahIndex = i; setExplain(ayah); showWordPop(ev.currentTarget, w.tr||'', ayah.bangla||'');
-        });
-        return span;
-      } else {
-        const wrap=document.createElement('span'); wrap.className='wstack'; wrap.setAttribute('lang','ar');
-        const ar=document.createElement('span'); ar.className='ar word'; ar.textContent=w.ar;
-        const tr=document.createElement('span'); tr.className='tr'; tr.textContent=w.tr||'';
-        const first=(w.rules||[])[0]; if(first && legend[first]?.color){ ar.style.background = hexAlpha(legend[first].color, .18); }
-        wrap.appendChild(ar); wrap.appendChild(tr);
-        wrap.addEventListener('click', (ev)=>{
-          const seg=segments.find(s=>s.ayahIndex===i && s.wordIndex===j);
-          if(seg){ player.currentTime = Math.max(baseOffset + seg.start + 0.01, 0); player.play().catch(()=>{}); }
-          currentAyahIndex = i; setExplain(ayah); showWordPop(ev.currentTarget, w.tr||'', ayah.bangla||'');
-        });
-        return wrap;
-      }
+    // Click the line to play that āyah from its first word
+    container.addEventListener('click', ()=>{
+      const first = segments.find(x => x.ayahIndex===i);
+      if (first){ player.currentTime = baseOffset + first.start + 0.01; player.play().catch(()=>{}); }
+      currentAyahIndex = i;
+      setExplain(ayah);
+      setActiveAyah(i);
     });
 
-    spans.forEach((s,idx)=>{ container.appendChild(s); if(!stackedView && idx!==spans.length-1) container.appendChild(document.createTextNode(' ')); });
-    li.appendChild(container); ayahList.appendChild(li);
-    spanRefs.push(spans.map(el => stackedView ? (el.querySelector('.ar')||el) : el));
+    li.appendChild(container);
+    ayahList.appendChild(li);
+    ayahEls.push(container);
   });
+
+  // Inline legend appended at the end of the sūrah
+  renderInlineLegend();
 }
 
-function highlight(i,j){
-  if(activeIdx.i===i && activeIdx.j===j) return;
-  if(activeIdx.i>=0 && activeIdx.j>=0){ spanRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('active'); }
-  const span=spanRefs[i]?.[j]; if(span){ span.classList.add('active'); activeIdx={i,j}; }
+function setActiveAyah(i){
+  ayahEls.forEach(el => el.classList.remove('ayah-active'));
+  const el = ayahEls[i];
+  if (el) el.classList.add('ayah-active');
 }
+
 function clearActive(){
-  if(activeIdx.i>=0&&activeIdx.j>=0){ spanRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('active'); }
-  activeIdx={i:-1,j:-1};
+  ayahEls.forEach(el => el.classList.remove('ayah-active'));
+  activeIdx={i:-1,j:-1}; lastAyahIndex=-1;
 }
 
 // ======= legend / overview / maqam =======
@@ -365,6 +322,23 @@ function renderLegend(obj){
     const text=document.createElement('span'); text.innerHTML=`<b>${val.label}</b> — ${val.desc}`;
     li.appendChild(sw); li.appendChild(text); legendList.appendChild(li);
   });
+}
+function renderInlineLegend(){
+  // Build a compact legend using the same legend.json
+  const box = document.createElement('div');
+  box.className = 'inline-legend';
+  box.innerHTML = `<h4 dir="ltr">Tajwīd legend</h4>`;
+  const ul = document.createElement('ul');
+  Object.entries(legend).forEach(([k,v])=>{
+    const li = document.createElement('li');
+    const sw = document.createElement('span'); sw.className='legend-swatch';
+    sw.style.background = v.color||'#2a3140';
+    const txt = document.createElement('span'); txt.innerHTML = `<b>${v.label}</b> — ${v.desc}`;
+    li.appendChild(sw); li.appendChild(txt); ul.appendChild(li);
+  });
+  box.appendChild(ul);
+  inlineLegendHolder.innerHTML = '';
+  inlineLegendHolder.appendChild(box);
 }
 function toggleLegend(){
   const hidden=legendPane.hasAttribute('hidden');
@@ -396,10 +370,8 @@ async function renderMaqam(id){
 function setExplain(ayah){
   const tr = (ayah.words||[]).map(w=>w.tr||'').join(' ');
   const bn = ayah.bangla || '';
-
   dock.hidden = false;
   dockPreview.textContent = (dockMode==='TR' ? tr : bn) || '—';
-
   dockExpand.onclick = ()=> openSheet(dockMode);
   sheetTitle.textContent = `Āyah ${ayah.ayah_id}`;
   sheetTR.dataset.text = tr;
@@ -440,7 +412,7 @@ async function renderTafsirForSurah(id){
   }catch{return '';}
 }
 
-// ======= inline word popup =======
+// ======= inline word popup (still available if you switch to word view later) =======
 function showWordPop(anchorEl, tr, bn){
   const pop = wordPop;
   pop.querySelector('.tr').textContent = tr||'';
