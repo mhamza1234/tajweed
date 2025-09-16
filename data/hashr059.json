@@ -1,0 +1,2846 @@
+{
+  "surah": 59,
+  "name_ar": "الحشر",
+  "name_bn": "সমাবেশ",
+  "audio_full": null,
+  "verses": [
+    {
+      "ayah_id": "59:1",
+      "arabic_tajweed_html": "سَبَّحَ لِلَّهِ مَا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ وَمَا فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ‌ۖ وَهُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْعَزِيزُ <tajweed class=ham_wasl>ٱ</tajweed>لْحَك<tajweed class=madda_permissible>ِي</tajweed>مُ <span class=end>١</span>",
+      "bangla": "Everything in the heavens and earth glorifies God; He is the Almighty, the Wise.",
+      "words": [
+        {
+          "ar": "سَبَّحَ",
+          "tr": "sabbaḥa",
+          "wbw_audio": "wbw/059_001_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِلَّهِ",
+          "tr": "lillahi",
+          "wbw_audio": "wbw/059_001_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَا",
+          "tr": "mā",
+          "wbw_audio": "wbw/059_001_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_001_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلسَّمَـٰوَٰتِ",
+          "tr": "l-samāwāti",
+          "wbw_audio": "wbw/059_001_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَمَا",
+          "tr": "wamā",
+          "wbw_audio": "wbw/059_001_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_001_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْأَرْضِ ۖ",
+          "tr": "l-arḍi",
+          "wbw_audio": "wbw/059_001_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَهُوَ",
+          "tr": "wahuwa",
+          "wbw_audio": "wbw/059_001_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْعَزِيزُ",
+          "tr": "l-ʿazīzu",
+          "wbw_audio": "wbw/059_001_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْحَكِيمُ",
+          "tr": "l-ḥakīmu",
+          "wbw_audio": "wbw/059_001_012.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:2",
+      "arabic_tajweed_html": "هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذ<tajweed class=madda_obligatory>ِىٓ</tajweed> أَخْرَجَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ كَفَرُو<tajweed class=slnt>اْ</tajweed> مِنْ أَهْلِ <tajweed class=ham_wasl>ٱ</tajweed>لْكِتَ<tajweed class=madda_normal>ـٰ</tajweed>بِ مِ<tajweed class=ikhafa>ن د</tajweed>ِيَ<tajweed class=madda_normal>ـٰ</tajweed>رِهِمْ لِأَوَّلِ <tajweed class=ham_wasl>ٱ</tajweed>لْحَشْرِ‌ۚ مَا ظَنَ<tajweed class=ikhafa>نت</tajweed>ُمْ أ<tajweed class=idgham_ghunnah>َن ي</tajweed>َخْرُجُو<tajweed class=slnt>اْ‌ۖ</tajweed> وَظَ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_obligatory>ُوٓ</tajweed><tajweed class=slnt>اْ</tajweed> أَ<tajweed class=ghunnah>نّ</tajweed>َه<tajweed class=idgham_shafawi>ُم م</tajweed>َّانِعَتُهُمْ حُصُونُه<tajweed class=idgham_shafawi>ُم م</tajweed>ِّنَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ فَأَتَ<tajweed class=madda_normal>ـٰ</tajweed>هُمُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ مِنْ حَيْثُ لَمْ يَحْتَسِبُو<tajweed class=slnt>اْ‌ۖ</tajweed> وَقَذَفَ فِى قُلُوبِهِمُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رُّعْبَ‌ۚ يُخْرِبُونَ بُيُوتَه<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِأَيْدِيهِمْ وَأَيْدِى <tajweed class=ham_wasl>ٱ</tajweed>لْمُؤْمِنِينَ فَ<tajweed class=ham_wasl>ٱ</tajweed>عْتَبِرُو<tajweed class=slnt>اْ</tajweed> يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أُ<tajweed class=slnt>وْ</tajweed>لِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَ<tajweed class=qalaqah>بْ</tajweed>صَ<tajweed class=madda_permissible>ـٰ</tajweed>رِ <span class=end>٢</span>",
+      "bangla": "It was He who drove those of the People of the Book who broke faith out from their homes at the first gathering of forces––you [believers] never thought they would go, and they themselves thought their fortifications would protect them against God. God came up on them from where they least expected and put panic into their hearts: their homes were destroyed by their own hands, and the hands of the believers. Learn from this, all of you with insight!",
+      "words": [
+        {
+          "ar": "هُوَ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_002_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِىٓ",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/059_002_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَخْرَجَ",
+          "tr": "akhraja",
+          "wbw_audio": "wbw/059_002_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_002_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَفَرُوا۟",
+          "tr": "kafarū",
+          "wbw_audio": "wbw/059_002_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنْ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_002_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَهْلِ",
+          "tr": "ahli",
+          "wbw_audio": "wbw/059_002_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْكِتَـٰبِ",
+          "tr": "l-kitābi",
+          "wbw_audio": "wbw/059_002_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِن",
+          "tr": "min",
+          "wbw_audio": "wbw/059_002_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "دِيَـٰرِهِمْ",
+          "tr": "diyārihim",
+          "wbw_audio": "wbw/059_002_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِأَوَّلِ",
+          "tr": "li-awwali",
+          "wbw_audio": "wbw/059_002_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْحَشْرِ ۚ",
+          "tr": "l-ḥashri",
+          "wbw_audio": "wbw/059_002_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَا",
+          "tr": "mā",
+          "wbw_audio": "wbw/059_002_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ظَنَنتُمْ",
+          "tr": "ẓanantum",
+          "wbw_audio": "wbw/059_002_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَن",
+          "tr": "an",
+          "wbw_audio": "wbw/059_002_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَخْرُجُوا۟ ۖ",
+          "tr": "yakhrujū",
+          "wbw_audio": "wbw/059_002_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَظَنُّوٓا۟",
+          "tr": "waẓannū",
+          "wbw_audio": "wbw/059_002_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَنَّهُم",
+          "tr": "annahum",
+          "wbw_audio": "wbw/059_002_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَّانِعَتُهُمْ",
+          "tr": "māniʿatuhum",
+          "wbw_audio": "wbw/059_002_021.mp3",
+          "rules": []
+        },
+        {
+          "ar": "حُصُونُهُم",
+          "tr": "ḥuṣūnuhum",
+          "wbw_audio": "wbw/059_002_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّنَ",
+          "tr": "mina",
+          "wbw_audio": "wbw/059_002_023.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهِ",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/059_002_024.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَأَتَىٰهُمُ",
+          "tr": "fa-atāhumu",
+          "wbw_audio": "wbw/059_002_025.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_002_026.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنْ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_002_027.mp3",
+          "rules": []
+        },
+        {
+          "ar": "حَيْثُ",
+          "tr": "ḥaythu",
+          "wbw_audio": "wbw/059_002_028.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَمْ",
+          "tr": "lam",
+          "wbw_audio": "wbw/059_002_029.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَحْتَسِبُوا۟ ۖ",
+          "tr": "yaḥtasibū",
+          "wbw_audio": "wbw/059_002_030.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَقَذَفَ",
+          "tr": "waqadhafa",
+          "wbw_audio": "wbw/059_002_032.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_002_033.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قُلُوبِهِمُ",
+          "tr": "qulūbihimu",
+          "wbw_audio": "wbw/059_002_034.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلرُّعْبَ ۚ",
+          "tr": "l-ruʿ'ba",
+          "wbw_audio": "wbw/059_002_035.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُخْرِبُونَ",
+          "tr": "yukh'ribūna",
+          "wbw_audio": "wbw/059_002_037.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بُيُوتَهُم",
+          "tr": "buyūtahum",
+          "wbw_audio": "wbw/059_002_038.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِأَيْدِيهِمْ",
+          "tr": "bi-aydīhim",
+          "wbw_audio": "wbw/059_002_039.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَأَيْدِى",
+          "tr": "wa-aydī",
+          "wbw_audio": "wbw/059_002_040.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُؤْمِنِينَ",
+          "tr": "l-mu'minīna",
+          "wbw_audio": "wbw/059_002_041.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَٱعْتَبِرُوا۟",
+          "tr": "fa-iʿ'tabirū",
+          "wbw_audio": "wbw/059_002_042.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَـٰٓأُو۟لِى",
+          "tr": "yāulī",
+          "wbw_audio": "wbw/059_002_043.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْأَبْصَـٰرِ",
+          "tr": "l-abṣāri",
+          "wbw_audio": "wbw/059_002_044.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:3",
+      "arabic_tajweed_html": "وَلَوْل<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>ن ك</tajweed>َتَبَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ عَلَيْهِمُ <tajweed class=ham_wasl>ٱ</tajweed>لْجَل<tajweed class=madda_obligatory>َا</tajweed>ٓءَ لَعَذَّبَهُمْ فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دُّنْيَا‌ۖ وَلَهُمْ فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَخِرَةِ عَذَابُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>رِ <span class=end>٣</span>",
+      "bangla": "If God had not decreed exile for them, He would have tormented them [even more severely] in this world. In the Hereafter they will have the torment of the Fire",
+      "words": [
+        {
+          "ar": "وَلَوْلَآ",
+          "tr": "walawlā",
+          "wbw_audio": "wbw/059_003_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَن",
+          "tr": "an",
+          "wbw_audio": "wbw/059_003_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَتَبَ",
+          "tr": "kataba",
+          "wbw_audio": "wbw/059_003_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_003_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَيْهِمُ",
+          "tr": "ʿalayhimu",
+          "wbw_audio": "wbw/059_003_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْجَلَآءَ",
+          "tr": "l-jalāa",
+          "wbw_audio": "wbw/059_003_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَعَذَّبَهُمْ",
+          "tr": "laʿadhabahum",
+          "wbw_audio": "wbw/059_003_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_003_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلدُّنْيَا ۖ",
+          "tr": "l-dun'yā",
+          "wbw_audio": "wbw/059_003_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَهُمْ",
+          "tr": "walahum",
+          "wbw_audio": "wbw/059_003_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_003_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْـَٔاخِرَةِ",
+          "tr": "l-ākhirati",
+          "wbw_audio": "wbw/059_003_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَذَابُ",
+          "tr": "ʿadhābu",
+          "wbw_audio": "wbw/059_003_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلنَّارِ",
+          "tr": "l-nāri",
+          "wbw_audio": "wbw/059_003_015.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:4",
+      "arabic_tajweed_html": "ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ بِأَ<tajweed class=ghunnah>نّ</tajweed>َهُمْ ش<tajweed class=madda_necessary>َا</tajweed>ٓقُّو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ وَرَسُولَهُ<tajweed class=madda_normal>ۥ</tajweed>‌ۖ وَم<tajweed class=idgham_ghunnah>َن ي</tajweed>ُش<tajweed class=madda_necessary>َا</tajweed>ٓقِّ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ فَإِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ شَدِيدُ <tajweed class=ham_wasl>ٱ</tajweed>لْعِق<tajweed class=madda_permissible>َا</tajweed><tajweed class=qalaqah>ب</tajweed>ِ <span class=end>٤</span>",
+      "bangla": "because they set themselves against God and His Messenger: God is stern in punishment towards anyone who sets himself against Him.",
+      "words": [
+        {
+          "ar": "ذَٰلِكَ",
+          "tr": "dhālika",
+          "wbw_audio": "wbw/059_004_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِأَنَّهُمْ",
+          "tr": "bi-annahum",
+          "wbw_audio": "wbw/059_004_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شَآقُّوا۟",
+          "tr": "shāqqū",
+          "wbw_audio": "wbw/059_004_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_004_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَرَسُولَهُۥ ۖ",
+          "tr": "warasūlahu",
+          "wbw_audio": "wbw/059_004_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَمَن",
+          "tr": "waman",
+          "wbw_audio": "wbw/059_004_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُشَآقِّ",
+          "tr": "yushāqqi",
+          "wbw_audio": "wbw/059_004_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_004_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَإِنَّ",
+          "tr": "fa-inna",
+          "wbw_audio": "wbw/059_004_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_004_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شَدِيدُ",
+          "tr": "shadīdu",
+          "wbw_audio": "wbw/059_004_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْعِقَابِ",
+          "tr": "l-ʿiqābi",
+          "wbw_audio": "wbw/059_004_013.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:5",
+      "arabic_tajweed_html": "مَا قَطَعْت<tajweed class=idgham_shafawi>ُم م</tajweed>ّ<tajweed class=idgham_wo_ghunnah>ِن ل</tajweed>ِّينَةٍ أَوْ تَرَكْتُمُوهَا ق<tajweed class=madda_obligatory>َا</tajweed>ٓئِمَةً عَلَ<tajweed class=madda_obligatory>ىٰٓ</tajweed> أُصُولِهَا فَبِإِذْنِ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ وَلِيُخْزِىَ <tajweed class=ham_wasl>ٱ</tajweed>لْفَ<tajweed class=madda_normal>ـٰ</tajweed>سِق<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٥</span>",
+      "bangla": "Whatever you [believers] may have done to [their] palm trees–– cutting them down or leaving them standing on their roots––was done by God’s leave, so that He might disgrace those who defied Him.",
+      "words": [
+        {
+          "ar": "مَا",
+          "tr": "mā",
+          "wbw_audio": "wbw/059_005_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَطَعْتُم",
+          "tr": "qaṭaʿtum",
+          "wbw_audio": "wbw/059_005_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّن",
+          "tr": "min",
+          "wbw_audio": "wbw/059_005_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِّينَةٍ",
+          "tr": "līnatin",
+          "wbw_audio": "wbw/059_005_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَوْ",
+          "tr": "aw",
+          "wbw_audio": "wbw/059_005_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَرَكْتُمُوهَا",
+          "tr": "taraktumūhā",
+          "wbw_audio": "wbw/059_005_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَآئِمَةً",
+          "tr": "qāimatan",
+          "wbw_audio": "wbw/059_005_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰٓ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_005_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُصُولِهَا",
+          "tr": "uṣūlihā",
+          "wbw_audio": "wbw/059_005_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَبِإِذْنِ",
+          "tr": "fabi-idh'ni",
+          "wbw_audio": "wbw/059_005_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهِ",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/059_005_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلِيُخْزِىَ",
+          "tr": "waliyukh'ziya",
+          "wbw_audio": "wbw/059_005_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْفَـٰسِقِينَ",
+          "tr": "l-fāsiqīna",
+          "wbw_audio": "wbw/059_005_013.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:6",
+      "arabic_tajweed_html": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَف<tajweed class=madda_obligatory>َا</tajweed>ٓءَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ عَلَىٰ رَسُولِه<tajweed class=madda_normal>ِۦ</tajweed> مِنْهُمْ فَم<tajweed class=madda_obligatory>َآ</tajweed> أَوْجَفْتُمْ عَلَيْهِ مِنْ خَيْ<tajweed class=idgham_ghunnah>لٍ و</tajweed>َلَا رِكَا<tajweed class=idgham_ghunnah>بٍ و</tajweed>َلَ<tajweed class=madda_normal>ـٰ</tajweed>كِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ يُسَلِّطُ رُسُلَهُ<tajweed class=madda_normal>ۥ</tajweed> عَلَىٰ م<tajweed class=idgham_ghunnah>َن ي</tajweed>َش<tajweed class=madda_obligatory>َا</tajweed>ٓءُ‌ۚ وَ<tajweed class=ham_wasl>ٱ</tajweed>للَّهُ عَلَىٰ كُلِّ ش<tajweed class=ikhafa>َىْءٍ ق</tajweed>َد<tajweed class=madda_permissible>ِي</tajweed>رٌ <span class=end>٦</span>",
+      "bangla": "You [believers] did not have to spur on your horses or your camels for whatever gains God turned over to His Messenger from them. God gives authority to His messengers over whoever He will: God has power over all things.",
+      "words": [
+        {
+          "ar": "وَمَآ",
+          "tr": "wamā",
+          "wbw_audio": "wbw/059_006_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَفَآءَ",
+          "tr": "afāa",
+          "wbw_audio": "wbw/059_006_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_006_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_006_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَسُولِهِۦ",
+          "tr": "rasūlihi",
+          "wbw_audio": "wbw/059_006_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنْهُمْ",
+          "tr": "min'hum",
+          "wbw_audio": "wbw/059_006_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَمَآ",
+          "tr": "famā",
+          "wbw_audio": "wbw/059_006_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَوْجَفْتُمْ",
+          "tr": "awjaftum",
+          "wbw_audio": "wbw/059_006_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَيْهِ",
+          "tr": "ʿalayhi",
+          "wbw_audio": "wbw/059_006_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنْ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_006_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "خَيْلٍۢ",
+          "tr": "khaylin",
+          "wbw_audio": "wbw/059_006_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَا",
+          "tr": "walā",
+          "wbw_audio": "wbw/059_006_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رِكَابٍۢ",
+          "tr": "rikābin",
+          "wbw_audio": "wbw/059_006_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَـٰكِنَّ",
+          "tr": "walākinna",
+          "wbw_audio": "wbw/059_006_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_006_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُسَلِّطُ",
+          "tr": "yusalliṭu",
+          "wbw_audio": "wbw/059_006_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رُسُلَهُۥ",
+          "tr": "rusulahu",
+          "wbw_audio": "wbw/059_006_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_006_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَن",
+          "tr": "man",
+          "wbw_audio": "wbw/059_006_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَشَآءُ ۚ",
+          "tr": "yashāu",
+          "wbw_audio": "wbw/059_006_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱللَّهُ",
+          "tr": "wal-lahu",
+          "wbw_audio": "wbw/059_006_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_006_023.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كُلِّ",
+          "tr": "kulli",
+          "wbw_audio": "wbw/059_006_024.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شَىْءٍۢ",
+          "tr": "shayin",
+          "wbw_audio": "wbw/059_006_025.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَدِيرٌۭ",
+          "tr": "qadīrun",
+          "wbw_audio": "wbw/059_006_026.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:7",
+      "arabic_tajweed_html": "مّ<tajweed class=madda_obligatory>َآ</tajweed> أَف<tajweed class=madda_obligatory>َا</tajweed>ٓءَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ عَلَىٰ رَسُولِه<tajweed class=madda_normal>ِۦ</tajweed> مِنْ أَهْلِ <tajweed class=ham_wasl>ٱ</tajweed>لْقُرَىٰ فَلِلَّهِ وَلِلرَّسُولِ وَلِذِى <tajweed class=ham_wasl>ٱ</tajweed>لْقُرْبَىٰ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْيَتَ<tajweed class=madda_normal>ـٰ</tajweed>مَىٰ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْمَسَ<tajweed class=madda_normal>ـٰ</tajweed>كِينِ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>بْ</tajweed>نِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّبِيلِ كَىْ لَا يَكُونَ دُولَ<tajweed class=iqlab>ةَۢ ب</tajweed>َيْنَ <tajweed class=ham_wasl>ٱ</tajweed>لْأَغْنِي<tajweed class=madda_obligatory>َا</tajweed>ٓءِ مِ<tajweed class=ikhafa>نك</tajweed>ُمْ‌ۚ وَم<tajweed class=madda_obligatory>َآ</tajweed> ءَاتَ<tajweed class=madda_normal>ـٰ</tajweed>كُمُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رَّسُولُ فَخُذُوهُ وَمَا نَهَ<tajweed class=madda_normal>ـٰ</tajweed>كُمْ عَنْهُ فَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=ikhafa>نت</tajweed>َهُو<tajweed class=slnt>اْ‌ۚ</tajweed> وَ<tajweed class=ham_wasl>ٱ</tajweed>تَّقُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ‌ۖ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ شَدِيدُ <tajweed class=ham_wasl>ٱ</tajweed>لْعِق<tajweed class=madda_permissible>َا</tajweed><tajweed class=qalaqah>ب</tajweed>ِ <span class=end>٧</span>",
+      "bangla": "Whatever gains God has turned over to His Messenger from the inhabitants of the villages belong to God, the Messenger, kinsfolk, orphans, the needy, the traveller in need- this is so that they do not just circulate among those of you who are rich––so accept whatever the Messenger gives you, and abstain from whatever he forbids you. Be mindful of God: God is severe in punishment.",
+      "words": [
+        {
+          "ar": "مَّآ",
+          "tr": "mā",
+          "wbw_audio": "wbw/059_007_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَفَآءَ",
+          "tr": "afāa",
+          "wbw_audio": "wbw/059_007_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_007_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_007_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَسُولِهِۦ",
+          "tr": "rasūlihi",
+          "wbw_audio": "wbw/059_007_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنْ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_007_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَهْلِ",
+          "tr": "ahli",
+          "wbw_audio": "wbw/059_007_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْقُرَىٰ",
+          "tr": "l-qurā",
+          "wbw_audio": "wbw/059_007_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَلِلَّهِ",
+          "tr": "falillahi",
+          "wbw_audio": "wbw/059_007_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلِلرَّسُولِ",
+          "tr": "walilrrasūli",
+          "wbw_audio": "wbw/059_007_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلِذِى",
+          "tr": "walidhī",
+          "wbw_audio": "wbw/059_007_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْقُرْبَىٰ",
+          "tr": "l-qur'bā",
+          "wbw_audio": "wbw/059_007_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱلْيَتَـٰمَىٰ",
+          "tr": "wal-yatāmā",
+          "wbw_audio": "wbw/059_007_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱلْمَسَـٰكِينِ",
+          "tr": "wal-masākīni",
+          "wbw_audio": "wbw/059_007_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱبْنِ",
+          "tr": "wa-ib'ni",
+          "wbw_audio": "wbw/059_007_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلسَّبِيلِ",
+          "tr": "l-sabīli",
+          "wbw_audio": "wbw/059_007_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَىْ",
+          "tr": "kay",
+          "wbw_audio": "wbw/059_007_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_007_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَكُونَ",
+          "tr": "yakūna",
+          "wbw_audio": "wbw/059_007_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "دُولَةًۢ",
+          "tr": "dūlatan",
+          "wbw_audio": "wbw/059_007_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بَيْنَ",
+          "tr": "bayna",
+          "wbw_audio": "wbw/059_007_021.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْأَغْنِيَآءِ",
+          "tr": "l-aghniyāi",
+          "wbw_audio": "wbw/059_007_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنكُمْ ۚ",
+          "tr": "minkum",
+          "wbw_audio": "wbw/059_007_023.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَمَآ",
+          "tr": "wamā",
+          "wbw_audio": "wbw/059_007_025.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ءَاتَىٰكُمُ",
+          "tr": "ātākumu",
+          "wbw_audio": "wbw/059_007_026.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلرَّسُولُ",
+          "tr": "l-rasūlu",
+          "wbw_audio": "wbw/059_007_027.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَخُذُوهُ",
+          "tr": "fakhudhūhu",
+          "wbw_audio": "wbw/059_007_028.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَمَا",
+          "tr": "wamā",
+          "wbw_audio": "wbw/059_007_029.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَهَىٰكُمْ",
+          "tr": "nahākum",
+          "wbw_audio": "wbw/059_007_030.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَنْهُ",
+          "tr": "ʿanhu",
+          "wbw_audio": "wbw/059_007_031.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَٱنتَهُوا۟ ۚ",
+          "tr": "fa-intahū",
+          "wbw_audio": "wbw/059_007_032.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱتَّقُوا۟",
+          "tr": "wa-ittaqū",
+          "wbw_audio": "wbw/059_007_034.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ ۖ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_007_035.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِنَّ",
+          "tr": "inna",
+          "wbw_audio": "wbw/059_007_037.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_007_038.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شَدِيدُ",
+          "tr": "shadīdu",
+          "wbw_audio": "wbw/059_007_039.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْعِقَابِ",
+          "tr": "l-ʿiqābi",
+          "wbw_audio": "wbw/059_007_040.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:8",
+      "arabic_tajweed_html": "لِلْفُقَر<tajweed class=madda_obligatory>َا</tajweed>ٓءِ <tajweed class=ham_wasl>ٱ</tajweed>لْمُهَ<tajweed class=madda_normal>ـٰ</tajweed>جِرِينَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ أُخْرِجُو<tajweed class=slnt>اْ</tajweed> مِ<tajweed class=ikhafa>ن د</tajweed>ِيَ<tajweed class=madda_normal>ـٰ</tajweed>رِهِمْ وَأَمْو<tajweed class=madda_normal>َٲ</tajweed>لِهِمْ يَ<tajweed class=qalaqah>بْ</tajweed>تَغُونَ فَضْل<tajweed class=idgham_ghunnah>اً م</tajweed>ِّنَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ وَرِضْو<tajweed class=madda_normal>َٲ</tajweed><tajweed class=idgham_ghunnah>نًا و</tajweed>َيَ<tajweed class=ikhafa>نص</tajweed>ُرُونَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ وَرَسُولَهُ<tajweed class=madda_obligatory>ۥٓ‌ۚ</tajweed> أُ<tajweed class=slnt>وْ</tajweed>لَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَ هُمُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=madda_normal>ـٰ</tajweed>دِق<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٨</span>",
+      "bangla": "The poor emigrants who were driven from their homes and possessions, who seek God’s favour and approval, those who help God and His Messenger- these are the ones who are true- [shall have a share].",
+      "words": [
+        {
+          "ar": "لِلْفُقَرَآءِ",
+          "tr": "lil'fuqarāi",
+          "wbw_audio": "wbw/059_008_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُهَـٰجِرِينَ",
+          "tr": "l-muhājirīna",
+          "wbw_audio": "wbw/059_008_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_008_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُخْرِجُوا۟",
+          "tr": "ukh'rijū",
+          "wbw_audio": "wbw/059_008_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِن",
+          "tr": "min",
+          "wbw_audio": "wbw/059_008_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "دِيَـٰرِهِمْ",
+          "tr": "diyārihim",
+          "wbw_audio": "wbw/059_008_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَأَمْوَٰلِهِمْ",
+          "tr": "wa-amwālihim",
+          "wbw_audio": "wbw/059_008_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَبْتَغُونَ",
+          "tr": "yabtaghūna",
+          "wbw_audio": "wbw/059_008_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَضْلًۭا",
+          "tr": "faḍlan",
+          "wbw_audio": "wbw/059_008_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّنَ",
+          "tr": "mina",
+          "wbw_audio": "wbw/059_008_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهِ",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/059_008_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَرِضْوَٰنًۭا",
+          "tr": "wariḍ'wānan",
+          "wbw_audio": "wbw/059_008_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَيَنصُرُونَ",
+          "tr": "wayanṣurūna",
+          "wbw_audio": "wbw/059_008_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_008_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَرَسُولَهُۥٓ ۚ",
+          "tr": "warasūlahu",
+          "wbw_audio": "wbw/059_008_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُو۟لَـٰٓئِكَ",
+          "tr": "ulāika",
+          "wbw_audio": "wbw/059_008_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُمُ",
+          "tr": "humu",
+          "wbw_audio": "wbw/059_008_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلصَّـٰدِقُونَ",
+          "tr": "l-ṣādiqūna",
+          "wbw_audio": "wbw/059_008_019.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:9",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ تَبَوَّءُو <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دَّارَ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْإِيمَ<tajweed class=madda_normal>ـٰ</tajweed>نَ مِ<tajweed class=ikhafa>ن ق</tajweed>َ<tajweed class=qalaqah>بْ</tajweed>لِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ وَلَا يَجِدُونَ فِى صُدُورِهِمْ حَاجَ<tajweed class=idgham_ghunnah>ةً م</tajweed>ِّ<tajweed class=ghunnah>مّ</tajweed><tajweed class=madda_obligatory>َآ</tajweed> أُوتُو<tajweed class=slnt>اْ</tajweed> وَيُؤْثِرُونَ عَلَ<tajweed class=madda_obligatory>ىٰٓ</tajweed> أَ<tajweed class=ikhafa>نف</tajweed>ُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَ<tajweed class=idgham_ghunnah>ةٌ‌ۚ و</tajweed>َم<tajweed class=idgham_ghunnah>َن ي</tajweed>ُوقَ شُحَّ نَفْسِه<tajweed class=madda_normal>ِۦ</tajweed> فَأُ<tajweed class=slnt>وْ</tajweed>لَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَ هُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُفْلِح<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٩</span>",
+      "bangla": "Those who were already firmly established in their homes [in Medina], and firmly rooted in faith, show love for those who migrated to them for refuge and harbour no desire in their hearts for what has been given to them. They give them preference over themselves, even if they too are poor: those who are saved from their own souls’ greed are truly successful.",
+      "words": [
+        {
+          "ar": "وَٱلَّذِينَ",
+          "tr": "wa-alladhīna",
+          "wbw_audio": "wbw/059_009_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَبَوَّءُو",
+          "tr": "tabawwaū",
+          "wbw_audio": "wbw/059_009_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلدَّارَ",
+          "tr": "l-dāra",
+          "wbw_audio": "wbw/059_009_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱلْإِيمَـٰنَ",
+          "tr": "wal-īmāna",
+          "wbw_audio": "wbw/059_009_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِن",
+          "tr": "min",
+          "wbw_audio": "wbw/059_009_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَبْلِهِمْ",
+          "tr": "qablihim",
+          "wbw_audio": "wbw/059_009_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُحِبُّونَ",
+          "tr": "yuḥibbūna",
+          "wbw_audio": "wbw/059_009_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَنْ",
+          "tr": "man",
+          "wbw_audio": "wbw/059_009_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هَاجَرَ",
+          "tr": "hājara",
+          "wbw_audio": "wbw/059_009_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَيْهِمْ",
+          "tr": "ilayhim",
+          "wbw_audio": "wbw/059_009_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَا",
+          "tr": "walā",
+          "wbw_audio": "wbw/059_009_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَجِدُونَ",
+          "tr": "yajidūna",
+          "wbw_audio": "wbw/059_009_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_009_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "صُدُورِهِمْ",
+          "tr": "ṣudūrihim",
+          "wbw_audio": "wbw/059_009_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "حَاجَةًۭ",
+          "tr": "ḥājatan",
+          "wbw_audio": "wbw/059_009_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّمَّآ",
+          "tr": "mimmā",
+          "wbw_audio": "wbw/059_009_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُوتُوا۟",
+          "tr": "ūtū",
+          "wbw_audio": "wbw/059_009_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَيُؤْثِرُونَ",
+          "tr": "wayu'thirūna",
+          "wbw_audio": "wbw/059_009_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰٓ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_009_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَنفُسِهِمْ",
+          "tr": "anfusihim",
+          "wbw_audio": "wbw/059_009_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَوْ",
+          "tr": "walaw",
+          "wbw_audio": "wbw/059_009_021.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَانَ",
+          "tr": "kāna",
+          "wbw_audio": "wbw/059_009_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِهِمْ",
+          "tr": "bihim",
+          "wbw_audio": "wbw/059_009_023.mp3",
+          "rules": []
+        },
+        {
+          "ar": "خَصَاصَةٌۭ ۚ",
+          "tr": "khaṣāṣatun",
+          "wbw_audio": "wbw/059_009_024.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَمَن",
+          "tr": "waman",
+          "wbw_audio": "wbw/059_009_026.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُوقَ",
+          "tr": "yūqa",
+          "wbw_audio": "wbw/059_009_027.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شُحَّ",
+          "tr": "shuḥḥa",
+          "wbw_audio": "wbw/059_009_028.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَفْسِهِۦ",
+          "tr": "nafsihi",
+          "wbw_audio": "wbw/059_009_029.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَأُو۟لَـٰٓئِكَ",
+          "tr": "fa-ulāika",
+          "wbw_audio": "wbw/059_009_030.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُمُ",
+          "tr": "humu",
+          "wbw_audio": "wbw/059_009_031.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُفْلِحُونَ",
+          "tr": "l-muf'liḥūna",
+          "wbw_audio": "wbw/059_009_032.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:10",
+      "arabic_tajweed_html": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ج<tajweed class=madda_obligatory>َا</tajweed>ٓءُو م<tajweed class=iqlab>ِنۢ ب</tajweed>َعْدِهِمْ يَقُولُونَ رَبَّنَا <tajweed class=ham_wasl>ٱ</tajweed>غْفِرْ لَنَا وَلِإِخْو<tajweed class=madda_normal>َٲ</tajweed>نِنَا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ سَبَقُونَا بِ<tajweed class=ham_wasl>ٱ</tajweed>لْإِيمَ<tajweed class=madda_normal>ـٰ</tajweed>نِ وَلَا تَ<tajweed class=qalaqah>جْ</tajweed>عَلْ فِى قُلُوبِنَا غِل<tajweed class=idgham_wo_ghunnah>اًّ ل</tajweed>ِّلَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> رَبَّن<tajweed class=madda_obligatory>َآ</tajweed> إِ<tajweed class=ghunnah>نّ</tajweed>َكَ رَءُو<tajweed class=idgham_wo_ghunnah>فٌ ر</tajweed>َّح<tajweed class=madda_permissible>ِي</tajweed>مٌ <span class=end>١٠</span>",
+      "bangla": "Those who came after them say, ‘Lord, forgive us our sins and the sins of our brothers who believed before us, and leave no malice in our hearts towards those who believe. Lord, You are truly compassionate and merciful.’",
+      "words": [
+        {
+          "ar": "وَٱلَّذِينَ",
+          "tr": "wa-alladhīna",
+          "wbw_audio": "wbw/059_010_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "جَآءُو",
+          "tr": "jāū",
+          "wbw_audio": "wbw/059_010_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنۢ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_010_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بَعْدِهِمْ",
+          "tr": "baʿdihim",
+          "wbw_audio": "wbw/059_010_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَقُولُونَ",
+          "tr": "yaqūlūna",
+          "wbw_audio": "wbw/059_010_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَبَّنَا",
+          "tr": "rabbanā",
+          "wbw_audio": "wbw/059_010_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱغْفِرْ",
+          "tr": "igh'fir",
+          "wbw_audio": "wbw/059_010_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَنَا",
+          "tr": "lanā",
+          "wbw_audio": "wbw/059_010_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلِإِخْوَٰنِنَا",
+          "tr": "wali-ikh'wāninā",
+          "wbw_audio": "wbw/059_010_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_010_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "سَبَقُونَا",
+          "tr": "sabaqūnā",
+          "wbw_audio": "wbw/059_010_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِٱلْإِيمَـٰنِ",
+          "tr": "bil-īmāni",
+          "wbw_audio": "wbw/059_010_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَا",
+          "tr": "walā",
+          "wbw_audio": "wbw/059_010_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَجْعَلْ",
+          "tr": "tajʿal",
+          "wbw_audio": "wbw/059_010_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_010_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قُلُوبِنَا",
+          "tr": "qulūbinā",
+          "wbw_audio": "wbw/059_010_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "غِلًّۭا",
+          "tr": "ghillan",
+          "wbw_audio": "wbw/059_010_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِّلَّذِينَ",
+          "tr": "lilladhīna",
+          "wbw_audio": "wbw/059_010_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ءَامَنُوا۟",
+          "tr": "āmanū",
+          "wbw_audio": "wbw/059_010_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَبَّنَآ",
+          "tr": "rabbanā",
+          "wbw_audio": "wbw/059_010_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِنَّكَ",
+          "tr": "innaka",
+          "wbw_audio": "wbw/059_010_021.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَءُوفٌۭ",
+          "tr": "raūfun",
+          "wbw_audio": "wbw/059_010_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَّحِيمٌ",
+          "tr": "raḥīmun",
+          "wbw_audio": "wbw/059_010_023.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:11",
+      "arabic_tajweed_html": "۞ أَلَمْ تَرَ إِلَى <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ نَافَقُو<tajweed class=slnt>اْ</tajweed> يَقُولُونَ لِإِخْو<tajweed class=madda_normal>َٲ</tajweed>نِهِمُ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ كَفَرُو<tajweed class=slnt>اْ</tajweed> مِنْ أَهْلِ <tajweed class=ham_wasl>ٱ</tajweed>لْكِتَ<tajweed class=madda_normal>ـٰ</tajweed>بِ لَئِنْ أُخْرِ<tajweed class=qalaqah>جْ</tajweed>تُمْ لَنَخْرُجَ<tajweed class=ghunnah>نّ</tajweed>َ مَعَكُمْ وَلَا نُطِيعُ فِيكُمْ أَحَدًا أَبَ<tajweed class=idgham_ghunnah>دًا و</tajweed>َإِ<tajweed class=ikhafa>ن ق</tajweed>ُوتِلْتُمْ لَنَ<tajweed class=ikhafa>نص</tajweed>ُرَ<tajweed class=ghunnah>نّ</tajweed>َكُمْ وَ<tajweed class=ham_wasl>ٱ</tajweed>للَّهُ يَشْهَدُ إِ<tajweed class=ghunnah>نّ</tajweed>َهُمْ لَكَ<tajweed class=madda_normal>ـٰ</tajweed>ذِب<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١١</span>",
+      "bangla": "Have you [Prophet] considered the hypocrites who say to their fellows, the faithless among the People of the Book, ‘If you are driven out, we shall go with you- we would never listen to anyone who sought to harm you- and if you are attacked, we shall certainly come to your aid’? God bears witness that they are in fact liars:",
+      "words": [
+        {
+          "ar": "۞ أَلَمْ",
+          "tr": "alam",
+          "wbw_audio": "wbw/059_011_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَرَ",
+          "tr": "tara",
+          "wbw_audio": "wbw/059_011_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَى",
+          "tr": "ilā",
+          "wbw_audio": "wbw/059_011_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_011_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَافَقُوا۟",
+          "tr": "nāfaqū",
+          "wbw_audio": "wbw/059_011_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَقُولُونَ",
+          "tr": "yaqūlūna",
+          "wbw_audio": "wbw/059_011_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِإِخْوَٰنِهِمُ",
+          "tr": "li-ikh'wānihimu",
+          "wbw_audio": "wbw/059_011_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_011_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَفَرُوا۟",
+          "tr": "kafarū",
+          "wbw_audio": "wbw/059_011_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِنْ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_011_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَهْلِ",
+          "tr": "ahli",
+          "wbw_audio": "wbw/059_011_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْكِتَـٰبِ",
+          "tr": "l-kitābi",
+          "wbw_audio": "wbw/059_011_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَئِنْ",
+          "tr": "la-in",
+          "wbw_audio": "wbw/059_011_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُخْرِجْتُمْ",
+          "tr": "ukh'rij'tum",
+          "wbw_audio": "wbw/059_011_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَنَخْرُجَنَّ",
+          "tr": "lanakhrujanna",
+          "wbw_audio": "wbw/059_011_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَعَكُمْ",
+          "tr": "maʿakum",
+          "wbw_audio": "wbw/059_011_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَا",
+          "tr": "walā",
+          "wbw_audio": "wbw/059_011_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نُطِيعُ",
+          "tr": "nuṭīʿu",
+          "wbw_audio": "wbw/059_011_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِيكُمْ",
+          "tr": "fīkum",
+          "wbw_audio": "wbw/059_011_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَحَدًا",
+          "tr": "aḥadan",
+          "wbw_audio": "wbw/059_011_021.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَبَدًۭا",
+          "tr": "abadan",
+          "wbw_audio": "wbw/059_011_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَإِن",
+          "tr": "wa-in",
+          "wbw_audio": "wbw/059_011_023.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قُوتِلْتُمْ",
+          "tr": "qūtil'tum",
+          "wbw_audio": "wbw/059_011_024.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَنَنصُرَنَّكُمْ",
+          "tr": "lananṣurannakum",
+          "wbw_audio": "wbw/059_011_025.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱللَّهُ",
+          "tr": "wal-lahu",
+          "wbw_audio": "wbw/059_011_026.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَشْهَدُ",
+          "tr": "yashhadu",
+          "wbw_audio": "wbw/059_011_027.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِنَّهُمْ",
+          "tr": "innahum",
+          "wbw_audio": "wbw/059_011_028.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَكَـٰذِبُونَ",
+          "tr": "lakādhibūna",
+          "wbw_audio": "wbw/059_011_029.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:12",
+      "arabic_tajweed_html": "لَئِنْ أُخْرِجُو<tajweed class=slnt>اْ</tajweed> لَا يَخْرُجُونَ مَعَهُمْ وَلَئِ<tajweed class=ikhafa>ن ق</tajweed>ُوتِلُو<tajweed class=slnt>اْ</tajweed> لَا يَ<tajweed class=ikhafa>نص</tajweed>ُرُونَهُمْ وَلَئ<tajweed class=idgham_ghunnah>ِن ن</tajweed>َّصَرُوهُمْ لَيُوَلُّ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْأَ<tajweed class=qalaqah>دْ</tajweed>بَ<tajweed class=madda_normal>ـٰ</tajweed>رَ ثُ<tajweed class=ghunnah>مّ</tajweed>َ لَا يُ<tajweed class=ikhafa>نص</tajweed>َر<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١٢</span>",
+      "bangla": "if they are driven out, they will never leave with them; if they are attacked, they will never help them. Even if they did come to their aid, they would soon turn tail and flee- in the end they would have no help.",
+      "words": [
+        {
+          "ar": "لَئِنْ",
+          "tr": "la-in",
+          "wbw_audio": "wbw/059_012_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُخْرِجُوا۟",
+          "tr": "ukh'rijū",
+          "wbw_audio": "wbw/059_012_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_012_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَخْرُجُونَ",
+          "tr": "yakhrujūna",
+          "wbw_audio": "wbw/059_012_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَعَهُمْ",
+          "tr": "maʿahum",
+          "wbw_audio": "wbw/059_012_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَئِن",
+          "tr": "wala-in",
+          "wbw_audio": "wbw/059_012_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قُوتِلُوا۟",
+          "tr": "qūtilū",
+          "wbw_audio": "wbw/059_012_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_012_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَنصُرُونَهُمْ",
+          "tr": "yanṣurūnahum",
+          "wbw_audio": "wbw/059_012_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَئِن",
+          "tr": "wala-in",
+          "wbw_audio": "wbw/059_012_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَّصَرُوهُمْ",
+          "tr": "naṣarūhum",
+          "wbw_audio": "wbw/059_012_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَيُوَلُّنَّ",
+          "tr": "layuwallunna",
+          "wbw_audio": "wbw/059_012_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْأَدْبَـٰرَ",
+          "tr": "l-adbāra",
+          "wbw_audio": "wbw/059_012_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ثُمَّ",
+          "tr": "thumma",
+          "wbw_audio": "wbw/059_012_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_012_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُنصَرُونَ",
+          "tr": "yunṣarūna",
+          "wbw_audio": "wbw/059_012_016.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:13",
+      "arabic_tajweed_html": "لَأَ<tajweed class=ikhafa>نت</tajweed>ُمْ أَشَدُّ رَهْبَ<tajweed class=ikhafa>ةً ف</tajweed>ِى صُدُورِه<tajweed class=idgham_shafawi>ِم م</tajweed>ِّنَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ‌ۚ ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ بِأَ<tajweed class=ghunnah>نّ</tajweed>َهُمْ قَوْ<tajweed class=idgham_wo_ghunnah>مٌ ل</tajweed>َّا يَفْقَه<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١٣</span>",
+      "bangla": "Fear of you [believers] is more intense in their hearts than fear of God because they are people devoid of understanding.",
+      "words": [
+        {
+          "ar": "لَأَنتُمْ",
+          "tr": "la-antum",
+          "wbw_audio": "wbw/059_013_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَشَدُّ",
+          "tr": "ashaddu",
+          "wbw_audio": "wbw/059_013_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَهْبَةًۭ",
+          "tr": "rahbatan",
+          "wbw_audio": "wbw/059_013_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_013_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "صُدُورِهِم",
+          "tr": "ṣudūrihim",
+          "wbw_audio": "wbw/059_013_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّنَ",
+          "tr": "mina",
+          "wbw_audio": "wbw/059_013_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهِ ۚ",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/059_013_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ذَٰلِكَ",
+          "tr": "dhālika",
+          "wbw_audio": "wbw/059_013_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِأَنَّهُمْ",
+          "tr": "bi-annahum",
+          "wbw_audio": "wbw/059_013_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَوْمٌۭ",
+          "tr": "qawmun",
+          "wbw_audio": "wbw/059_013_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَّا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_013_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَفْقَهُونَ",
+          "tr": "yafqahūna",
+          "wbw_audio": "wbw/059_013_013.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:14",
+      "arabic_tajweed_html": "لَا يُقَ<tajweed class=madda_normal>ـٰ</tajweed>تِلُونَكُمْ جَمِيعًا إِلَّا فِى قُ<tajweed class=idgham_ghunnah>رًى م</tajweed>ُّحَصَّنَةٍ أَوْ م<tajweed class=idgham_ghunnah>ِن و</tajweed>َر<tajweed class=madda_obligatory>َا</tajweed>ٓءِ جُدُ<tajweed class=iqlab>رِۭ‌ۚ ب</tajweed>َأْسُه<tajweed class=ikhafa_shafawi>ُم ب</tajweed>َيْنَهُمْ شَدِي<tajweed class=ikhafa>دٌ‌ۚ ت</tajweed>َحْسَبُهُمْ جَمِي<tajweed class=idgham_ghunnah>عًا و</tajweed>َقُلُوبُهُمْ شَتَّىٰ‌ۚ ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ بِأَ<tajweed class=ghunnah>نّ</tajweed>َهُمْ قَوْ<tajweed class=idgham_wo_ghunnah>مٌ ل</tajweed>َّا يَعْقِل<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١٤</span>",
+      "bangla": "Even united they would never fight you, except from within fortified strongholds or behind high walls. There is much hostility between them: you think they are united but their hearts are divided because they are people devoid of reason.",
+      "words": [
+        {
+          "ar": "لَا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_014_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُقَـٰتِلُونَكُمْ",
+          "tr": "yuqātilūnakum",
+          "wbw_audio": "wbw/059_014_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "جَمِيعًا",
+          "tr": "jamīʿan",
+          "wbw_audio": "wbw/059_014_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَّا",
+          "tr": "illā",
+          "wbw_audio": "wbw/059_014_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_014_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قُرًۭى",
+          "tr": "quran",
+          "wbw_audio": "wbw/059_014_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مُّحَصَّنَةٍ",
+          "tr": "muḥaṣṣanatin",
+          "wbw_audio": "wbw/059_014_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَوْ",
+          "tr": "aw",
+          "wbw_audio": "wbw/059_014_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِن",
+          "tr": "min",
+          "wbw_audio": "wbw/059_014_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَرَآءِ",
+          "tr": "warāi",
+          "wbw_audio": "wbw/059_014_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "جُدُرٍۭ ۚ",
+          "tr": "judurin",
+          "wbw_audio": "wbw/059_014_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بَأْسُهُم",
+          "tr": "basuhum",
+          "wbw_audio": "wbw/059_014_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بَيْنَهُمْ",
+          "tr": "baynahum",
+          "wbw_audio": "wbw/059_014_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شَدِيدٌۭ ۚ",
+          "tr": "shadīdun",
+          "wbw_audio": "wbw/059_014_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَحْسَبُهُمْ",
+          "tr": "taḥsabuhum",
+          "wbw_audio": "wbw/059_014_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "جَمِيعًۭا",
+          "tr": "jamīʿan",
+          "wbw_audio": "wbw/059_014_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَقُلُوبُهُمْ",
+          "tr": "waqulūbuhum",
+          "wbw_audio": "wbw/059_014_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "شَتَّىٰ ۚ",
+          "tr": "shattā",
+          "wbw_audio": "wbw/059_014_020.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ذَٰلِكَ",
+          "tr": "dhālika",
+          "wbw_audio": "wbw/059_014_022.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِأَنَّهُمْ",
+          "tr": "bi-annahum",
+          "wbw_audio": "wbw/059_014_023.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَوْمٌۭ",
+          "tr": "qawmun",
+          "wbw_audio": "wbw/059_014_024.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَّا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_014_025.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَعْقِلُونَ",
+          "tr": "yaʿqilūna",
+          "wbw_audio": "wbw/059_014_026.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:15",
+      "arabic_tajweed_html": "كَمَثَلِ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ مِ<tajweed class=ikhafa>ن ق</tajweed>َ<tajweed class=qalaqah>بْ</tajweed>لِهِمْ قَرِي<tajweed class=ikhafa>بًا‌ۖ ذ</tajweed>َاقُو<tajweed class=slnt>اْ</tajweed> وَبَالَ أَمْرِهِمْ وَلَهُمْ عَذَابٌ أَل<tajweed class=madda_permissible>ِي</tajweed>مٌ <span class=end>١٥</span>",
+      "bangla": "Like those who went just before them, they have tasted the result of their conduct and a painful punishment awaits them.",
+      "words": [
+        {
+          "ar": "كَمَثَلِ",
+          "tr": "kamathali",
+          "wbw_audio": "wbw/059_015_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_015_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِن",
+          "tr": "min",
+          "wbw_audio": "wbw/059_015_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَبْلِهِمْ",
+          "tr": "qablihim",
+          "wbw_audio": "wbw/059_015_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَرِيبًۭا ۖ",
+          "tr": "qarīban",
+          "wbw_audio": "wbw/059_015_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ذَاقُوا۟",
+          "tr": "dhāqū",
+          "wbw_audio": "wbw/059_015_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَبَالَ",
+          "tr": "wabāla",
+          "wbw_audio": "wbw/059_015_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَمْرِهِمْ",
+          "tr": "amrihim",
+          "wbw_audio": "wbw/059_015_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلَهُمْ",
+          "tr": "walahum",
+          "wbw_audio": "wbw/059_015_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَذَابٌ",
+          "tr": "ʿadhābun",
+          "wbw_audio": "wbw/059_015_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَلِيمٌۭ",
+          "tr": "alīmun",
+          "wbw_audio": "wbw/059_015_012.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:16",
+      "arabic_tajweed_html": "كَمَثَلِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شَّيْطَ<tajweed class=madda_normal>ـٰ</tajweed>نِ إِذْ قَالَ لِلْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نِ <tajweed class=ham_wasl>ٱ</tajweed>كْفُرْ فَلَ<tajweed class=ghunnah>مّ</tajweed>َا كَفَرَ قَالَ إِ<tajweed class=ghunnah>نّ</tajweed>ِى بَر<tajweed class=madda_obligatory>ِى</tajweed>ٓ<tajweed class=idgham_ghunnah>ءٌ م</tajweed>ِّ<tajweed class=ikhafa>نك</tajweed>َ إِ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_obligatory>ِىٓ</tajweed> أَخَافُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ رَبَّ <tajweed class=ham_wasl>ٱ</tajweed>لْعَ<tajweed class=madda_normal>ـٰ</tajweed>لَم<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>١٦</span>",
+      "bangla": "Like Satan, who says to man, ‘Do not believe!’ but when man disbelieves, says, ‘I disown you; I fear God, the Lord of the Worlds,’",
+      "words": [
+        {
+          "ar": "كَمَثَلِ",
+          "tr": "kamathali",
+          "wbw_audio": "wbw/059_016_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلشَّيْطَـٰنِ",
+          "tr": "l-shayṭāni",
+          "wbw_audio": "wbw/059_016_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِذْ",
+          "tr": "idh",
+          "wbw_audio": "wbw/059_016_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَالَ",
+          "tr": "qāla",
+          "wbw_audio": "wbw/059_016_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِلْإِنسَـٰنِ",
+          "tr": "lil'insāni",
+          "wbw_audio": "wbw/059_016_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱكْفُرْ",
+          "tr": "uk'fur",
+          "wbw_audio": "wbw/059_016_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَلَمَّا",
+          "tr": "falammā",
+          "wbw_audio": "wbw/059_016_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَفَرَ",
+          "tr": "kafara",
+          "wbw_audio": "wbw/059_016_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَالَ",
+          "tr": "qāla",
+          "wbw_audio": "wbw/059_016_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِنِّى",
+          "tr": "innī",
+          "wbw_audio": "wbw/059_016_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بَرِىٓءٌۭ",
+          "tr": "barīon",
+          "wbw_audio": "wbw/059_016_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّنكَ",
+          "tr": "minka",
+          "wbw_audio": "wbw/059_016_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِنِّىٓ",
+          "tr": "innī",
+          "wbw_audio": "wbw/059_016_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَخَافُ",
+          "tr": "akhāfu",
+          "wbw_audio": "wbw/059_016_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_016_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "رَبَّ",
+          "tr": "rabba",
+          "wbw_audio": "wbw/059_016_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْعَـٰلَمِينَ",
+          "tr": "l-ʿālamīna",
+          "wbw_audio": "wbw/059_016_017.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:17",
+      "arabic_tajweed_html": "فَكَانَ عَ<tajweed class=madda_normal>ـٰ</tajweed>قِبَتَهُم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ghunnah>نّ</tajweed>َهُمَا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َارِ خَ<tajweed class=madda_normal>ـٰ</tajweed>لِدَيْنِ فِيهَا‌ۚ وَذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ جَز<tajweed class=madda_obligatory>َٲ</tajweed>ٓؤُ<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>ظَّ<tajweed class=madda_normal>ـٰ</tajweed>لِم<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>١٧</span>",
+      "bangla": "both will end up in the Fire, there to remain. That is the reward of evildoers.",
+      "words": [
+        {
+          "ar": "فَكَانَ",
+          "tr": "fakāna",
+          "wbw_audio": "wbw/059_017_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَـٰقِبَتَهُمَآ",
+          "tr": "ʿāqibatahumā",
+          "wbw_audio": "wbw/059_017_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَنَّهُمَا",
+          "tr": "annahumā",
+          "wbw_audio": "wbw/059_017_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_017_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلنَّارِ",
+          "tr": "l-nāri",
+          "wbw_audio": "wbw/059_017_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "خَـٰلِدَيْنِ",
+          "tr": "khālidayni",
+          "wbw_audio": "wbw/059_017_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِيهَا ۚ",
+          "tr": "fīhā",
+          "wbw_audio": "wbw/059_017_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَذَٰلِكَ",
+          "tr": "wadhālika",
+          "wbw_audio": "wbw/059_017_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "جَزَٰٓؤُا۟",
+          "tr": "jazāu",
+          "wbw_audio": "wbw/059_017_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلظَّـٰلِمِينَ",
+          "tr": "l-ẓālimīna",
+          "wbw_audio": "wbw/059_017_011.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:18",
+      "arabic_tajweed_html": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>تَّقُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ وَلْتَ<tajweed class=ikhafa>نظ</tajweed>ُرْ نَفْ<tajweed class=idgham_ghunnah>سٌ م</tajweed>َّا قَدَّمَتْ لِغَ<tajweed class=idgham_ghunnah>دٍ‌ۖ و</tajweed>َ<tajweed class=ham_wasl>ٱ</tajweed>تَّقُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ خَبِي<tajweed class=iqlab>رُۢ ب</tajweed>ِمَا تَعْمَل<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١٨</span>",
+      "bangla": "You who believe! Be mindful of God, and let every soul consider carefully what it sends ahead for tomorrow; be mindful of God, for God is well aware of everything you do.",
+      "words": [
+        {
+          "ar": "يَـٰٓأَيُّهَا",
+          "tr": "yāayyuhā",
+          "wbw_audio": "wbw/059_018_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِينَ",
+          "tr": "alladhīna",
+          "wbw_audio": "wbw/059_018_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ءَامَنُوا۟",
+          "tr": "āmanū",
+          "wbw_audio": "wbw/059_018_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱتَّقُوا۟",
+          "tr": "ittaqū",
+          "wbw_audio": "wbw/059_018_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_018_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَلْتَنظُرْ",
+          "tr": "waltanẓur",
+          "wbw_audio": "wbw/059_018_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَفْسٌۭ",
+          "tr": "nafsun",
+          "wbw_audio": "wbw/059_018_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَّا",
+          "tr": "mā",
+          "wbw_audio": "wbw/059_018_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "قَدَّمَتْ",
+          "tr": "qaddamat",
+          "wbw_audio": "wbw/059_018_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِغَدٍۢ ۖ",
+          "tr": "lighadin",
+          "wbw_audio": "wbw/059_018_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱتَّقُوا۟",
+          "tr": "wa-ittaqū",
+          "wbw_audio": "wbw/059_018_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ ۚ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_018_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِنَّ",
+          "tr": "inna",
+          "wbw_audio": "wbw/059_018_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_018_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "خَبِيرٌۢ",
+          "tr": "khabīrun",
+          "wbw_audio": "wbw/059_018_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "بِمَا",
+          "tr": "bimā",
+          "wbw_audio": "wbw/059_018_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَعْمَلُونَ",
+          "tr": "taʿmalūna",
+          "wbw_audio": "wbw/059_018_019.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:19",
+      "arabic_tajweed_html": "وَلَا تَكُونُو<tajweed class=slnt>اْ</tajweed> كَ<tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ نَسُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ فَأَ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>هُمْ أَ<tajweed class=ikhafa>نف</tajweed>ُسَهُمْ‌ۚ أُ<tajweed class=slnt>وْ</tajweed>لَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَ هُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْفَ<tajweed class=madda_normal>ـٰ</tajweed>سِق<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١٩</span>",
+      "bangla": "Do not be like those who forget God, so God causes them to forget their own souls: they are the rebellious ones-",
+      "words": [
+        {
+          "ar": "وَلَا",
+          "tr": "walā",
+          "wbw_audio": "wbw/059_019_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "تَكُونُوا۟",
+          "tr": "takūnū",
+          "wbw_audio": "wbw/059_019_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "كَٱلَّذِينَ",
+          "tr": "ka-alladhīna",
+          "wbw_audio": "wbw/059_019_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَسُوا۟",
+          "tr": "nasū",
+          "wbw_audio": "wbw/059_019_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهَ",
+          "tr": "l-laha",
+          "wbw_audio": "wbw/059_019_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فَأَنسَىٰهُمْ",
+          "tr": "fa-ansāhum",
+          "wbw_audio": "wbw/059_019_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَنفُسَهُمْ ۚ",
+          "tr": "anfusahum",
+          "wbw_audio": "wbw/059_019_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أُو۟لَـٰٓئِكَ",
+          "tr": "ulāika",
+          "wbw_audio": "wbw/059_019_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُمُ",
+          "tr": "humu",
+          "wbw_audio": "wbw/059_019_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْفَـٰسِقُونَ",
+          "tr": "l-fāsiqūna",
+          "wbw_audio": "wbw/059_019_011.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:20",
+      "arabic_tajweed_html": "لَا يَسْتَو<tajweed class=madda_obligatory>ِىٓ</tajweed> أَصْحَ<tajweed class=madda_normal>ـٰ</tajweed>بُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َارِ وَأَصْحَ<tajweed class=madda_normal>ـٰ</tajweed>بُ <tajweed class=ham_wasl>ٱ</tajweed>لْجَ<tajweed class=ghunnah>نّ</tajweed>َةِ‌ۚ أَصْحَ<tajweed class=madda_normal>ـٰ</tajweed>بُ <tajweed class=ham_wasl>ٱ</tajweed>لْجَ<tajweed class=ghunnah>نّ</tajweed>َةِ هُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْف<tajweed class=madda_obligatory>َا</tajweed>ٓئِز<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢٠</span>",
+      "bangla": "there is no comparison between the inhabitants of the Fire and the inhabitants of Paradise- and the inhabitants of Paradise are the successful ones.",
+      "words": [
+        {
+          "ar": "لَا",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_020_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَسْتَوِىٓ",
+          "tr": "yastawī",
+          "wbw_audio": "wbw/059_020_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَصْحَـٰبُ",
+          "tr": "aṣḥābu",
+          "wbw_audio": "wbw/059_020_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلنَّارِ",
+          "tr": "l-nāri",
+          "wbw_audio": "wbw/059_020_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَأَصْحَـٰبُ",
+          "tr": "wa-aṣḥābu",
+          "wbw_audio": "wbw/059_020_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْجَنَّةِ ۚ",
+          "tr": "l-janati",
+          "wbw_audio": "wbw/059_020_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَصْحَـٰبُ",
+          "tr": "aṣḥābu",
+          "wbw_audio": "wbw/059_020_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْجَنَّةِ",
+          "tr": "l-janati",
+          "wbw_audio": "wbw/059_020_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُمُ",
+          "tr": "humu",
+          "wbw_audio": "wbw/059_020_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْفَآئِزُونَ",
+          "tr": "l-fāizūna",
+          "wbw_audio": "wbw/059_020_011.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:21",
+      "arabic_tajweed_html": "لَوْ أَ<tajweed class=ikhafa>نز</tajweed>َلْنَا هَ<tajweed class=madda_normal>ـٰ</tajweed>ذَا <tajweed class=ham_wasl>ٱ</tajweed>لْقُرْءَانَ عَلَىٰ جَبَ<tajweed class=idgham_wo_ghunnah>لٍ ل</tajweed>َّرَأَيْتَهُ<tajweed class=madda_normal>ۥ</tajweed> خَ<tajweed class=madda_normal>ـٰ</tajweed>شِ<tajweed class=idgham_ghunnah>عًا م</tajweed>ُّتَصَدِّ<tajweed class=idgham_ghunnah>عًا م</tajweed>ِّنْ خَشْيَةِ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ‌ۚ وَتِلْكَ <tajweed class=ham_wasl>ٱ</tajweed>لْأَمْثَ<tajweed class=madda_normal>ـٰ</tajweed>لُ نَضْرِبُهَا لِل<tajweed class=ghunnah>نّ</tajweed>َاسِ لَعَلَّهُمْ يَتَفَكَّر<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢١</span>",
+      "bangla": "If We had sent this Quran down to a mountain, you [Prophet] would have seen it humbled and split apart in its awe of God: We offer people such illustrations so that they may reflect.",
+      "words": [
+        {
+          "ar": "لَوْ",
+          "tr": "law",
+          "wbw_audio": "wbw/059_021_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "أَنزَلْنَا",
+          "tr": "anzalnā",
+          "wbw_audio": "wbw/059_021_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هَـٰذَا",
+          "tr": "hādhā",
+          "wbw_audio": "wbw/059_021_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْقُرْءَانَ",
+          "tr": "l-qur'āna",
+          "wbw_audio": "wbw/059_021_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَلَىٰ",
+          "tr": "ʿalā",
+          "wbw_audio": "wbw/059_021_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "جَبَلٍۢ",
+          "tr": "jabalin",
+          "wbw_audio": "wbw/059_021_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَّرَأَيْتَهُۥ",
+          "tr": "lara-aytahu",
+          "wbw_audio": "wbw/059_021_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "خَـٰشِعًۭا",
+          "tr": "khāshiʿan",
+          "wbw_audio": "wbw/059_021_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مُّتَصَدِّعًۭا",
+          "tr": "mutaṣaddiʿan",
+          "wbw_audio": "wbw/059_021_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مِّنْ",
+          "tr": "min",
+          "wbw_audio": "wbw/059_021_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "خَشْيَةِ",
+          "tr": "khashyati",
+          "wbw_audio": "wbw/059_021_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهِ ۚ",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/059_021_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَتِلْكَ",
+          "tr": "watil'ka",
+          "wbw_audio": "wbw/059_021_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْأَمْثَـٰلُ",
+          "tr": "l-amthālu",
+          "wbw_audio": "wbw/059_021_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "نَضْرِبُهَا",
+          "tr": "naḍribuhā",
+          "wbw_audio": "wbw/059_021_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لِلنَّاسِ",
+          "tr": "lilnnāsi",
+          "wbw_audio": "wbw/059_021_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَعَلَّهُمْ",
+          "tr": "laʿallahum",
+          "wbw_audio": "wbw/059_021_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يَتَفَكَّرُونَ",
+          "tr": "yatafakkarūna",
+          "wbw_audio": "wbw/059_021_019.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:22",
+      "arabic_tajweed_html": "هُوَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى ل<tajweed class=madda_obligatory>َآ</tajweed> إِلَ<tajweed class=madda_normal>ـٰ</tajweed>هَ إِلَّا هُوَ‌ۖ عَ<tajweed class=madda_normal>ـٰ</tajweed>لِمُ <tajweed class=ham_wasl>ٱ</tajweed>لْغَيْبِ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شَّهَ<tajweed class=madda_normal>ـٰ</tajweed>دَةِ‌ۖ هُوَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رَّحْمَ<tajweed class=madda_normal>ـٰ</tajweed>نُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رَّح<tajweed class=madda_permissible>ِي</tajweed>مُ <span class=end>٢٢</span>",
+      "bangla": "He is God: there is no god other than Him. It is He who knows what is hidden as well as what is in the open, He is the Lord of Mercy, the Giver of Mercy.",
+      "words": [
+        {
+          "ar": "هُوَ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_022_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_022_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِى",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/059_022_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَآ",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_022_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَـٰهَ",
+          "tr": "ilāha",
+          "wbw_audio": "wbw/059_022_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَّا",
+          "tr": "illā",
+          "wbw_audio": "wbw/059_022_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُوَ ۖ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_022_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَـٰلِمُ",
+          "tr": "ʿālimu",
+          "wbw_audio": "wbw/059_022_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْغَيْبِ",
+          "tr": "l-ghaybi",
+          "wbw_audio": "wbw/059_022_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱلشَّهَـٰدَةِ ۖ",
+          "tr": "wal-shahādati",
+          "wbw_audio": "wbw/059_022_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُوَ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_022_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلرَّحْمَـٰنُ",
+          "tr": "l-raḥmānu",
+          "wbw_audio": "wbw/059_022_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلرَّحِيمُ",
+          "tr": "l-raḥīmu",
+          "wbw_audio": "wbw/059_022_015.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:23",
+      "arabic_tajweed_html": "هُوَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى ل<tajweed class=madda_obligatory>َآ</tajweed> إِلَ<tajweed class=madda_normal>ـٰ</tajweed>هَ إِلَّا هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْمَلِكُ <tajweed class=ham_wasl>ٱ</tajweed>لْقُدُّوسُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّلَ<tajweed class=madda_normal>ـٰ</tajweed>مُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُؤْمِنُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُهَيْمِنُ <tajweed class=ham_wasl>ٱ</tajweed>لْعَزِيزُ <tajweed class=ham_wasl>ٱ</tajweed>لْجَبَّارُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُتَكَبِّرُ‌ۚ سُ<tajweed class=qalaqah>بْ</tajweed>حَ<tajweed class=madda_normal>ـٰ</tajweed>نَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ عَ<tajweed class=ghunnah>مّ</tajweed>َا يُشْرِك<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢٣</span>",
+      "bangla": "He is God: there is no god other than Him, the Controller, the Holy One, Source of Peace, Granter of Security, Guardian over all, the Almighty, the Compeller, the Truly Great; God is far above anything they consider to be His partner.",
+      "words": [
+        {
+          "ar": "هُوَ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_023_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_023_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلَّذِى",
+          "tr": "alladhī",
+          "wbw_audio": "wbw/059_023_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَآ",
+          "tr": "lā",
+          "wbw_audio": "wbw/059_023_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَـٰهَ",
+          "tr": "ilāha",
+          "wbw_audio": "wbw/059_023_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "إِلَّا",
+          "tr": "illā",
+          "wbw_audio": "wbw/059_023_006.mp3",
+          "rules": []
+        },
+        {
+          "ar": "هُوَ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_023_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمَلِكُ",
+          "tr": "l-maliku",
+          "wbw_audio": "wbw/059_023_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْقُدُّوسُ",
+          "tr": "l-qudūsu",
+          "wbw_audio": "wbw/059_023_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلسَّلَـٰمُ",
+          "tr": "l-salāmu",
+          "wbw_audio": "wbw/059_023_010.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُؤْمِنُ",
+          "tr": "l-mu'minu",
+          "wbw_audio": "wbw/059_023_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُهَيْمِنُ",
+          "tr": "l-muhayminu",
+          "wbw_audio": "wbw/059_023_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْعَزِيزُ",
+          "tr": "l-ʿazīzu",
+          "wbw_audio": "wbw/059_023_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْجَبَّارُ",
+          "tr": "l-jabāru",
+          "wbw_audio": "wbw/059_023_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُتَكَبِّرُ ۚ",
+          "tr": "l-mutakabiru",
+          "wbw_audio": "wbw/059_023_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "سُبْحَـٰنَ",
+          "tr": "sub'ḥāna",
+          "wbw_audio": "wbw/059_023_017.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهِ",
+          "tr": "l-lahi",
+          "wbw_audio": "wbw/059_023_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "عَمَّا",
+          "tr": "ʿammā",
+          "wbw_audio": "wbw/059_023_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُشْرِكُونَ",
+          "tr": "yush'rikūna",
+          "wbw_audio": "wbw/059_023_020.mp3",
+          "rules": []
+        }
+      ]
+    },
+    {
+      "ayah_id": "59:24",
+      "arabic_tajweed_html": "هُوَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ <tajweed class=ham_wasl>ٱ</tajweed>لْخَ<tajweed class=madda_normal>ـٰ</tajweed>لِقُ <tajweed class=ham_wasl>ٱ</tajweed>لْبَارِئُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُصَوِّرُ‌ۖ لَهُ <tajweed class=ham_wasl>ٱ</tajweed>لْأَسْم<tajweed class=madda_obligatory>َا</tajweed>ٓءُ <tajweed class=ham_wasl>ٱ</tajweed>لْحُسْنَىٰ‌ۚ يُسَبِّحُ لَهُ<tajweed class=madda_normal>ۥ</tajweed> مَا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ‌ۖ وَهُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْعَزِيزُ <tajweed class=ham_wasl>ٱ</tajweed>لْحَك<tajweed class=madda_permissible>ِي</tajweed>مُ <span class=end>٢٤</span>",
+      "bangla": "He is God: the Creator, the Originator, the Shaper. The best names belong to Him. Everything in the heavens and earth glorifies Him: He is the Almighty, the Wise.",
+      "words": [
+        {
+          "ar": "هُوَ",
+          "tr": "huwa",
+          "wbw_audio": "wbw/059_024_001.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱللَّهُ",
+          "tr": "l-lahu",
+          "wbw_audio": "wbw/059_024_002.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْخَـٰلِقُ",
+          "tr": "l-khāliqu",
+          "wbw_audio": "wbw/059_024_003.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْبَارِئُ",
+          "tr": "l-bāri-u",
+          "wbw_audio": "wbw/059_024_004.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْمُصَوِّرُ ۖ",
+          "tr": "l-muṣawiru",
+          "wbw_audio": "wbw/059_024_005.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَهُ",
+          "tr": "lahu",
+          "wbw_audio": "wbw/059_024_007.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْأَسْمَآءُ",
+          "tr": "l-asmāu",
+          "wbw_audio": "wbw/059_024_008.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْحُسْنَىٰ ۚ",
+          "tr": "l-ḥus'nā",
+          "wbw_audio": "wbw/059_024_009.mp3",
+          "rules": []
+        },
+        {
+          "ar": "يُسَبِّحُ",
+          "tr": "yusabbiḥu",
+          "wbw_audio": "wbw/059_024_011.mp3",
+          "rules": []
+        },
+        {
+          "ar": "لَهُۥ",
+          "tr": "lahu",
+          "wbw_audio": "wbw/059_024_012.mp3",
+          "rules": []
+        },
+        {
+          "ar": "مَا",
+          "tr": "mā",
+          "wbw_audio": "wbw/059_024_013.mp3",
+          "rules": []
+        },
+        {
+          "ar": "فِى",
+          "tr": "fī",
+          "wbw_audio": "wbw/059_024_014.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلسَّمَـٰوَٰتِ",
+          "tr": "l-samāwāti",
+          "wbw_audio": "wbw/059_024_015.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَٱلْأَرْضِ ۖ",
+          "tr": "wal-arḍi",
+          "wbw_audio": "wbw/059_024_016.mp3",
+          "rules": []
+        },
+        {
+          "ar": "وَهُوَ",
+          "tr": "wahuwa",
+          "wbw_audio": "wbw/059_024_018.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْعَزِيزُ",
+          "tr": "l-ʿazīzu",
+          "wbw_audio": "wbw/059_024_019.mp3",
+          "rules": []
+        },
+        {
+          "ar": "ٱلْحَكِيمُ",
+          "tr": "l-ḥakīmu",
+          "wbw_audio": "wbw/059_024_020.mp3",
+          "rules": []
+        }
+      ]
+    }
+  ]
+}
