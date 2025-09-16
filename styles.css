@@ -45,9 +45,12 @@ button:hover,select:focus,.btn:hover{outline:none;border-color:var(--ring);box-s
 .surah-title{margin:0 0 .6rem 0;font-weight:700;letter-spacing:.5px}
 .ayah-list{list-style:decimal;padding:0 1.2rem;margin:0}
 .ayah-list li{margin:.6rem 0;line-height:2.6rem;font-size:2rem;word-spacing:.35rem}
+.ayah{display:block}
 .word{padding:.15rem .35rem;border-radius:.4rem;cursor:pointer;transition:background .12s ease,outline-color .12s ease;outline:1px solid transparent}
 .word:hover{outline:1px dashed #ffffff3a}
 .word.active{outline:2px solid var(--ring);background:#8ab4f81a}
+/* verse end number inside inline HTML */
+.ayah .end{font-size:1.1rem; opacity:.7; margin:0 .15rem}
 
 /* stacked AR+TR */
 .wstack{display:inline-flex;flex-direction:column;align-items:center;margin:0 .25rem .55rem .25rem}
@@ -88,4 +91,5 @@ aside#legend{height:fit-content}
 .sheet-backdrop{position:fixed;inset:0;background:#0007;z-index:49}
 
 /* accessibility */
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap}
