@@ -44,7 +44,7 @@ function setAudioWithFallback(audioEl, urls, onResolvedUrl) {
 // ======= elements =======
 const fullSurah   = document.getElementById('fullSurah');
 const fullRate    = document.getElementById('fullRate');
-const fullLoop    = document.getElementById('fullLoop');
+theFullLoop = document.getElementById('fullLoop');
 const downloadMp3 = document.getElementById('downloadMp3');
 const startPracticeBtn = document.getElementById('startPractice');
 const heroTitle   = document.getElementById('heroTitle');
@@ -125,30 +125,59 @@ function setMode(m){
   modeAyahBtn.classList.toggle('active', m==='ayah');
   modeContBtn.classList.toggle('active', m==='cont');
 }
+function updateSrcHint(){
+  if (!resolvedSrc) return;
+  try{
+    srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`;
+  }catch{}
+}
+
+// Colorize custom <tajweed class=...> markup when we don't have words[]
+function colorizeTajweedHTML(html, legendMap) {
+  return (html||'').replace(
+    /<tajweed\s+class=([a-zA-Z0-9_\-]+)>(.*?)<\/tajweed>/g,
+    (_, cls, inner) => {
+      const e = legendMap?.[cls] || {};
+      const bg = e.color ? hexAlpha(e.color, .18) : 'transparent';
+      const title = e.label || cls;
+      return `<span class="word" style="background:${bg}" title="${title}">${inner}</span>`;
+    }
+  );
+}
+
+// Show a quick banner if boot fails
+function showBootError(err){
+  const box=document.createElement('pre');
+  box.textContent='Error loading data:\n' + (err?.stack||err);
+  box.style.cssText='color:#ff8a8a;background:#1b1111;padding:.6rem;border-radius:.4rem;margin:1rem';
+  document.body.prepend(box);
+}
 
 // ======= init =======
 (async function init(){
-  legend = await (await fetch(LEGEND_JSON)).json();
-  renderLegend(legend);
+  try{
+    legend = await (await fetch(LEGEND_JSON)).json();
+    renderLegend(legend);
 
-  const manifest = await (await fetch(MANIFEST_JSON)).json();
-  surahSelect.innerHTML = '';
-  manifest.surahs.forEach(s => {
-    const opt = document.createElement('option');
-    opt.value = s.id; opt.textContent = `${s.id} — ${s.name_bn}`;
-    surahSelect.appendChild(opt);
-  });
+    const manifest = await (await fetch(MANIFEST_JSON)).json();
+    surahSelect.innerHTML = '';
+    manifest.surahs.forEach(s => {
+      const opt = document.createElement('option');
+      opt.value = s.id; opt.textContent = `${s.id} — ${s.name_bn}`;
+      surahSelect.appendChild(opt);
+    });
 
-  bindTransport();
-  await loadSurah(surahSelect.value);
+    bindTransport();
+    await loadSurah(surahSelect.value);
 
-  surahSelect.addEventListener('change', e => loadSurah(e.target.value));
-  legendBtn.addEventListener('click', () => toggleLegend());
-  viewToggle.addEventListener('click', ()=>{
-    stackedView = !stackedView;
-    viewToggle.textContent = stackedView ? 'View: Stacked (AR+TR)' : 'View: Arabic only';
-    reRenderAyat();
-  });
+    surahSelect.addEventListener('change', e => loadSurah(e.target.value));
+    legendBtn.addEventListener('click', () => toggleLegend());
+    viewToggle.addEventListener('click', ()=>{
+      stackedView = !stackedView;
+      viewToggle.textContent = stackedView ? 'View: Stacked (AR+TR)' : 'View: Arabic only';
+      reRenderAyat();
+    });
+  }catch(e){ showBootError(e); }
 })();
 
 // ======= transport & interactions =======
@@ -171,7 +200,7 @@ function bindTransport(){
   fullRate.addEventListener('change', e => {
     const r = parseFloat(e.target.value||'1'); fullSurah.playbackRate = r; player.playbackRate = r;
   });
-  fullLoop.addEventListener('change', e => { fullSurah.loop = e.target.checked; });
+  theFullLoop.addEventListener('change', e => { fullSurah.loop = e.target.checked; });
   fullSurah.addEventListener('timeupdate', () => {
     fullTime.textContent = `${mmss(fullSurah.currentTime)} / ${mmss(fullSurah.duration||0)}`;
   });
@@ -194,7 +223,7 @@ function bindTransport(){
   sheetTAF.addEventListener('click', ()=> setSheetTab('TAF'));
   dockPreview.addEventListener('click', playCurrentAyah);
 
-  // small: hide popup on scroll
+  // hide popup on scroll
   document.addEventListener('scroll', ()=> hideWordPop(), { passive:true });
 }
 
@@ -225,10 +254,6 @@ function handlePracticeTick(){
   // continuous mode lets audio run; no auto-stop.
 }
 
-function updateSrcHint(){
-  if (!resolvedSrc) return;
-  try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`; }catch{}
-}
 function playCurrentAyah(){
   const first = segments.find(x => x.ayahIndex===currentAyahIndex);
   if (!first) return;
@@ -255,7 +280,6 @@ async function loadSurah(id){
 
   // overview (optional tafsir summary)
   renderOverview(String(data.surah).padStart(3,'0'));
-
   // maqam notes (optional)
   renderMaqam(String(data.surah).padStart(3,'0'));
 
@@ -279,7 +303,7 @@ function reRenderAyat(){
 
     const safeWords = (ayah.words||[]).filter(w => w && (w.ar||'').trim().length);
     if (!safeWords.length){
-      if (ayah.arabic_tajweed_html) container.innerHTML = ayah.arabic_tajweed_html;
+      if (ayah.arabic_tajweed_html) container.innerHTML = colorizeTajweedHTML(ayah.arabic_tajweed_html, legend);
       else if (ayah.arabic) container.textContent = ayah.arabic;
       else container.textContent = '—';
       li.appendChild(container); ayahList.appendChild(li); spanRefs.push([]); return;
@@ -346,7 +370,6 @@ async function renderOverview(id){
     const sum = (t.summary||'').split(/\n+/).map(p=>`<p>${p}</p>`).join('');
     const secs = (t.sections||[]).map(s=>`<h4>${s.title}</h4><p>${s.body}</p>`).join('');
     overviewBody.innerHTML = head + sum + secs;
-    // default: collapsed on mobile
     if (window.innerWidth >= 1024) surahOverview.open = true; else surahOverview.open = false;
   }catch{ overviewBody.textContent = '—'; }
 }
@@ -369,7 +392,6 @@ function setExplain(ayah){
 
   dockExpand.onclick = ()=> openSheet(dockMode);
   sheetTitle.textContent = `Āyah ${ayah.ayah_id}`;
-  // store for the sheet
   sheetTR.dataset.text = tr;
   sheetBN.dataset.text = bn;
 }
@@ -422,6 +444,3 @@ function showWordPop(anchorEl, tr, bn){
   setTimeout(()=>document.addEventListener('click', closer, true),0);
 }
 function hideWordPop(){ wordPop.hidden = true; }
-
-// ======= utils =======
-function updateSrcHint(){ if (!resolvedSrc) return; try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • offset: ${baseOffset.toFixed(1)}s`; }catch{} }
