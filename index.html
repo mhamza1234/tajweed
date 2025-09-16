@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Qur’an Read-Along — Tajwīd Tutor</title>
+  <title>Qur’an Read-Along — Tajwīd & Maqām</title>
   <link rel="preconnect" href="https://cdn.islamic.network" crossorigin>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -12,13 +12,13 @@
     <div class="brand">Qur’an Read-Along</div>
     <div class="controls">
       <label for="surahSelect">Surah:</label>
-      <select id="surahSelect"></select>
-      <button id="viewToggle">View: Arabic only</button>
-      <button id="legendToggle" aria-expanded="false">Legend</button>
+      <select id="surahSelect" aria-label="Select surah"></select>
+      <button id="viewToggle" class="btn">View: Arabic only</button>
+      <button id="legendToggle" class="btn" aria-expanded="false">Legend</button>
     </div>
   </header>
 
-  <!-- HERO: Full-surah recitation -->
+  <!-- SURAH HERO (full recitation) -->
   <section class="hero" dir="ltr">
     <div class="hero-head">
       <div>
@@ -45,28 +45,34 @@
         <label><input type="checkbox" id="fullLoop"> Loop</label>
         <a id="downloadMp3" class="btn" download>Download MP3</a>
         <button id="startPractice" class="btn primary">Start practice ↓</button>
-        <span id="srcHint" class="mono" style="opacity:.7;margin-left:.6rem"></span>
+        <span id="srcHint" class="mono hint"></span>
         <button id="alignMinus" class="btn" title="Shift −0.5s">−0.5s</button>
-        <button id="alignPlus" class="btn"  title="Shift +0.5s">+0.5s</button>
+        <button id="alignPlus"  class="btn" title="Shift +0.5s">+0.5s</button>
       </div>
       <div id="fullTime" class="time">0:00 / 0:00</div>
     </div>
+
+    <!-- Surah overview / tafsir summary (collapsible) -->
+    <details id="surahOverview" class="overview" dir="ltr">
+      <summary>Surah overview & tafsīr (summary)</summary>
+      <div id="overviewBody">—</div>
+    </details>
   </section>
 
-  <!-- PRACTICE player -->
+  <!-- PRACTICE PLAYER -->
   <section class="player" dir="ltr">
     <h3 style="margin:.2rem 0 .6rem 0">Practice player</h3>
     <audio id="player" preload="metadata" controls></audio>
     <div class="transport">
-      <button id="playBtn">Play</button>
-      <button id="pauseBtn">Pause</button>
-      <button id="restartBtn" title="Restart">↺</button>
-      <div style="margin-left:.8rem;display:flex;gap:.35rem;align-items:center;">
+      <button id="playBtn" class="btn">Play</button>
+      <button id="pauseBtn" class="btn">Pause</button>
+      <button id="restartBtn" class="btn" title="Restart">↺</button>
+      <div class="mode-box">
         <label>Mode:</label>
         <button id="modeWord" class="btn active">Word</button>
         <button id="modeAyah" class="btn">Āyah</button>
         <button id="modeCont" class="btn">Cont.</button>
-        <label style="margin-left:.5rem"><input type="checkbox" id="loopPractice"> Loop</label>
+        <label class="ml"><input type="checkbox" id="loopPractice"> Loop</label>
       </div>
     </div>
   </section>
@@ -75,24 +81,47 @@
     <section class="panel">
       <h2 id="surahTitle" class="surah-title" aria-live="polite"></h2>
       <ol id="ayahList" class="ayah-list" aria-live="polite"></ol>
-
-      <div class="explain" dir="ltr">
-        <div>
-          <h3>Transliteration</h3>
-          <div id="trOut" class="mono"></div>
-        </div>
-        <div>
-          <h3>Meaning (Bangla)</h3>
-          <div id="bnOut"></div>
-        </div>
-      </div>
     </section>
 
     <aside id="legend" hidden>
       <h3 dir="ltr">Tajwīd Legend</h3>
       <ul id="legendList"></ul>
+
+      <h3 dir="ltr" style="margin-top:1rem">Maqām (melodic) notes</h3>
+      <div id="maqamBox" class="mono small" dir="ltr">—</div>
     </aside>
   </main>
+
+  <!-- Inline word popup -->
+  <div id="wordPop" class="word-pop" hidden>
+    <div class="tr"></div>
+    <div class="bn"></div>
+  </div>
+
+  <!-- Bottom Dock -->
+  <div id="dock" class="dock" hidden>
+    <div class="dock-tabs" role="tablist" aria-label="Ayah details">
+      <button id="tabTR" class="active" role="tab" aria-selected="true">TR</button>
+      <button id="tabBN" role="tab" aria-selected="false">BN</button>
+      <button id="dockExpand" class="expand" title="Expand">↑</button>
+    </div>
+    <div id="dockPreview" class="dock-preview" aria-live="polite">—</div>
+  </div>
+
+  <!-- Bottom Sheet -->
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-head">
+      <div id="sheetTitle" class="sheet-title"></div>
+      <button id="sheetClose" class="btn">✕</button>
+    </div>
+    <div class="sheet-tabs">
+      <button id="sheetTR" class="btn active">Transliteration</button>
+      <button id="sheetBN" class="btn">Bangla</button>
+      <button id="sheetTAF" class="btn">Tafsīr</button>
+    </div>
+    <div id="sheetBody" class="sheet-body"></div>
+  </div>
+  <div id="sheetBackdrop" class="sheet-backdrop" hidden></div>
 
   <div class="sr-only" aria-live="polite" id="live"></div>
   <script src="app.js"></script>
