@@ -64,8 +64,6 @@ const legendBtn   = document.getElementById('legendToggle');
 const legendList  = document.getElementById('legendList');
 const viewToggle  = document.getElementById('viewToggle');
 
-const wordPop     = document.getElementById('wordPop');
-
 const playBtn     = document.getElementById('playBtn');
 const pauseBtn    = document.getElementById('pauseBtn');
 const restartBtn  = document.getElementById('restartBtn');
@@ -93,11 +91,29 @@ const surahOverview   = document.getElementById('surahOverview');
 const overviewBody    = document.getElementById('overviewBody');
 const maqamBox        = document.getElementById('maqamBox');
 
+// Flashcards
+const openFlashBtn = document.getElementById('openFlash');
+const closeFlashBtn= document.getElementById('closeFlash');
+const flashPanel   = document.getElementById('flash');
+const flashBack    = document.getElementById('flashBack');
+const flashTitle   = document.getElementById('flashTitle');
+const onlyAyahCb   = document.getElementById('onlyAyah');
+const nextFlashBtn = document.getElementById('nextFlash');
+const prevFlashBtn = document.getElementById('prevFlash');
+const shuffleFlashBtn = document.getElementById('shuffleFlash');
+const flashAr = document.getElementById('flashAr');
+const flashTR = document.getElementById('flashTR');
+const flashBN = document.getElementById('flashBN');
+const flashChips = document.getElementById('flashChips');
+const flashLegend = document.getElementById('flashLegend');
+const flashAudio  = document.getElementById('flashAudio');
+
 // ======= state =======
 let legend = {};
-let segments = [];          // timing segments for words
-let ayahEls = [];           // one element per āyah (for active highlight)
-let activeIdx = { i:-1, j:-1 };
+let segments = [];              // timing segments (word level)
+let wordRefs = [];              // [ [wordSpan, ...] per āyah ]
+let ayahEls = [];               // visible tajwīd line per āyah
+let activeIdx = { i:-1, j:-1 }; // current i/j
 let lastAyahIndex = -1;
 let currentAyahIndex = 0;
 let stackedView = false;
@@ -106,14 +122,17 @@ let currentData = null;
 let practiceMode = 'word';
 let loopPractice = false;
 
-let baseOffset = 0;         // intro offset (ta'awwudh + basmalah)
+let baseOffset = 0;
 let resolvedSrc = "";
 let dockMode = 'TR';
+
+// Flashcards state
+let deck = []; // [{i,j,html,tr,bn,audio,tags}]
+let deckPos = 0;
 
 // ======= helpers =======
 const mmss = s => (!isFinite(s) ? '0:00' : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`);
 
-// reciter intro guess (Afasy); Sūrah 9 has no basmalah
 function reciterIntroOffset(url, surahId){
   let host = '';
   try { host = new URL(url).hostname; } catch {}
@@ -128,6 +147,74 @@ function setMode(m){
   modeWordBtn.classList.toggle('active', m==='word');
   modeAyahBtn.classList.toggle('active', m==='ayah');
   modeContBtn.classList.toggle('active', m==='cont');
+}
+
+// Wrap visible tajwīd HTML into word spans so we can click/highlight
+function wrapTajweedIntoWords(container, ayahIndex){
+  const endNumber = container.querySelector('span.end');
+  if (endNumber) endNumber.remove();
+
+  const nodes = Array.from(container.childNodes);
+  container.textContent = '';
+
+  const makeWord = () => {
+    const w = document.createElement('span');
+    w.className = 'word';
+    w.setAttribute('lang','ar');
+    return w;
+  };
+
+  const spans = [];
+  let current = makeWord();
+  container.appendChild(current);
+  spans.push(current);
+
+  const pushSpace = () => { container.appendChild(document.createTextNode(' ')); };
+  const newWord = () => { current = makeWord(); pushSpace(); container.appendChild(current); spans.push(current); };
+
+  const appendNode = (n) => {
+    current.appendChild(n.nodeType === Node.TEXT_NODE ? document.createTextNode(n.textContent) : n);
+  };
+
+  nodes.forEach(node=>{
+    if (node.nodeType === Node.TEXT_NODE){
+      const parts = node.textContent.split(/(\s+)/);
+      parts.forEach(part=>{
+        if (/\s+/.test(part)) newWord();
+        else if (part.length) appendNode({nodeType:Node.TEXT_NODE, textContent:part});
+      });
+    } else {
+      if (!(node.nodeType === Node.ELEMENT_NODE && node.classList.contains('end'))) appendNode(node);
+    }
+  });
+
+  // merge sajdah sign "۩"
+  for (let i=1;i<spans.length;i++){
+    const t = spans[i].textContent.trim();
+    if (t==='۩'){
+      container.insertBefore(document.createTextNode(' '), spans[i]);
+      while(spans[i].firstChild){ spans[i-1].appendChild(spans[i].firstChild); }
+      container.removeChild(spans[i]);
+      spans.splice(i,1); i--;
+    }
+  }
+  while (spans.length && spans[spans.length-1].textContent.trim()===''){
+    const s = spans.pop(); container.removeChild(s);
+  }
+
+  spans.forEach((el, j)=>{
+    el.addEventListener('click', (ev)=>{
+      ev.stopPropagation();
+      const seg = segments.find(s => s.ayahIndex===ayahIndex && s.wordIndex===j);
+      if (seg){
+        player.currentTime = baseOffset + seg.start + 0.01;
+        player.play().catch(()=>{});
+        highlightWord(ayahIndex, j);
+      }
+    });
+  });
+
+  return spans;
 }
 
 // ======= init =======
@@ -145,6 +232,8 @@ function setMode(m){
   });
 
   bindTransport();
+  bindFlashcards();
+
   await loadSurah(surahSelect.value || (manifest.surahs?.[0]?.id ?? '096'));
 
   surahSelect.addEventListener('change', e => loadSurah(e.target.value));
@@ -159,7 +248,7 @@ function setMode(m){
 // ======= transport & interactions =======
 function bindTransport(){
   playBtn.addEventListener('click', () => {
-    if (Math.abs(player.currentTime) < 0.25) player.currentTime = baseOffset + 0.01;
+    if (player.currentTime < baseOffset) player.currentTime = baseOffset + 0.01;
     player.play();
   });
   pauseBtn.addEventListener('click', () => player.pause());
@@ -201,28 +290,33 @@ function bindTransport(){
   sheetTR.addEventListener('click', ()=> setSheetTab('TR'));
   sheetBN.addEventListener('click', ()=> setSheetTab('BN'));
   sheetTAF.addEventListener('click', ()=> setSheetTab('TAF'));
-  document.addEventListener('scroll', ()=> hideWordPop(), { passive:true });
+  document.addEventListener('scroll', ()=> {/* no-op popup now */}, { passive:true });
 }
 
 function handlePracticeTick(){
   if (!segments.length) return;
   const tEff = Math.max(0, player.currentTime - baseOffset);
 
-  // find current segment
   for (let k=0;k<segments.length;k++){
     const s = segments[k];
     if (tEff>=s.start && tEff<s.end){
+      if (practiceMode === 'word') highlightWord(s.ayahIndex, s.wordIndex);
       if (lastAyahIndex !== s.ayahIndex){
         lastAyahIndex = s.ayahIndex;
         currentAyahIndex = s.ayahIndex;
-        setExplain(currentData.verses[s.ayahIndex]);  // UPDATE DOCK WHEN AYAH CHANGES
+        setExplain(currentData.verses[s.ayahIndex]);
         setActiveAyah(s.ayahIndex);
       }
       break;
     }
   }
 
-  // looping (ayah focused)
+  if (practiceMode === 'word' && activeIdx.i>=0 && activeIdx.j>=0){
+    const seg = segments.find(x => x.ayahIndex===activeIdx.i && x.wordIndex===activeIdx.j);
+    if (seg && tEff >= seg.end - 0.01){
+      if (loopPractice) player.currentTime = baseOffset + seg.start + 0.01; else player.pause();
+    }
+  }
   if (practiceMode === 'ayah' && lastAyahIndex>=0){
     const first = segments.find(x => x.ayahIndex===lastAyahIndex);
     const last  = [...segments].reverse().find(x => x.ayahIndex===lastAyahIndex);
@@ -230,6 +324,16 @@ function handlePracticeTick(){
       if (loopPractice) player.currentTime = baseOffset + first.start + 0.01; else player.pause();
     }
   }
+}
+
+function highlightWord(i,j){
+  if (activeIdx.i===i && activeIdx.j===j) return;
+  if (activeIdx.i>=0 && activeIdx.j>=0){
+    wordRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('word-active');
+  }
+  const el = wordRefs[i]?.[j];
+  if (el){ el.classList.add('word-active'); activeIdx = {i,j}; }
+  setActiveAyah(i);
 }
 
 function updateSrcHint(){
@@ -240,7 +344,7 @@ function updateSrcHint(){
 // ======= load/render =======
 async function loadSurah(id){
   clearActive();
-  ayahList.innerHTML=''; ayahEls=[]; segments=[]; currentAyahIndex=0; lastAyahIndex=-1;
+  ayahList.innerHTML=''; ayahEls=[]; wordRefs=[]; segments=[]; currentAyahIndex=0; lastAyahIndex=-1;
   inlineLegendHolder.innerHTML = '';
   fullSurah.pause(); player.pause();
 
@@ -265,28 +369,26 @@ async function loadSurah(id){
     const times = await (await fetch(SURAH_TIMES(id))).json();
     segments = times.map(t=>({start:t.start,end:t.end,ayahIndex:t.ayahIndex,wordIndex:t.wordIndex}));
   } catch { segments = []; }
+
+  // Build flashcard legend list UI
+  renderFlashLegend();
+  // Rebuild deck (whole sūrah by default)
+  buildDeck();
 }
 
 function reRenderAyat(){
-  ayahList.innerHTML=''; ayahEls=[]; clearActive();
+  ayahList.innerHTML=''; ayahEls=[]; wordRefs=[]; clearActive();
   const data = currentData; if (!data) return;
 
   data.verses.forEach((ayah,i)=>{
     const li=document.createElement('li'); li.setAttribute('dir','rtl');
-    const container=document.createElement('div'); container.className='ayah';
-    container.dataset.ayahIndex = i;
+    const line=document.createElement('div'); line.className='ayah'; line.dataset.ayahIndex = i;
 
-    // ONLY render tajwīd HTML line if available (no duplicates)
-    if (ayah.arabic_tajweed_html) {
-      container.innerHTML = ayah.arabic_tajweed_html;
-    } else if (ayah.arabic) {
-      container.textContent = ayah.arabic;
-    } else {
-      container.textContent = '—';
-    }
+    if (ayah.arabic_tajweed_html) line.innerHTML = ayah.arabic_tajweed_html;
+    else if (ayah.arabic) line.textContent = ayah.arabic;
+    else line.textContent = '—';
 
-    // Click the line to play that āyah from its first word
-    container.addEventListener('click', ()=>{
+    line.addEventListener('click', ()=>{
       const first = segments.find(x => x.ayahIndex===i);
       if (first){ player.currentTime = baseOffset + first.start + 0.01; player.play().catch(()=>{}); }
       currentAyahIndex = i;
@@ -294,12 +396,14 @@ function reRenderAyat(){
       setActiveAyah(i);
     });
 
-    li.appendChild(container);
+    li.appendChild(line);
     ayahList.appendChild(li);
-    ayahEls.push(container);
+    ayahEls.push(line);
+
+    const spans = wrapTajweedIntoWords(line, i);
+    wordRefs.push(spans);
   });
 
-  // Inline legend appended at the end of the sūrah
   renderInlineLegend();
 }
 
@@ -311,6 +415,7 @@ function setActiveAyah(i){
 
 function clearActive(){
   ayahEls.forEach(el => el.classList.remove('ayah-active'));
+  wordRefs.forEach(arr => arr?.forEach(w => w.classList.remove('word-active')));
   activeIdx={i:-1,j:-1}; lastAyahIndex=-1;
 }
 
@@ -324,7 +429,6 @@ function renderLegend(obj){
   });
 }
 function renderInlineLegend(){
-  // Build a compact legend using the same legend.json
   const box = document.createElement('div');
   box.className = 'inline-legend';
   box.innerHTML = `<h4 dir="ltr">Tajwīd legend</h4>`;
@@ -412,17 +516,100 @@ async function renderTafsirForSurah(id){
   }catch{return '';}
 }
 
-// ======= inline word popup (still available if you switch to word view later) =======
-function showWordPop(anchorEl, tr, bn){
-  const pop = wordPop;
-  pop.querySelector('.tr').textContent = tr||'';
-  pop.querySelector('.bn').textContent = bn||'';
-  pop.hidden = false;
-  const r = anchorEl.getBoundingClientRect();
-  const y = window.scrollY + r.top - pop.offsetHeight - 8;
-  const x = window.scrollX + r.left + (r.width/2) - (pop.offsetWidth/2);
-  pop.style.top = `${Math.max(8,y)}px`; pop.style.left = `${Math.max(8,x)}px`;
-  const closer = (e)=>{ if(!pop.contains(e.target)){ hideWordPop(); document.removeEventListener('click', closer, true);} };
-  setTimeout(()=>document.addEventListener('click', closer, true),0);
+// ======= FLASHCARDS =======
+function bindFlashcards(){
+  openFlashBtn.addEventListener('click', ()=>{ flashPanel.hidden=false; flashBack.hidden=false; deckPos=0; showCard(); });
+  closeFlashBtn.addEventListener('click', closeFlash);
+  flashBack.addEventListener('click', closeFlash);
+  onlyAyahCb.addEventListener('change', ()=>{ buildDeck(); deckPos=0; showCard(); });
+  nextFlashBtn.addEventListener('click', ()=>{ if(!deck.length) return; deckPos=(deckPos+1)%deck.length; showCard(); });
+  prevFlashBtn.addEventListener('click', ()=>{ if(!deck.length) return; deckPos=(deckPos-1+deck.length)%deck.length; showCard(); });
+  shuffleFlashBtn.addEventListener('click', ()=>{ shuffle(deck); deckPos=0; showCard(); });
 }
-function hideWordPop(){ wordPop.hidden = true; }
+function closeFlash(){ flashPanel.hidden=true; flashBack.hidden=true; flashAudio.pause(); }
+
+function buildDeck(){
+  deck = [];
+  if (!currentData || !wordRefs.length) return;
+  const onlyAyah = onlyAyahCb?.checked;
+  const fromAyah = onlyAyah ? currentAyahIndex : 0;
+  const toAyah   = onlyAyah ? currentAyahIndex : (currentData.verses.length-1);
+
+  for (let i=fromAyah;i<=toAyah;i++){
+    const ayah = currentData.verses[i];
+    const bn   = ayah.bangla || '';
+    const words = ayah.words || [];
+    const refs  = wordRefs[i] || [];
+    for (let j=0;j<refs.length;j++){
+      const ref = refs[j];
+      const wordObj = words[j] || {};
+      // take the exact tajwīd-colored HTML from the rendered word
+      const html = ref.innerHTML || ref.textContent || '';
+      // collect tajwīd classes used inside this word
+      const tagSet = new Set();
+      ref.querySelectorAll('tajweed').forEach(t => {
+        for (const cl of t.classList) tagSet.add(cl);
+      });
+      const audio = wordObj.wbw_audio || '';
+      deck.push({
+        i, j, html,
+        tr: wordObj.tr || '',
+        bn,
+        audio,
+        tags: [...tagSet]
+      });
+    }
+  }
+  flashTitle.textContent = `${currentData.name_en} (${currentData.name_bn}) • ${deck.length} words`;
+}
+
+function showCard(){
+  if (!deck.length){
+    flashAr.innerHTML = '—';
+    flashTR.textContent = '—';
+    flashBN.textContent = '—';
+    flashChips.innerHTML = '';
+    flashAudio.src = '';
+    return;
+  }
+  const c = deck[deckPos];
+  flashAr.innerHTML = c.html;  // tajwīd-colored word
+  flashTR.textContent = c.tr || '—';
+  flashBN.textContent = c.bn || '—';
+
+  // chips
+  flashChips.innerHTML = '';
+  c.tags.forEach(k=>{
+    const meta = legend[k];
+    const chip = document.createElement('span'); chip.className='chip';
+    const sw = document.createElement('span'); sw.className='sw'; sw.style.background = meta?.color || '#2a3140';
+    const lbl = document.createElement('span'); lbl.innerHTML = meta ? `<b>${meta.label}</b>` : k;
+    chip.appendChild(sw); chip.appendChild(lbl);
+    flashChips.appendChild(chip);
+  });
+  // audio
+  if (c.audio){
+    flashAudio.src = c.audio;
+    // try to play (ignore promise rejection if blocked)
+    flashAudio.play().catch(()=>{});
+  } else {
+    flashAudio.removeAttribute('src'); flashAudio.load();
+  }
+}
+
+function renderFlashLegend(){
+  flashLegend.innerHTML = '';
+  Object.entries(legend).forEach(([k,v])=>{
+    const li = document.createElement('li');
+    const sw = document.createElement('span'); sw.className='legend-swatch'; sw.style.background=v.color||'#2a3140';
+    const txt = document.createElement('span'); txt.innerHTML = `<b>${v.label}</b> — ${v.desc}`;
+    li.appendChild(sw); li.appendChild(txt);
+    flashLegend.appendChild(li);
+  });
+}
+function shuffle(a){
+  for (let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+}
