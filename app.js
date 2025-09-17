@@ -13,8 +13,8 @@ const SURAH_JSON   = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.json`;
 const SURAH_TIMES  = id => `data/${(SHORT_NAMES[id]||`surah${id}`)}${id}.words.json`;
 const LEGEND_JSON  = 'data/legend.json';
 const MANIFEST_JSON= 'data/manifest.json';
-const TAFSIR_JSON  = id => `data/tafsir/${id}.json`;
-const MAQAM_JSON   = id => `data/maqam/${id}.json`;
+const TAFSIR_JSON  = id => `data/tafsir/${id}.json`;  // optional
+const MAQAM_JSON   = id => `data/maqam/${id}.json`;   // optional
 
 // ======= audio fallbacks =======
 function buildAudioCandidates(id) {
@@ -57,12 +57,14 @@ const alignPlus   = document.getElementById('alignPlus');
 const player      = document.getElementById('player');
 const surahSelect = document.getElementById('surahSelect');
 const ayahList    = document.getElementById('ayahList');
-const inlineLegendHolder = document.getElementById('inlineLegendHolder');
 const surahTitle  = document.getElementById('surahTitle');
 const legendPane  = document.getElementById('legend');
 const legendBtn   = document.getElementById('legendToggle');
 const legendList  = document.getElementById('legendList');
+const legendInline= document.getElementById('legendInline');
 const viewToggle  = document.getElementById('viewToggle');
+
+const wordPop     = document.getElementById('wordPop');
 
 const playBtn     = document.getElementById('playBtn');
 const pauseBtn    = document.getElementById('pauseBtn');
@@ -91,30 +93,26 @@ const surahOverview   = document.getElementById('surahOverview');
 const overviewBody    = document.getElementById('overviewBody');
 const maqamBox        = document.getElementById('maqamBox');
 
-// Flashcards
-const openFlashBtn = document.getElementById('openFlash');
-const closeFlashBtn= document.getElementById('closeFlash');
-const flashPanel   = document.getElementById('flash');
-const flashBack    = document.getElementById('flashBack');
-const flashTitle   = document.getElementById('flashTitle');
-const onlyAyahCb   = document.getElementById('onlyAyah');
-const nextFlashBtn = document.getElementById('nextFlash');
-const prevFlashBtn = document.getElementById('prevFlash');
-const shuffleFlashBtn = document.getElementById('shuffleFlash');
-const flashAr = document.getElementById('flashAr');
-const flashTR = document.getElementById('flashTR');
-const flashBN = document.getElementById('flashBN');
-const flashChips = document.getElementById('flashChips');
+// flashcards
+const flashBtn    = document.getElementById('flashToggle');
+const flashModal  = document.getElementById('flashModal');
+const flashClose  = document.getElementById('flashClose');
+const flashCurrentAyah = document.getElementById('flashCurrentAyah');
+const flashPrev   = document.getElementById('flashPrev');
+const flashNext   = document.getElementById('flashNext');
+const flashShuffle= document.getElementById('flashShuffle');
+const fcAR        = document.getElementById('fcAR');
+const fcTR        = document.getElementById('fcTR');
+const fcAyahBN    = document.getElementById('fcAyahBN');
+const fcTags      = document.getElementById('fcTags');
+const fcAudio     = document.getElementById('fcAudio');
 const flashLegend = document.getElementById('flashLegend');
-const flashAudio  = document.getElementById('flashAudio');
 
 // ======= state =======
 let legend = {};
-let segments = [];              // timing segments (word level)
-let wordRefs = [];              // [ [wordSpan, ...] per āyah ]
-let ayahEls = [];               // visible tajwīd line per āyah
-let activeIdx = { i:-1, j:-1 }; // current i/j
-let lastAyahIndex = -1;
+let segments = [];          // [{start,end,ayahIndex,wordIndex}]
+let spanRefs = [];          // [[span,...] per ayah]
+let activeIdx = { i:-1, j:-1 };
 let currentAyahIndex = 0;
 let stackedView = false;
 let currentData = null;
@@ -122,26 +120,26 @@ let currentData = null;
 let practiceMode = 'word';
 let loopPractice = false;
 
-let baseOffset = 0;
+let baseOffset = 0;         // intro offset
 let resolvedSrc = "";
-let dockMode = 'TR';
+let dockMode = 'TR';        // 'TR' | 'BN'
+let lastShownAyah = -1;
 
-// Flashcards state
-let deck = []; // [{i,j,html,tr,bn,audio,tags}]
-let deckPos = 0;
+// flashcards state
+let flashWords = [];  // [{ar,tr,ruleKeys,ayahIndex,wordIndex,bn}]
+let flashPtr = 0;
 
 // ======= helpers =======
 const mmss = s => (!isFinite(s) ? '0:00' : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`);
-
-function reciterIntroOffset(url, surahId){
-  let host = '';
-  try { host = new URL(url).hostname; } catch {}
-  const isTawbah = (String(surahId).padStart(3,'0') === '009');
-  if (host.includes('quranicaudio.com')) return isTawbah ? 2.6 : 5.3;
-  if (host.includes('islamic.network') || host.includes('qurancdn.com') || host.includes('quran.com')) return isTawbah ? 0.9 : 1.8;
-  return isTawbah ? 1.0 : 2.0;
+const hexAlpha = (hex,a)=>{const c=hex.replace('#','');const n=parseInt(c,16);const r=(n>>16)&255,g=(n>>8)&255,b=n&255;return `rgba(${r},${g},${b},${a})`;};
+function guessIntroOffset(url) {
+  try {
+    const h = new URL(url).hostname;
+    if (h.includes("quranicaudio.com")) return 5.3; // ta'awwudh + basmalah (long)
+    if (h.includes("islamic.network")||h.includes("qurancdn.com")||h.includes("quran.com")) return 1.8;
+  } catch {}
+  return 1.8;
 }
-
 function setMode(m){
   practiceMode = m;
   modeWordBtn.classList.toggle('active', m==='word');
@@ -149,82 +147,16 @@ function setMode(m){
   modeContBtn.classList.toggle('active', m==='cont');
 }
 
-// Wrap visible tajwīd HTML into word spans so we can click/highlight
-function wrapTajweedIntoWords(container, ayahIndex){
-  const endNumber = container.querySelector('span.end');
-  if (endNumber) endNumber.remove();
-
-  const nodes = Array.from(container.childNodes);
-  container.textContent = '';
-
-  const makeWord = () => {
-    const w = document.createElement('span');
-    w.className = 'word';
-    w.setAttribute('lang','ar');
-    return w;
-  };
-
-  const spans = [];
-  let current = makeWord();
-  container.appendChild(current);
-  spans.push(current);
-
-  const pushSpace = () => { container.appendChild(document.createTextNode(' ')); };
-  const newWord = () => { current = makeWord(); pushSpace(); container.appendChild(current); spans.push(current); };
-
-  const appendNode = (n) => {
-    current.appendChild(n.nodeType === Node.TEXT_NODE ? document.createTextNode(n.textContent) : n);
-  };
-
-  nodes.forEach(node=>{
-    if (node.nodeType === Node.TEXT_NODE){
-      const parts = node.textContent.split(/(\s+)/);
-      parts.forEach(part=>{
-        if (/\s+/.test(part)) newWord();
-        else if (part.length) appendNode({nodeType:Node.TEXT_NODE, textContent:part});
-      });
-    } else {
-      if (!(node.nodeType === Node.ELEMENT_NODE && node.classList.contains('end'))) appendNode(node);
-    }
-  });
-
-  // merge sajdah sign "۩"
-  for (let i=1;i<spans.length;i++){
-    const t = spans[i].textContent.trim();
-    if (t==='۩'){
-      container.insertBefore(document.createTextNode(' '), spans[i]);
-      while(spans[i].firstChild){ spans[i-1].appendChild(spans[i].firstChild); }
-      container.removeChild(spans[i]);
-      spans.splice(i,1); i--;
-    }
-  }
-  while (spans.length && spans[spans.length-1].textContent.trim()===''){
-    const s = spans.pop(); container.removeChild(s);
-  }
-
-  spans.forEach((el, j)=>{
-    el.addEventListener('click', (ev)=>{
-      ev.stopPropagation();
-      const seg = segments.find(s => s.ayahIndex===ayahIndex && s.wordIndex===j);
-      if (seg){
-        player.currentTime = baseOffset + seg.start + 0.01;
-        player.play().catch(()=>{});
-        highlightWord(ayahIndex, j);
-      }
-    });
-  });
-
-  return spans;
-}
-
 // ======= init =======
 (async function init(){
   legend = await (await fetch(LEGEND_JSON)).json();
-  renderLegend(legend);
+  renderLegend(legend, legendList);
+  renderLegend(legend, flashLegend);
+  renderLegend(legend, legendInline);
 
   const manifest = await (await fetch(MANIFEST_JSON)).json();
   surahSelect.innerHTML = '';
-  (manifest.surahs||[]).forEach(s => {
+  manifest.surahs.forEach(s => {
     const opt = document.createElement('option');
     opt.value = s.id;
     opt.textContent = `${s.id} — ${s.name_en} (${s.name_bn})`;
@@ -232,9 +164,7 @@ function wrapTajweedIntoWords(container, ayahIndex){
   });
 
   bindTransport();
-  bindFlashcards();
-
-  await loadSurah(surahSelect.value || (manifest.surahs?.[0]?.id ?? '096'));
+  await loadSurah(surahSelect.value);
 
   surahSelect.addEventListener('change', e => loadSurah(e.target.value));
   legendBtn.addEventListener('click', () => toggleLegend());
@@ -243,16 +173,22 @@ function wrapTajweedIntoWords(container, ayahIndex){
     viewToggle.textContent = stackedView ? 'View: Stacked (AR+TR)' : 'View: Arabic only';
     reRenderAyat();
   });
+
+  // flashcards
+  flashBtn.addEventListener('click', openFlashcards);
+  flashClose.addEventListener('click', closeFlashcards);
+  flashModal.addEventListener('click', (e)=>{ if(e.target===flashModal) closeFlashcards(); });
+  flashPrev.addEventListener('click', ()=>{ flashPtr=(flashPtr-1+flashWords.length)%flashWords.length; paintFlashcard(); });
+  flashNext.addEventListener('click', ()=>{ flashPtr=(flashPtr+1)%flashWords.length; paintFlashcard(); });
+  flashShuffle.addEventListener('click', ()=>{ shuffleFlash(); paintFlashcard(); });
+  flashCurrentAyah.addEventListener('change', buildFlashWords);
 })();
 
 // ======= transport & interactions =======
 function bindTransport(){
-  playBtn.addEventListener('click', () => {
-    if (player.currentTime < baseOffset) player.currentTime = baseOffset + 0.01;
-    player.play();
-  });
+  playBtn.addEventListener('click', () => player.play());
   pauseBtn.addEventListener('click', () => player.pause());
-  restartBtn.addEventListener('click', () => { player.currentTime = baseOffset + 0.01; player.play(); });
+  restartBtn.addEventListener('click', () => { player.currentTime = 0; player.play(); });
 
   modeWordBtn.addEventListener('click', ()=> setMode('word'));
   modeAyahBtn.addEventListener('click', ()=> setMode('ayah'));
@@ -273,15 +209,14 @@ function bindTransport(){
     fullTime.textContent = `${mmss(fullSurah.currentTime)} / ${mmss(fullSurah.duration||0)}`;
   });
   startPracticeBtn.addEventListener('click', () => {
-    fullSurah.pause();
-    player.currentTime = baseOffset + 0.01;
-    player.play().catch(()=>{});
+    fullSurah.pause(); player.currentTime = 0; player.play().catch(()=>{});
     document.querySelector('.panel')?.scrollIntoView({ behavior:'smooth', block:'start' });
   });
 
   alignMinus.addEventListener('click', ()=>{ baseOffset=Math.max(0,baseOffset-0.5); updateSrcHint(); });
   alignPlus .addEventListener('click', ()=>{ baseOffset+=0.5;               updateSrcHint(); });
 
+  // dock / sheet
   tabTR.addEventListener('click', ()=>{ dockMode='TR'; tabTR.classList.add('active'); tabBN.classList.remove('active'); refreshDockPreview(); });
   tabBN.addEventListener('click', ()=>{ dockMode='BN'; tabBN.classList.add('active'); tabTR.classList.remove('active'); refreshDockPreview(); });
   dockExpand.addEventListener('click', ()=> openSheet(dockMode));
@@ -290,7 +225,10 @@ function bindTransport(){
   sheetTR.addEventListener('click', ()=> setSheetTab('TR'));
   sheetBN.addEventListener('click', ()=> setSheetTab('BN'));
   sheetTAF.addEventListener('click', ()=> setSheetTab('TAF'));
-  document.addEventListener('scroll', ()=> {/* no-op popup now */}, { passive:true });
+  dockPreview.addEventListener('click', playCurrentAyah);
+
+  // hide popup on scroll
+  document.addEventListener('scroll', ()=> hideWordPop(), { passive:true });
 }
 
 function handlePracticeTick(){
@@ -300,12 +238,12 @@ function handlePracticeTick(){
   for (let k=0;k<segments.length;k++){
     const s = segments[k];
     if (tEff>=s.start && tEff<s.end){
-      if (practiceMode === 'word') highlightWord(s.ayahIndex, s.wordIndex);
-      if (lastAyahIndex !== s.ayahIndex){
-        lastAyahIndex = s.ayahIndex;
+      highlight(s.ayahIndex, s.wordIndex);
+      if (lastShownAyah !== s.ayahIndex){
+        lastShownAyah = s.ayahIndex;
         currentAyahIndex = s.ayahIndex;
-        setExplain(currentData.verses[s.ayahIndex]);
-        setActiveAyah(s.ayahIndex);
+        const ayah = currentData?.verses?.[s.ayahIndex];
+        if (ayah) setExplain(ayah);
       }
       break;
     }
@@ -317,132 +255,126 @@ function handlePracticeTick(){
       if (loopPractice) player.currentTime = baseOffset + seg.start + 0.01; else player.pause();
     }
   }
-  if (practiceMode === 'ayah' && lastAyahIndex>=0){
-    const first = segments.find(x => x.ayahIndex===lastAyahIndex);
-    const last  = [...segments].reverse().find(x => x.ayahIndex===lastAyahIndex);
+  if (practiceMode === 'ayah' && activeIdx.i>=0){
+    const first = segments.find(x => x.ayahIndex===activeIdx.i);
+    const last  = [...segments].reverse().find(x => x.ayahIndex===activeIdx.i);
     if (first && last && tEff >= last.end - 0.01){
       if (loopPractice) player.currentTime = baseOffset + first.start + 0.01; else player.pause();
     }
   }
 }
 
-function highlightWord(i,j){
-  if (activeIdx.i===i && activeIdx.j===j) return;
-  if (activeIdx.i>=0 && activeIdx.j>=0){
-    wordRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('word-active');
-  }
-  const el = wordRefs[i]?.[j];
-  if (el){ el.classList.add('word-active'); activeIdx = {i,j}; }
-  setActiveAyah(i);
-}
-
 function updateSrcHint(){
   if (!resolvedSrc) return;
   try{ srcHint.textContent = `${new URL(resolvedSrc).hostname} • intro offset: ${baseOffset.toFixed(1)}s`; }catch{}
 }
+function playCurrentAyah(){
+  const first = segments.find(x => x.ayahIndex===currentAyahIndex);
+  if (!first) return;
+  player.currentTime = baseOffset + first.start + 0.01;
+  setMode('ayah'); player.play().catch(()=>{});
+}
 
 // ======= load/render =======
 async function loadSurah(id){
-  clearActive();
-  ayahList.innerHTML=''; ayahEls=[]; wordRefs=[]; segments=[]; currentAyahIndex=0; lastAyahIndex=-1;
-  inlineLegendHolder.innerHTML = '';
+  clearActive(); ayahList.innerHTML=''; spanRefs=[]; segments=[]; currentAyahIndex=0; lastShownAyah=-1; setMode('word');
   fullSurah.pause(); player.pause();
 
   const data = await (await fetch(SURAH_JSON(id))).json();
   currentData = data;
 
+  // hero
   surahTitle.textContent = `${data.name_ar} — ${data.name_en} (${data.name_bn})`;
   heroTitle.textContent  = `${data.name_ar} — ${data.name_en} (${data.name_bn})`;
   heroMeta.textContent   = `Sūrah ${String(data.surah).padStart(3,'0')} • ${data.verses.length} āyāt`;
 
+  // audio
   const candidates = [ data.audio_full, ...buildAudioCandidates(id) ].filter(Boolean);
-  setAudioWithFallback(player, candidates, url => { resolvedSrc = url; baseOffset = reciterIntroOffset(url, data.surah); updateSrcHint(); downloadMp3.href = url; });
-  setAudioWithFallback(fullSurah, candidates, url => { if (!resolvedSrc){ resolvedSrc=url; baseOffset=reciterIntroOffset(url, data.surah); updateSrcHint(); } });
+  setAudioWithFallback(player, candidates, url => { resolvedSrc = url; baseOffset = guessIntroOffset(url); updateSrcHint(); downloadMp3.href = url; });
+  setAudioWithFallback(fullSurah, candidates, url => { if (!resolvedSrc){ resolvedSrc=url; baseOffset=guessIntroOffset(url); updateSrcHint(); } });
 
+  // overview (optional)
   renderOverview(String(data.surah).padStart(3,'0'));
+
+  // maqam notes (optional)
   renderMaqam(String(data.surah).padStart(3,'0'));
 
+  // ayat list
   reRenderAyat();
   if (data.verses[0]) { currentAyahIndex = 0; setExplain(data.verses[0]); }
 
+  // timings
   try{
     const times = await (await fetch(SURAH_TIMES(id))).json();
     segments = times.map(t=>({start:t.start,end:t.end,ayahIndex:t.ayahIndex,wordIndex:t.wordIndex}));
   } catch { segments = []; }
 
-  // Build flashcard legend list UI
-  renderFlashLegend();
-  // Rebuild deck (whole sūrah by default)
-  buildDeck();
+  // flashcards
+  buildFlashWords();
 }
 
 function reRenderAyat(){
-  ayahList.innerHTML=''; ayahEls=[]; wordRefs=[]; clearActive();
+  ayahList.innerHTML=''; spanRefs=[]; clearActive();
   const data = currentData; if (!data) return;
 
   data.verses.forEach((ayah,i)=>{
     const li=document.createElement('li'); li.setAttribute('dir','rtl');
-    const line=document.createElement('div'); line.className='ayah'; line.dataset.ayahIndex = i;
+    const container=document.createElement('div'); container.className='ayah';
 
-    if (ayah.arabic_tajweed_html) line.innerHTML = ayah.arabic_tajweed_html;
-    else if (ayah.arabic) line.textContent = ayah.arabic;
-    else line.textContent = '—';
-
-    line.addEventListener('click', ()=>{
-      const first = segments.find(x => x.ayahIndex===i);
-      if (first){ player.currentTime = baseOffset + first.start + 0.01; player.play().catch(()=>{}); }
-      currentAyahIndex = i;
-      setExplain(ayah);
-      setActiveAyah(i);
+    // ONE coloured Arabic line (no duplicate bare line)
+    const safeWords = (ayah.words||[]).filter(w => w && (w.ar||'').trim().length);
+    const spans = safeWords.map((w,j)=>{
+      if (!stackedView){
+        const span=document.createElement('span'); span.className='word'; span.textContent=w.ar; span.setAttribute('lang','ar');
+        const first=(w.rules||[])[0]; if(first && legend[first]?.color){ span.style.background = hexAlpha(legend[first].color, .18); }
+        span.addEventListener('click', (ev)=>{
+          const seg=segments.find(s=>s.ayahIndex===i && s.wordIndex===j);
+          if(seg){ player.currentTime = Math.max(baseOffset + seg.start + 0.01, 0); player.play().catch(()=>{}); }
+          currentAyahIndex = i; setExplain(ayah); showWordPop(ev.currentTarget, w.tr||'', ayah.bangla||'');
+        });
+        return span;
+      } else {
+        const wrap=document.createElement('span'); wrap.className='wstack'; wrap.setAttribute('lang','ar');
+        const ar=document.createElement('span'); ar.className='ar word'; ar.textContent=w.ar;
+        const tr=document.createElement('span'); tr.className='tr'; tr.textContent=w.tr||'';
+        const first=(w.rules||[])[0]; if(first && legend[first]?.color){ ar.style.background = hexAlpha(legend[first].color, .18); }
+        wrap.appendChild(ar); wrap.appendChild(tr);
+        wrap.addEventListener('click', (ev)=>{
+          const seg=segments.find(s=>s.ayahIndex===i && s.wordIndex===j);
+          if(seg){ player.currentTime = Math.max(baseOffset + seg.start + 0.01, 0); player.play().catch(()=>{}); }
+          currentAyahIndex = i; setExplain(ayah); showWordPop(ev.currentTarget, w.tr||'', ayah.bangla||'');
+        });
+        return wrap;
+      }
     });
 
-    li.appendChild(line);
-    ayahList.appendChild(li);
-    ayahEls.push(line);
-
-    const spans = wrapTajweedIntoWords(line, i);
-    wordRefs.push(spans);
+    spans.forEach((s,idx)=>{ container.appendChild(s); if(!stackedView && idx!==spans.length-1) container.appendChild(document.createTextNode(' ')); });
+    li.appendChild(container); ayahList.appendChild(li);
+    spanRefs.push(spans.map(el => stackedView ? (el.querySelector('.ar')||el) : el));
   });
-
-  renderInlineLegend();
 }
 
-function setActiveAyah(i){
-  ayahEls.forEach(el => el.classList.remove('ayah-active'));
-  const el = ayahEls[i];
-  if (el) el.classList.add('ayah-active');
+function highlight(i,j){
+  if(activeIdx.i===i && activeIdx.j===j) return;
+  if(activeIdx.i>=0 && activeIdx.j>=0){ spanRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('active'); }
+  const span=spanRefs[i]?.[j]; if(span){ span.classList.add('active'); activeIdx={i,j}; }
 }
-
-function clearActive(){
-  ayahEls.forEach(el => el.classList.remove('ayah-active'));
-  wordRefs.forEach(arr => arr?.forEach(w => w.classList.remove('word-active')));
-  activeIdx={i:-1,j:-1}; lastAyahIndex=-1;
-}
+function clearActive(){ if(activeIdx.i>=0&&activeIdx.j>=0){ spanRefs[activeIdx.i]?.[activeIdx.j]?.classList.remove('active'); } activeIdx={i:-1,j:-1}; }
 
 // ======= legend / overview / maqam =======
-function renderLegend(obj){
-  legendList.innerHTML=''; Object.entries(obj).forEach(([key,val])=>{
+function renderLegend(obj, ul){
+  ul.innerHTML='';
+  Object.entries(obj).forEach(([key,val])=>{
     const li=document.createElement('li'); li.className='legend-item';
-    const sw=document.createElement('span'); sw.className='legend-swatch'; sw.style.background=val.color||'#2a3140';
-    const text=document.createElement('span'); text.innerHTML=`<b>${val.label}</b> — ${val.desc}`;
-    li.appendChild(sw); li.appendChild(text); legendList.appendChild(li);
+    if (ul === legendList) {
+      const sw=document.createElement('span'); sw.className='legend-swatch'; sw.style.background=val.color||'#2a3140';
+      const text=document.createElement('span'); text.innerHTML=`<b>${val.label}</b> — ${val.desc}`;
+      li.appendChild(sw); li.appendChild(text);
+    } else {
+      li.innerHTML = `<b>${val.label}</b> — ${val.desc}`;
+    }
+    ul.appendChild(li);
   });
-}
-function renderInlineLegend(){
-  const box = document.createElement('div');
-  box.className = 'inline-legend';
-  box.innerHTML = `<h4 dir="ltr">Tajwīd legend</h4>`;
-  const ul = document.createElement('ul');
-  Object.entries(legend).forEach(([k,v])=>{
-    const li = document.createElement('li');
-    const sw = document.createElement('span'); sw.className='legend-swatch';
-    sw.style.background = v.color||'#2a3140';
-    const txt = document.createElement('span'); txt.innerHTML = `<b>${v.label}</b> — ${v.desc}`;
-    li.appendChild(sw); li.appendChild(txt); ul.appendChild(li);
-  });
-  box.appendChild(ul);
-  inlineLegendHolder.innerHTML = '';
-  inlineLegendHolder.appendChild(box);
 }
 function toggleLegend(){
   const hidden=legendPane.hasAttribute('hidden');
@@ -474,8 +406,10 @@ async function renderMaqam(id){
 function setExplain(ayah){
   const tr = (ayah.words||[]).map(w=>w.tr||'').join(' ');
   const bn = ayah.bangla || '';
+
   dock.hidden = false;
   dockPreview.textContent = (dockMode==='TR' ? tr : bn) || '—';
+
   dockExpand.onclick = ()=> openSheet(dockMode);
   sheetTitle.textContent = `Āyah ${ayah.ayah_id}`;
   sheetTR.dataset.text = tr;
@@ -516,100 +450,80 @@ async function renderTafsirForSurah(id){
   }catch{return '';}
 }
 
-// ======= FLASHCARDS =======
-function bindFlashcards(){
-  openFlashBtn.addEventListener('click', ()=>{ flashPanel.hidden=false; flashBack.hidden=false; deckPos=0; showCard(); });
-  closeFlashBtn.addEventListener('click', closeFlash);
-  flashBack.addEventListener('click', closeFlash);
-  onlyAyahCb.addEventListener('change', ()=>{ buildDeck(); deckPos=0; showCard(); });
-  nextFlashBtn.addEventListener('click', ()=>{ if(!deck.length) return; deckPos=(deckPos+1)%deck.length; showCard(); });
-  prevFlashBtn.addEventListener('click', ()=>{ if(!deck.length) return; deckPos=(deckPos-1+deck.length)%deck.length; showCard(); });
-  shuffleFlashBtn.addEventListener('click', ()=>{ shuffle(deck); deckPos=0; showCard(); });
+// ======= inline word popup =======
+function showWordPop(anchorEl, tr, bn){
+  const pop = wordPop;
+  pop.querySelector('.tr').textContent = tr||'';
+  pop.querySelector('.bn').textContent = bn||'';
+  pop.hidden = false;
+  const r = anchorEl.getBoundingClientRect();
+  const y = window.scrollY + r.top - pop.offsetHeight - 8;
+  const x = window.scrollX + r.left + (r.width/2) - (pop.offsetWidth/2);
+  pop.style.top = `${Math.max(8,y)}px`; pop.style.left = `${Math.max(8,x)}px`;
+  const closer = (e)=>{ if(!pop.contains(e.target)){ hideWordPop(); document.removeEventListener('click', closer, true);} };
+  setTimeout(()=>document.addEventListener('click', closer, true),0);
 }
-function closeFlash(){ flashPanel.hidden=true; flashBack.hidden=true; flashAudio.pause(); }
+function hideWordPop(){ wordPop.hidden = true; }
 
-function buildDeck(){
-  deck = [];
-  if (!currentData || !wordRefs.length) return;
-  const onlyAyah = onlyAyahCb?.checked;
-  const fromAyah = onlyAyah ? currentAyahIndex : 0;
-  const toAyah   = onlyAyah ? currentAyahIndex : (currentData.verses.length-1);
-
-  for (let i=fromAyah;i<=toAyah;i++){
-    const ayah = currentData.verses[i];
-    const bn   = ayah.bangla || '';
-    const words = ayah.words || [];
-    const refs  = wordRefs[i] || [];
-    for (let j=0;j<refs.length;j++){
-      const ref = refs[j];
-      const wordObj = words[j] || {};
-      // take the exact tajwīd-colored HTML from the rendered word
-      const html = ref.innerHTML || ref.textContent || '';
-      // collect tajwīd classes used inside this word
-      const tagSet = new Set();
-      ref.querySelectorAll('tajweed').forEach(t => {
-        for (const cl of t.classList) tagSet.add(cl);
+// ======= Flashcards =======
+function buildFlashWords(){
+  if (!currentData) return;
+  const onlyAyah = flashCurrentAyah.checked ? currentAyahIndex : null;
+  const out=[];
+  currentData.verses.forEach((v,ai)=>{
+    if (onlyAyah!==null && ai!==onlyAyah) return;
+    (v.words||[]).forEach((w,wi)=>{
+      if (!w || !(w.ar||'').trim()) return;
+      out.push({
+        ar:w.ar, tr:w.tr||'', ruleKeys:w.rules||[], ayahIndex:ai, wordIndex:wi, bn:v.bangla||''
       });
-      const audio = wordObj.wbw_audio || '';
-      deck.push({
-        i, j, html,
-        tr: wordObj.tr || '',
-        bn,
-        audio,
-        tags: [...tagSet]
-      });
-    }
-  }
-  flashTitle.textContent = `${currentData.name_en} (${currentData.name_bn}) • ${deck.length} words`;
+    });
+  });
+  flashWords = out;
+  flashPtr = 0;
+  shuffleFlash();
+  paintFlashcard();
 }
+function shuffleFlash(){ for(let i=flashWords.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [flashWords[i],flashWords[j]]=[flashWords[j],flashWords[i]]; } }
+function paintFlashcard(){
+  if (!flashWords.length){ fcAR.textContent='—'; fcTR.textContent='—'; fcAyahBN.textContent='—'; fcTags.innerHTML=''; fcAudio.src=''; return; }
+  const item = flashWords[flashPtr];
+  fcAR.textContent = item.ar;
+  fcTR.textContent = item.tr || '—';
+  fcAyahBN.textContent = item.bn || '—';
 
-function showCard(){
-  if (!deck.length){
-    flashAr.innerHTML = '—';
-    flashTR.textContent = '—';
-    flashBN.textContent = '—';
-    flashChips.innerHTML = '';
-    flashAudio.src = '';
-    return;
-  }
-  const c = deck[deckPos];
-  flashAr.innerHTML = c.html;  // tajwīd-colored word
-  flashTR.textContent = c.tr || '—';
-  flashBN.textContent = c.bn || '—';
-
-  // chips
-  flashChips.innerHTML = '';
-  c.tags.forEach(k=>{
+  // tags
+  fcTags.innerHTML='';
+  (item.ruleKeys||[]).forEach(k=>{
     const meta = legend[k];
-    const chip = document.createElement('span'); chip.className='chip';
-    const sw = document.createElement('span'); sw.className='sw'; sw.style.background = meta?.color || '#2a3140';
-    const lbl = document.createElement('span'); lbl.innerHTML = meta ? `<b>${meta.label}</b>` : k;
-    chip.appendChild(sw); chip.appendChild(lbl);
-    flashChips.appendChild(chip);
+    if (!meta) return;
+    const chip = document.createElement('span');
+    chip.className='tag';
+    chip.textContent = meta.label;
+    chip.style.outline = `2px solid ${meta.color||'#3a4b6a'}`;
+    chip.style.boxShadow = `0 0 0 3px ${(meta.color||'#3a4b6a')}22 inset`;
+    fcTags.appendChild(chip);
   });
-  // audio
-  if (c.audio){
-    flashAudio.src = c.audio;
-    // try to play (ignore promise rejection if blocked)
-    flashAudio.play().catch(()=>{});
-  } else {
-    flashAudio.removeAttribute('src'); flashAudio.load();
-  }
-}
 
-function renderFlashLegend(){
-  flashLegend.innerHTML = '';
-  Object.entries(legend).forEach(([k,v])=>{
-    const li = document.createElement('li');
-    const sw = document.createElement('span'); sw.className='legend-swatch'; sw.style.background=v.color||'#2a3140';
-    const txt = document.createElement('span'); txt.innerHTML = `<b>${v.label}</b> — ${v.desc}`;
-    li.appendChild(sw); li.appendChild(txt);
-    flashLegend.appendChild(li);
-  });
-}
-function shuffle(a){
-  for (let i=a.length-1;i>0;i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [a[i],a[j]]=[a[j],a[i]];
+  // audio for word (slice from full audio if we have timings)
+  const seg = segments.find(s=>s.ayahIndex===item.ayahIndex && s.wordIndex===item.wordIndex);
+  if (seg && resolvedSrc){
+    // use HTMLMediaElement fast seek range with fragment (not perfect everywhere but works widely)
+    // We "simulate" with start/end by listening timeupdate and pausing
+    fcAudio.src = resolvedSrc;
+    const start = baseOffset + seg.start + 0.01;
+    const end   = baseOffset + seg.end - 0.01;
+    const onTime = ()=>{ if (fcAudio.currentTime>=end) { fcAudio.pause(); fcAudio.removeEventListener('timeupdate', onTime); } };
+    fcAudio.currentTime = start;
+    fcAudio.play().catch(()=>{});
+    fcAudio.addEventListener('timeupdate', onTime);
+  } else {
+    fcAudio.removeAttribute('src');
+    fcAudio.load();
   }
 }
+function openFlashcards(){ flashModal.hidden = false; buildFlashWords(); }
+function closeFlashcards(){ flashModal.hidden = true; }
+
+// ======= utils =======
+// (none)
