@@ -1,26 +1,109 @@
-/* Flashcards */
-.flashpanel{
-  position:fixed; inset:auto 0 0 0; max-height:85vh; z-index:60;
-  background:#0f1115; border-top:1px solid #2a3140; padding:1rem;
-  box-shadow:0 -10px 30px #0009;
+:root {
+  --bg:#0f1115; --card:#171a21; --ink:#e9eef6; --muted:#aeb6c3; --ring:#8ab4f8;
+  --shade:#11151b; --border:#2a3140;
 }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Noto Naskh Arabic","Scheherazade New",Segoe UI,Arial,sans-serif
+}
+
+/* buttons + inputs */
+select,button,.btn{
+  background:var(--card);color:var(--ink);border:1px solid var(--border);
+  padding:.45rem .6rem;border-radius:.45rem;cursor:pointer
+}
+button:hover,select:focus,.btn:hover{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px #8ab4f822}
+.btn{text-decoration:none}
+.btn.primary{background:#1f6feb;border-color:#2b73f0}
+.btn.active{outline:2px solid var(--ring);box-shadow:0 0 0 3px #8ab4f822}
+
+/* top */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 1rem;background:#12151b;border-bottom:1px solid var(--border)}
+.brand{font-weight:700;letter-spacing:.2px}
+.controls{display:flex;align-items:center;gap:.5rem}
+
+/* hero */
+.hero,.player,.panel,aside#legend{background:var(--card);padding:1rem;border-radius:.6rem;margin:1rem}
+.hero-head{display:flex;justify-content:space-between;align-items:end;gap:1rem}
+.hero-title{margin:0;font-size:1.3rem}
+.hero-meta,.reciter-meta{color:var(--muted);font-size:.95rem}
+.reciter{text-align:right}.reciter-name{font-weight:600}
+.hero-audio{margin-top:.6rem}
+.hero-controls{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+.time{margin-top:.3rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.hint{opacity:.7;margin-left:.6rem}
+
+/* overview */
+.overview{margin-top:.8rem}
+.overview summary{cursor:pointer}
+
+/* practice */
+.transport{display:flex;gap:.5rem;flex-wrap:wrap}
+.mode-box{display:flex;gap:.35rem;align-items:center;margin-left:.8rem}
+.mode-box .ml{margin-left:.5rem}
+
+/* ayat */
+.surah-title{margin:0 0 .6rem 0;font-weight:700;letter-spacing:.5px}
+.ayah-list{list-style:decimal;padding:0 1.2rem;margin:0}
+.ayah-list li{margin:.6rem 0;line-height:2.6rem;font-size:2rem;word-spacing:.35rem}
+.word{padding:.15rem .35rem;border-radius:.4rem;cursor:pointer;transition:background .12s ease,outline-color .12s ease;outline:1px solid transparent}
+.word:hover{outline:1px dashed #ffffff3a}
+.word.active{outline:2px solid var(--ring);background:#8ab4f81a}
+
+/* stacked AR+TR */
+.wstack{display:inline-flex;flex-direction:column;align-items:center;margin:0 .25rem .55rem .25rem}
+.wstack .ar{font-size:2rem;line-height:2.6rem}
+.wstack .tr{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95rem;color:#cbd5e1;margin-top:.2rem;direction:ltr}
+
+/* inline popup */
+.word-pop{position:absolute;background:var(--shade);border:1px solid var(--border);border-radius:.5rem;padding:.45rem .6rem;max-width:70ch;z-index:20;box-shadow:0 6px 22px #0007}
+.word-pop .tr{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e2e8f0}
+.word-pop .bn{color:#aeb6c3;margin-top:.25rem}
+
+/* legend lists */
+aside#legend{height:fit-content}
+#legendList{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+.legend-item{display:flex;align-items:center;gap:.6rem}
+.legend-swatch{width:1.25rem;height:1.25rem;border-radius:.25rem;border:1px solid var(--border)}
+.small{font-size:.95rem;color:#cbd5e1}
+.legend-heading{margin:1.4rem 0 .4rem 0}
+.legend-inline{list-style:disc;padding-inline:1.2rem;margin:.2rem 0;color:#dbe5f3}
+.legend-inline li{margin:.25rem 0}
+
+/* dock */
+.dock{position:fixed;left:0;right:0;bottom:0;background:var(--shade);border-top:1px solid var(--border);padding:.5rem .75rem;z-index:40}
+.dock-tabs{display:flex;gap:.4rem;align-items:center}
+.dock-tabs .expand{margin-left:auto}
+.dock-preview{margin-top:.4rem;color:#c8d1df;max-height:3.6em;overflow:hidden}
+
+/* wide screens: dock right */
+@media (min-width:1200px){
+  .dock{width:360px;right:1rem;left:auto;bottom:1rem;border:1px solid var(--border);border-radius:.6rem}
+}
+
+/* sheet */
+.sheet{position:fixed;left:0;right:0;bottom:0;max-height:75vh;background:var(--bg);border-top:1px solid var(--border);
+  transform:translateY(100%);transition:transform .2s ease;z-index:50;padding:.75rem 1rem}
+.sheet[data-open="true"]{transform:translateY(0)}
+.sheet-head{display:flex;align-items:center;justify-content:space-between}
+.sheet-title{font-weight:700}
+.sheet-tabs{display:flex;gap:.4rem;margin:.5rem 0}
+.sheet-body{color:#dbe5f3;line-height:1.6;max-height:58vh;overflow:auto}
+.sheet-backdrop{position:fixed;inset:0;background:#0007;z-index:49}
+
+/* flashcards */
+.flash-modal{position:fixed;inset:0;background:#000a;z-index:60;display:flex;align-items:flex-start;justify-content:center;padding:4vh 1rem}
+.flash-dialog{width:min(1100px,95vw);background:#0e1117;border:1px solid var(--border);border-radius:.8rem;padding:1rem;box-shadow:0 18px 80px #000d;color:#e9eef6}
 .flash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem}
 .flash-title{font-weight:700}
-.flash-controls{display:flex;gap:.5rem;align-items:center;margin-bottom:.7rem;flex-wrap:wrap}
-.card{
-  border:1px solid #2a3140; border-radius:.8rem; padding:1rem; background:#11151b;
-}
-.card-ar{
-  font-size:2.2rem; line-height:2.8rem; margin-bottom:.6rem; text-align:right;
-}
-.card-row{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
-.card-col{flex:1 1 260px}
-.label{font-size:.85rem;color:#aeb6c3;margin-bottom:.25rem}
-.card-tr{font-family:ui-monospace,monospace}
-.card-bn{color:#cbd5e1}
-.chips{display:flex;gap:.4rem;flex-wrap:wrap}
-.chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #2a3140;border-radius:999px;padding:.15rem .5rem;font-size:.9rem}
-.chip .sw{width:.85rem;height:.85rem;border-radius:50%;border:1px solid #2a3140}
-.card-audio{margin-top:.6rem;width:100%}
-
-/* Tajwīd elements are already colored; keep earlier tajweed rules */
+.flash-controls{display:flex;gap:.5rem;align-items:center;margin-bottom:.6rem}
+.flash-card{display:flex;gap:1rem;background:#121623;border:1px solid var(--border);border-radius:.8rem;padding:1rem}
+.flash-left{flex:1;min-width:45%}
+.flash-right{flex:1;display:flex;flex-direction:column;align-items:flex-end}
+.flash-ar{font-size:2.2rem;line-height:2.8rem}
+.flash-ayah-meaning{margin-top:.6rem}
+.flash-label{color:#cbd5e1;margin:.35rem 0 .2rem}
+.tag-row{display:flex;flex-wrap:wrap;gap:.4rem}
+.tag{padding:.15rem .45rem;border:1px solid var(--border);border-radius:999px;font-size:.9rem;background:#1a2133}
