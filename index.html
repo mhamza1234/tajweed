@@ -15,7 +15,7 @@
       <select id="surahSelect" aria-label="Select surah"></select>
       <button id="viewToggle" class="btn">View: Arabic only</button>
       <button id="legendToggle" class="btn" aria-expanded="false">Legend</button>
-      <button id="openFlash" class="btn primary">Flashcards</button>
+      <button id="flashToggle" class="btn">Flashcards</button>
     </div>
   </header>
 
@@ -45,7 +45,7 @@
         </label>
         <label><input type="checkbox" id="fullLoop"> Loop</label>
         <a id="downloadMp3" class="btn" download>Download MP3</a>
-        <button id="startPractice" class="btn">Start practice ↓</button>
+        <button id="startPractice" class="btn primary">Start practice ↓</button>
         <span id="srcHint" class="mono hint"></span>
         <button id="alignMinus" class="btn" title="Shift −0.5s">−0.5s</button>
         <button id="alignPlus"  class="btn" title="Shift +0.5s">+0.5s</button>
@@ -53,7 +53,6 @@
       <div id="fullTime" class="time">0:00 / 0:00</div>
     </div>
 
-    <!-- Surah overview / tafsir summary (collapsible) -->
     <details id="surahOverview" class="overview" dir="ltr">
       <summary>Surah overview & tafsīr (summary)</summary>
       <div id="overviewBody">—</div>
@@ -82,7 +81,10 @@
     <section class="panel">
       <h2 id="surahTitle" class="surah-title" aria-live="polite"></h2>
       <ol id="ayahList" class="ayah-list" aria-live="polite"></ol>
-      <div id="inlineLegendHolder" dir="ltr"></div>
+
+      <!-- Tajwīd legend at the bottom of the surah page -->
+      <h3 class="legend-heading" dir="ltr">Tajwīd legend</h3>
+      <ul id="legendInline" class="legend-inline" dir="ltr"></ul>
     </section>
 
     <aside id="legend" hidden>
@@ -93,6 +95,12 @@
       <div id="maqamBox" class="mono small" dir="ltr">—</div>
     </aside>
   </main>
+
+  <!-- Inline word popup -->
+  <div id="wordPop" class="word-pop" hidden>
+    <div class="tr"></div>
+    <div class="bn"></div>
+  </div>
 
   <!-- Bottom Dock -->
   <div id="dock" class="dock" hidden>
@@ -119,40 +127,39 @@
   </div>
   <div id="sheetBackdrop" class="sheet-backdrop" hidden></div>
 
-  <!-- FLASHCARDS MODAL -->
-  <div id="flashBack" class="sheet-backdrop" hidden></div>
-  <div id="flash" class="flashpanel" hidden>
-    <div class="flash-head" dir="ltr">
-      <div class="flash-title">Flashcards — <span id="flashTitle">—</span></div>
-      <button id="closeFlash" class="btn">✕</button>
-    </div>
-    <div class="flash-controls" dir="ltr">
-      <label><input type="checkbox" id="onlyAyah"> Current āyah only</label>
-      <button id="shuffleFlash" class="btn">Shuffle</button>
-      <button id="prevFlash" class="btn">Prev</button>
-      <button id="nextFlash" class="btn primary">Next</button>
-    </div>
-    <div id="flashCard" class="card" dir="rtl">
-      <div id="flashAr" class="card-ar">—</div>
-      <div class="card-row" dir="ltr">
-        <div class="card-col">
-          <div class="label">Transliteration</div>
-          <div id="flashTR" class="card-tr">—</div>
+  <!-- Flashcards modal (single, consolidated) -->
+  <div id="flashModal" class="flash-modal" hidden>
+    <div class="flash-dialog" role="dialog" aria-modal="true" aria-labelledby="flashTitle">
+      <div class="flash-head">
+        <div id="flashTitle" class="flash-title">Flashcards</div>
+        <button id="flashClose" class="btn">✕</button>
+      </div>
+      <div class="flash-controls">
+        <label><input type="checkbox" id="flashCurrentAyah" checked> Current āyah only</label>
+        <button id="flashShuffle" class="btn">Shuffle</button>
+        <button id="flashPrev" class="btn">Prev</button>
+        <button id="flashNext" class="btn">Next</button>
+      </div>
+      <div id="flashCard" class="flash-card">
+        <div class="flash-left">
+          <div class="flash-label">Transliteration</div>
+          <div id="fcTR" class="flash-tr">—</div>
+          <div class="flash-label">Tajwīd on this word</div>
+          <div id="fcTags" class="tag-row"></div>
+          <audio id="fcAudio" preload="metadata" controls></audio>
         </div>
-        <div class="card-col">
-          <div class="label">Verse meaning (context)</div>
-          <div id="flashBN" class="card-bn">—</div>
+        <div class="flash-right" dir="rtl">
+          <div id="fcAR" class="flash-ar">—</div>
+          <div class="flash-ayah-meaning" dir="ltr">
+            <div class="flash-label">Verse meaning (context)</div>
+            <div id="fcAyahBN">—</div>
+          </div>
         </div>
       </div>
-      <div class="card-row" dir="ltr">
-        <div class="label">Tajwīd on this word</div>
-        <div id="flashChips" class="chips"></div>
+      <div class="flash-legend">
+        <div class="flash-label">Tajwīd legend</div>
+        <ul id="flashLegend" class="legend-inline"></ul>
       </div>
-      <audio id="flashAudio" preload="none" controls class="card-audio" dir="ltr"></audio>
-    </div>
-    <div class="inline-legend" dir="ltr">
-      <h4>Tajwīd legend</h4>
-      <ul id="flashLegend"></ul>
     </div>
   </div>
 
